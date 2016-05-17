@@ -1,0 +1,3396 @@
+"icd","icddesc","icdvers","hcc","rxhcc","inhcc","inrxhcc","year"
+"0031","Salmonella septicemia",9,2,,"Yes","No",2011
+"00322","Salmonella pneumonia",9,112,,"Yes","No",2011
+"00323","Salmonella arthritis",9,37,,"Yes","No",2011
+"00324","Salmonella osteomyelitis",9,37,,"Yes","No",2011
+"0064","Amebic lung abscess",9,112,106,"Yes","Yes",2011
+"0074","Cryptosporidiosis",9,5,5,"Yes","Yes",2011
+"0202","Septicemic plague",9,2,,"Yes","No",2011
+"0203","Primary pneumonic plague",9,112,,"Yes","No",2011
+"0204","Secondary pneumon plague",9,112,,"Yes","No",2011
+"0205","Pneumonic plague NOS",9,112,,"Yes","No",2011
+"0212","Pulmonary tularemia",9,112,,"Yes","No",2011
+"0221","Pulmonary anthrax",9,112,,"Yes","No",2011
+"0223","Anthrax septicemia",9,2,,"Yes","No",2011
+"0310","Pulmonary mycobacteria",9,5,5,"Yes","Yes",2011
+"0312","DMAC bacteremia",9,5,5,"Yes","Yes",2011
+"03283","Diphtheritic peritonitis",9,31,,"Yes","No",2011
+"0362","Meningococcemia",9,2,,"Yes","No",2011
+"0363","Meningococc adrenal synd",9,,19,"No","Yes",2011
+"03682","Meningococc arthropathy",9,37,,"Yes","No",2011
+"0380","Streptococcal septicemia",9,2,,"Yes","No",2011
+"03810","Staphylcocc septicem NOS",9,2,,"Yes","No",2011
+"03811","Meth susc Staph aur sept",9,2,,"Yes","No",2011
+"03812","MRSA septicemia",9,2,,"Yes","No",2011
+"03819","Staphylcocc septicem NEC",9,2,,"Yes","No",2011
+"0382","Pneumococcal septicemia",9,2,,"Yes","No",2011
+"0383","Anaerobic septicemia",9,2,,"Yes","No",2011
+"03840","Gram-neg septicemia NOS",9,2,,"Yes","No",2011
+"03841","H. influenae septicemia",9,2,,"Yes","No",2011
+"03842","E coli septicemia",9,2,,"Yes","No",2011
+"03843","Pseudomonas septicemia",9,2,,"Yes","No",2011
+"03844","Serratia septicemia",9,2,,"Yes","No",2011
+"03849","Gram-neg septicemia NEC",9,2,,"Yes","No",2011
+"0388","Septicemia NEC",9,2,,"Yes","No",2011
+"0389","Septicemia NOS",9,2,,"Yes","No",2011
+"0391","Pulmonary actinomycosis",9,112,,"Yes","No",2011
+"0400","Gas gangrene",9,104,,"Yes","No",2011
+"0402","Whipple's disease",9,32,31,"Yes","Yes",2011
+"04082","Toxic shock syndrome",9,2,,"Yes","No",2011
+"042","Human immuno virus dis",9,1,1,"Yes","Yes",2011
+"0460","Kuru",9,,55,"No","Yes",2011
+"04611","Varnt Creutzfeldt-Jakob",9,,55,"No","Yes",2011
+"04619","Creutzfldt-Jakob NEC/NOS",9,,55,"No","Yes",2011
+"0462","Subac scleros panenceph",9,,55,"No","Yes",2011
+"0463","Prog multifoc leukoencep",9,,55,"No","Yes",2011
+"04671","Gerstmn-Straus-Schnk syn",9,,55,"No","Yes",2011
+"04672","Fatal familial insomnia",9,,55,"No","Yes",2011
+"04679","Prion dis of CNS NEC/NOS",9,,55,"No","Yes",2011
+"0468","Cns slow virus infec NEC",9,,55,"No","Yes",2011
+"0469","Cns slow virus infec NOS",9,,55,"No","Yes",2011
+"0522","Postvaricella myelitis",9,,72,"No","Yes",2011
+"05310","H zoster nerv syst NOS",9,,83,"No","Yes",2011
+"05311","Geniculate herpes zoster",9,,83,"No","Yes",2011
+"05312","Postherpes trigem neural",9,,83,"No","Yes",2011
+"05313","Postherpes polyneuropath",9,,83,"No","Yes",2011
+"05314","Herpes zoster myelitis",9,,72,"No","Yes",2011
+"05319","H zoster nerv syst NEC",9,,83,"No","Yes",2011
+"0545","Herpetic septicemia",9,2,,"Yes","No",2011
+"05474","Herpes simplex myelitis",9,,72,"No","Yes",2011
+"05671","Arthritis due to rubella",9,37,,"Yes","No",2011
+"07022","Hpt B chrn coma wo dlta",9,27,25,"Yes","Yes",2011
+"07023","Hpt B chrn coma w dlta",9,27,25,"Yes","Yes",2011
+"07032","Hpt B chrn wo cm wo dlta",9,27,25,"Yes","Yes",2011
+"07033","Hpt B chrn wo cm w dlta",9,27,25,"Yes","Yes",2011
+"07044","Chrnc hpt C w hepat Coma",9,27,25,"Yes","Yes",2011
+"07054","Chrnc hpt C wo hpat coma",9,27,25,"Yes","Yes",2011
+"0723","Mumps pancreatitis",9,32,,"Yes","No",2011
+"0785","Cytomegaloviral disease",9,5,5,"Yes","Yes",2011
+"0786","Hem nephrosonephritis",9,132,126,"Yes","Yes",2011
+"07953","Hiv-2 infection oth dis",9,1,1,"Yes","Yes",2011
+"09487","Syph rupt cereb aneurysm",9,95,,"Yes","No",2011
+"09850","Gonococcal arthritis",9,37,,"Yes","No",2011
+"09851","Gonococcal synovitis",9,37,,"Yes","No",2011
+"09852","Gonococcal bursitis",9,37,,"Yes","No",2011
+"09853","Gonococcal spondylitis",9,37,,"Yes","No",2011
+"09859","Gc infect joint NEC",9,37,,"Yes","No",2011
+"09886","Gonococcal peritonitis",9,31,,"Yes","No",2011
+"0993","Reiter's disease",9,,41,"No","Yes",2011
+"1026","Yaws of bone & joint",9,37,,"Yes","No",2011
+"1124","Candidiasis of lung",9,5,5,"Yes","Yes",2011
+"1125","Disseminated candidiasis",9,5,5,"Yes","Yes",2011
+"11284","Candidal esophagitis",9,5,5,"Yes","Yes",2011
+"1140","Primary coccidioidomycos",9,112,106,"Yes","Yes",2011
+"1144","Ch pl coccidioidomycosis",9,112,106,"Yes","Yes",2011
+"1145","Pl cocidioidomycosis NOS",9,112,106,"Yes","Yes",2011
+"11505","Histoplasm caps pneumon",9,112,106,"Yes","Yes",2011
+"11515","Histoplasm dub pneumonia",9,112,106,"Yes","Yes",2011
+"11595","Histoplasmosis pneumonia",9,112,106,"Yes","Yes",2011
+"1173","Aspergillosis",9,5,5,"Yes","Yes",2011
+"1175","Cryptococcosis",9,5,5,"Yes","Yes",2011
+"1177","Zygomycosis",9,5,5,"Yes","Yes",2011
+"118","Opportunistic mycoses",9,,5,"No","Yes",2011
+"1212","Paragonimiasis",9,112,106,"Yes","Yes",2011
+"1221","Echinococc granul lung",9,112,106,"Yes","Yes",2011
+"1300","Toxoplasm meningoenceph",9,5,5,"Yes","Yes",2011
+"1304","Toxoplasma pneumonitis",9,112,5,"Yes","Yes",2011
+"1308","Multisystem toxoplasmos",9,5,5,"Yes","Yes",2011
+"1361","Behcet's syndrome",9,38,41,"Yes","Yes",2011
+"1363","Pneumocystosis",9,5,5,"Yes","Yes",2011
+"1410","Mal neo tongue base",9,9,,"Yes","No",2011
+"1411","Mal neo dorsal tongue",9,9,,"Yes","No",2011
+"1412","Mal neo tip/lat tongue",9,9,,"Yes","No",2011
+"1413","Mal neo ventral tongue",9,9,,"Yes","No",2011
+"1414","Mal neo ant 2/3 tongue",9,9,,"Yes","No",2011
+"1415","Mal neo tongue junction",9,9,,"Yes","No",2011
+"1416","Mal neo lingual tonsil",9,9,,"Yes","No",2011
+"1418","Malig neo tongue NEC",9,9,,"Yes","No",2011
+"1419","Malig neo tongue NOS",9,9,,"Yes","No",2011
+"1420","Malig neo parotid",9,9,,"Yes","No",2011
+"1421","Malig neo submandibular",9,9,,"Yes","No",2011
+"1422","Malig neo sublingual",9,9,,"Yes","No",2011
+"1428","Mal neo maj salivary NEC",9,9,,"Yes","No",2011
+"1429","Mal neo salivary NOS",9,9,,"Yes","No",2011
+"1430","Malig neo upper gum",9,9,,"Yes","No",2011
+"1431","Malig neo lower gum",9,9,,"Yes","No",2011
+"1438","Malig neo gum NEC",9,9,,"Yes","No",2011
+"1439","Malig neo gum NOS",9,9,,"Yes","No",2011
+"1440","Mal neo ant floor mouth",9,9,,"Yes","No",2011
+"1441","Mal neo lat floor mouth",9,9,,"Yes","No",2011
+"1448","Mal neo mouth floor NEC",9,9,,"Yes","No",2011
+"1449","Mal neo mouth floor NOS",9,9,,"Yes","No",2011
+"1450","Mal neo cheek mucosa",9,9,,"Yes","No",2011
+"1451","Mal neo mouth vestibule",9,9,,"Yes","No",2011
+"1452","Malig neo hard palate",9,9,,"Yes","No",2011
+"1453","Malig neo soft palate",9,9,,"Yes","No",2011
+"1454","Malignant neoplasm uvula",9,9,,"Yes","No",2011
+"1455","Malignant neo palate NOS",9,9,,"Yes","No",2011
+"1456","Malig neo retromolar",9,9,,"Yes","No",2011
+"1458","Malig neoplasm mouth NEC",9,9,,"Yes","No",2011
+"1459","Malig neoplasm mouth NOS",9,9,,"Yes","No",2011
+"1460","Malignant neopl tonsil",9,9,,"Yes","No",2011
+"1461","Mal neo tonsillar fossa",9,9,,"Yes","No",2011
+"1462","Mal neo tonsil pillars",9,9,,"Yes","No",2011
+"1463","Malign neopl vallecula",9,9,,"Yes","No",2011
+"1464","Mal neo ant epiglottis",9,9,,"Yes","No",2011
+"1465","Mal neo epiglottis junct",9,9,,"Yes","No",2011
+"1466","Mal neo lat oropharynx",9,9,,"Yes","No",2011
+"1467","Mal neo post oropharynx",9,9,,"Yes","No",2011
+"1468","Mal neo oropharynx NEC",9,9,,"Yes","No",2011
+"1469","Malig neo oropharynx NOS",9,9,,"Yes","No",2011
+"1470","Mal neo super nasopharyn",9,9,,"Yes","No",2011
+"1471","Mal neo post nasopharynx",9,9,,"Yes","No",2011
+"1472","Mal neo lat nasopharynx",9,9,,"Yes","No",2011
+"1473","Mal neo ant nasopharynx",9,9,,"Yes","No",2011
+"1478","Mal neo nasopharynx NEC",9,9,,"Yes","No",2011
+"1479","Mal neo nasopharynx NOS",9,9,,"Yes","No",2011
+"1480","Mal neo postcricoid",9,9,,"Yes","No",2011
+"1481","Mal neo pyriform sinus",9,9,,"Yes","No",2011
+"1482","Mal neo aryepiglott fold",9,9,,"Yes","No",2011
+"1483","Mal neo post hypopharynx",9,9,,"Yes","No",2011
+"1488","Mal neo hypopharynx NEC",9,9,,"Yes","No",2011
+"1489","Mal neo hypopharynx NOS",9,9,,"Yes","No",2011
+"1490","Mal neo pharynx NOS",9,9,,"Yes","No",2011
+"1491","Mal neo waldeyer's ring",9,9,,"Yes","No",2011
+"1498","Mal neo oral/pharynx NEC",9,9,,"Yes","No",2011
+"1499","Mal neo orophryn ill-def",9,9,,"Yes","No",2011
+"1500","Mal neo cervical esophag",9,8,,"Yes","No",2011
+"1501","Mal neo thoracic esophag",9,8,,"Yes","No",2011
+"1502","Mal neo abdomin esophag",9,8,,"Yes","No",2011
+"1503","Mal neo upper 3rd esoph",9,8,,"Yes","No",2011
+"1504","Mal neo middle 3rd esoph",9,8,,"Yes","No",2011
+"1505","Mal neo lower 3rd esoph",9,8,,"Yes","No",2011
+"1508","Mal neo esophagus NEC",9,8,,"Yes","No",2011
+"1509","Mal neo esophagus NOS",9,8,,"Yes","No",2011
+"1510","Mal neo stomach cardia",9,8,10,"Yes","Yes",2011
+"1511","Malignant neo pylorus",9,8,10,"Yes","Yes",2011
+"1512","Mal neo pyloric antrum",9,8,10,"Yes","Yes",2011
+"1513","Mal neo stomach fundus",9,8,10,"Yes","Yes",2011
+"1514","Mal neo stomach body",9,8,10,"Yes","Yes",2011
+"1515","Mal neo stom lesser curv",9,8,10,"Yes","Yes",2011
+"1516","Mal neo stom great curv",9,8,10,"Yes","Yes",2011
+"1518","Malig neopl stomach NEC",9,8,10,"Yes","Yes",2011
+"1519","Malig neopl stomach NOS",9,8,10,"Yes","Yes",2011
+"1520","Malignant neopl duodenum",9,8,11,"Yes","Yes",2011
+"1521","Malignant neopl jejunum",9,8,11,"Yes","Yes",2011
+"1522","Malignant neoplasm ileum",9,8,11,"Yes","Yes",2011
+"1523","Mal neo meckel's divert",9,8,11,"Yes","Yes",2011
+"1528","Mal neo small bowel NEC",9,8,11,"Yes","Yes",2011
+"1529","Mal neo small bowel NOS",9,8,11,"Yes","Yes",2011
+"1530","Mal neo hepatic flexure",9,10,,"Yes","No",2011
+"1531","Mal neo transverse colon",9,10,,"Yes","No",2011
+"1532","Mal neo descend colon",9,10,,"Yes","No",2011
+"1533","Mal neo sigmoid colon",9,10,,"Yes","No",2011
+"1534","Malignant neoplasm cecum",9,10,,"Yes","No",2011
+"1535","Malignant neo appendix",9,10,,"Yes","No",2011
+"1536","Malig neo ascend colon",9,10,,"Yes","No",2011
+"1537","Mal neo splenic flexure",9,10,,"Yes","No",2011
+"1538","Malignant neo colon NEC",9,10,,"Yes","No",2011
+"1539","Malignant neo colon NOS",9,10,,"Yes","No",2011
+"1540","Mal neo rectosigmoid jct",9,10,,"Yes","No",2011
+"1541","Malignant neopl rectum",9,10,,"Yes","No",2011
+"1542","Malig neopl anal canal",9,10,,"Yes","No",2011
+"1543","Malignant neo anus NOS",9,10,,"Yes","No",2011
+"1548","Mal neo rectum/anus NEC",9,10,,"Yes","No",2011
+"1550","Mal neo liver, primary",9,8,10,"Yes","Yes",2011
+"1551","Mal neo intrahepat ducts",9,8,10,"Yes","Yes",2011
+"1552","Malignant neo liver NOS",9,8,10,"Yes","Yes",2011
+"1560","Malig neo gallbladder",9,8,11,"Yes","Yes",2011
+"1561","Mal neo extrahepat ducts",9,8,11,"Yes","Yes",2011
+"1562","Mal neo ampulla of vater",9,8,11,"Yes","Yes",2011
+"1568","Malig neo biliary NEC",9,8,11,"Yes","Yes",2011
+"1569","Malig neo biliary NOS",9,8,11,"Yes","Yes",2011
+"1570","Mal neo pancreas head",9,8,10,"Yes","Yes",2011
+"1571","Mal neo pancreas body",9,8,10,"Yes","Yes",2011
+"1572","Mal neo pancreas tail",9,8,10,"Yes","Yes",2011
+"1573","Mal neo pancreatic duct",9,8,10,"Yes","Yes",2011
+"1574","Mal neo islet langerhans",9,8,10,"Yes","Yes",2011
+"1578","Malig neo pancreas NEC",9,8,10,"Yes","Yes",2011
+"1579","Malig neo pancreas NOS",9,8,10,"Yes","Yes",2011
+"1580","Mal neo retroperitoneum",9,8,11,"Yes","Yes",2011
+"1588","Mal neo peritoneum NEC",9,8,11,"Yes","Yes",2011
+"1589","Mal neo peritoneum NOS",9,8,11,"Yes","Yes",2011
+"1590","Malig neo intestine NOS",9,10,,"Yes","No",2011
+"1591","Malignant neo spleen NEC",9,10,,"Yes","No",2011
+"1598","Mal neo gi/intra-abd NEC",9,10,,"Yes","No",2011
+"1599","Mal neo GI tract ill-def",9,10,,"Yes","No",2011
+"1600","Mal neo nasal cavities",9,9,,"Yes","No",2011
+"1601","Malig neo middle ear",9,9,,"Yes","No",2011
+"1602","Mal neo maxillary sinus",9,9,,"Yes","No",2011
+"1603","Mal neo ethmoidal sinus",9,9,,"Yes","No",2011
+"1604","Malig neo frontal sinus",9,9,,"Yes","No",2011
+"1605","Mal neo sphenoid sinus",9,9,,"Yes","No",2011
+"1608","Mal neo access sinus NEC",9,9,,"Yes","No",2011
+"1609","Mal neo access sinus NOS",9,9,,"Yes","No",2011
+"1610","Malignant neo glottis",9,9,,"Yes","No",2011
+"1611","Malig neo supraglottis",9,9,,"Yes","No",2011
+"1612","Malig neo subglottis",9,9,,"Yes","No",2011
+"1613","Mal neo cartilage larynx",9,9,,"Yes","No",2011
+"1618","Malignant neo larynx NEC",9,9,,"Yes","No",2011
+"1619","Malignant neo larynx NOS",9,9,,"Yes","No",2011
+"1620","Malignant neo trachea",9,8,10,"Yes","Yes",2011
+"1622","Malig neo main bronchus",9,8,10,"Yes","Yes",2011
+"1623","Mal neo upper lobe lung",9,8,10,"Yes","Yes",2011
+"1624","Mal neo middle lobe lung",9,8,10,"Yes","Yes",2011
+"1625","Mal neo lower lobe lung",9,8,10,"Yes","Yes",2011
+"1628","Mal neo bronch/lung NEC",9,8,10,"Yes","Yes",2011
+"1629","Mal neo bronch/lung NOS",9,8,10,"Yes","Yes",2011
+"1630","Mal neo parietal pleura",9,8,10,"Yes","Yes",2011
+"1631","Mal neo visceral pleura",9,8,10,"Yes","Yes",2011
+"1638","Malig neopl pleura NEC",9,8,10,"Yes","Yes",2011
+"1639","Malig neopl pleura NOS",9,8,10,"Yes","Yes",2011
+"1640","Malignant neopl thymus",9,9,,"Yes","No",2011
+"1641","Malignant neopl heart",9,9,,"Yes","No",2011
+"1642","Mal neo ant mediastinum",9,9,,"Yes","No",2011
+"1643","Mal neo post mediastinum",9,9,,"Yes","No",2011
+"1648","Mal neo mediastinum NEC",9,9,,"Yes","No",2011
+"1649","Mal neo mediastinum NOS",9,9,,"Yes","No",2011
+"1650","Mal neo upper resp NOS",9,9,,"Yes","No",2011
+"1658","Mal neo thorax/resp NEC",9,9,,"Yes","No",2011
+"1659","Mal neo resp system NOS",9,9,,"Yes","No",2011
+"1700","Mal neo skull/face bone",9,9,11,"Yes","Yes",2011
+"1701","Malignant neo mandible",9,9,11,"Yes","Yes",2011
+"1702","Malig neo vertebrae",9,9,11,"Yes","Yes",2011
+"1703","Mal neo ribs/stern/clav",9,9,11,"Yes","Yes",2011
+"1704","Mal neo long bones arm",9,9,11,"Yes","Yes",2011
+"1705","Mal neo bones wrist/hand",9,9,11,"Yes","Yes",2011
+"1706","Mal neo pelvic girdle",9,9,11,"Yes","Yes",2011
+"1707","Mal neo long bones leg",9,9,11,"Yes","Yes",2011
+"1708","Mal neo bones ankle/foot",9,9,11,"Yes","Yes",2011
+"1709","Malig neopl bone NOS",9,9,11,"Yes","Yes",2011
+"1710","Mal neo soft tissue head",9,9,10,"Yes","Yes",2011
+"1712","Mal neo soft tissue arm",9,9,10,"Yes","Yes",2011
+"1713","Mal neo soft tissue leg",9,9,10,"Yes","Yes",2011
+"1714","Mal neo soft tis thorax",9,9,10,"Yes","Yes",2011
+"1715","Mal neo soft tis abdomen",9,9,9,"Yes","Yes",2011
+"1716","Mal neo soft tis pelvis",9,9,10,"Yes","Yes",2011
+"1717","Mal neopl trunk NOS",9,9,10,"Yes","Yes",2011
+"1718","Mal neo soft tissue NEC",9,9,10,"Yes","Yes",2011
+"1719","Mal neo soft tissue NOS",9,9,10,"Yes","Yes",2011
+"1720","Malig melanoma lip",9,10,,"Yes","No",2011
+"1721","Malig melanoma eyelid",9,10,,"Yes","No",2011
+"1722","Malig melanoma ear",9,10,,"Yes","No",2011
+"1723","Mal melanom face NEC/NOS",9,10,,"Yes","No",2011
+"1724","Mal melanoma scalp/neck",9,10,,"Yes","No",2011
+"1725","Malig melanoma trunk",9,10,,"Yes","No",2011
+"1726","Malig melanoma arm",9,10,,"Yes","No",2011
+"1727","Malig melanoma leg",9,10,,"Yes","No",2011
+"1728","Malig melanoma skin NEC",9,10,,"Yes","No",2011
+"1729","Malig melanoma skin NOS",9,10,,"Yes","No",2011
+"1740","Malig neo nipple",9,10,10,"Yes","Yes",2011
+"1741","Mal neo breast-central",9,10,10,"Yes","Yes",2011
+"1742","Mal neo breast up-inner",9,10,10,"Yes","Yes",2011
+"1743","Mal neo breast low-inner",9,10,10,"Yes","Yes",2011
+"1744","Mal neo breast up-outer",9,10,10,"Yes","Yes",2011
+"1745","Mal neo breast low-outer",9,10,10,"Yes","Yes",2011
+"1746","Mal neo breast-axillary",9,10,10,"Yes","Yes",2011
+"1748","Malign neopl breast NEC",9,10,10,"Yes","Yes",2011
+"1749","Malign neopl breast NOS",9,10,10,"Yes","Yes",2011
+"1750","Mal neo male nipple",9,10,10,"Yes","Yes",2011
+"1759","Mal neo male breast NEC",9,10,10,"Yes","Yes",2011
+"1760","Skin - kaposi's sarcoma",9,9,10,"Yes","Yes",2011
+"1761","Sft tisue - kpsi's srcma",9,9,10,"Yes","Yes",2011
+"1762","Palate - kpsi's sarcoma",9,9,10,"Yes","Yes",2011
+"1763","GI sites - kpsi's srcoma",9,9,10,"Yes","Yes",2011
+"1764","Lung - kaposi's sarcoma",9,9,10,"Yes","Yes",2011
+"1765","Lym nds - kpsi's sarcoma",9,9,10,"Yes","Yes",2011
+"1768","Spf sts - kpsi's sarcoma",9,9,10,"Yes","Yes",2011
+"1769","Kaposi's sarcoma NOS",9,9,10,"Yes","Yes",2011
+"179","Malig neopl uterus NOS",9,10,,"Yes","No",2011
+"1800","Malig neo endocervix",9,10,,"Yes","No",2011
+"1801","Malig neo exocervix",9,10,,"Yes","No",2011
+"1808","Malig neo cervix NEC",9,10,,"Yes","No",2011
+"1809","Mal neo cervix uteri NOS",9,10,,"Yes","No",2011
+"181","Malignant neopl placenta",9,9,,"Yes","No",2011
+"1820","Malig neo corpus uteri",9,10,,"Yes","No",2011
+"1821","Mal neo uterine isthmus",9,10,,"Yes","No",2011
+"1828","Mal neo body uterus NEC",9,10,,"Yes","No",2011
+"1830","Malign neopl ovary",9,9,,"Yes","No",2011
+"1832","Mal neo fallopian tube",9,9,,"Yes","No",2011
+"1833","Mal neo broad ligament",9,9,,"Yes","No",2011
+"1834","Malig neo parametrium",9,9,,"Yes","No",2011
+"1835","Mal neo round ligament",9,9,,"Yes","No",2011
+"1838","Mal neo adnexa NEC",9,9,,"Yes","No",2011
+"1839","Mal neo adnexa NOS",9,9,,"Yes","No",2011
+"1840","Malign neopl vagina",9,10,,"Yes","No",2011
+"1841","Mal neo labia majora",9,10,,"Yes","No",2011
+"1842","Mal neo labia minora",9,10,,"Yes","No",2011
+"1843","Malign neopl clitoris",9,10,,"Yes","No",2011
+"1844","Malign neopl vulva NOS",9,10,,"Yes","No",2011
+"1848","Mal neo female genit NEC",9,10,,"Yes","No",2011
+"1849","Mal neo female genit NOS",9,10,,"Yes","No",2011
+"185","Malign neopl prostate",9,10,11,"Yes","Yes",2011
+"1860","Mal neo undescend testis",9,10,,"Yes","No",2011
+"1869","Malig neo testis NEC",9,10,,"Yes","No",2011
+"1871","Malign neopl prepuce",9,10,,"Yes","No",2011
+"1872","Malig neo glans penis",9,10,,"Yes","No",2011
+"1873","Malig neo penis body",9,10,,"Yes","No",2011
+"1874","Malig neo penis NOS",9,10,,"Yes","No",2011
+"1875","Malig neo epididymis",9,10,,"Yes","No",2011
+"1876","Mal neo spermatic cord",9,10,,"Yes","No",2011
+"1877","Malign neopl scrotum",9,10,,"Yes","No",2011
+"1878","Mal neo male genital NEC",9,10,,"Yes","No",2011
+"1879","Mal neo male genital NOS",9,10,,"Yes","No",2011
+"1880","Mal neo bladder-trigone",9,10,,"Yes","No",2011
+"1881","Mal neo bladder-dome",9,10,,"Yes","No",2011
+"1882","Mal neo bladder-lateral",9,10,,"Yes","No",2011
+"1883","Mal neo bladder-anterior",9,10,,"Yes","No",2011
+"1884","Mal neo bladder-post",9,10,,"Yes","No",2011
+"1885","Mal neo bladder neck",9,10,,"Yes","No",2011
+"1886","Mal neo ureteric orifice",9,10,,"Yes","No",2011
+"1887","Malig neo urachus",9,10,,"Yes","No",2011
+"1888","Malig neo bladder NEC",9,10,,"Yes","No",2011
+"1889","Malig neo bladder NOS",9,10,,"Yes","No",2011
+"1890","Malig neopl kidney",9,10,10,"Yes","Yes",2011
+"1891","Malig neo renal pelvis",9,10,10,"Yes","Yes",2011
+"1892","Malign neopl ureter",9,10,,"Yes","No",2011
+"1893","Malign neopl urethra",9,10,,"Yes","No",2011
+"1894","Mal neo paraurethral",9,10,,"Yes","No",2011
+"1898","Mal neo urinary NEC",9,10,,"Yes","No",2011
+"1899","Mal neo urinary NOS",9,10,,"Yes","No",2011
+"1900","Malign neopl eyeball",9,10,,"Yes","No",2011
+"1901","Malign neopl orbit",9,10,,"Yes","No",2011
+"1902","Mal neo lacrimal gland",9,10,,"Yes","No",2011
+"1903","Mal neo conjunctiva",9,10,,"Yes","No",2011
+"1904","Malign neopl cornea",9,10,,"Yes","No",2011
+"1905","Malign neopl retina",9,10,,"Yes","No",2011
+"1906","Malign neopl choroid",9,10,,"Yes","No",2011
+"1907","Mal neo lacrimal duct",9,10,,"Yes","No",2011
+"1908","Malign neopl eye NEC",9,10,,"Yes","No",2011
+"1909","Malign neopl eye NOS",9,10,,"Yes","No",2011
+"1910","Malign neopl cerebrum",9,9,11,"Yes","Yes",2011
+"1911","Malig neo frontal lobe",9,9,11,"Yes","Yes",2011
+"1912","Mal neo temporal lobe",9,9,11,"Yes","Yes",2011
+"1913","Mal neo parietal lobe",9,9,11,"Yes","Yes",2011
+"1914","Mal neo occipital lobe",9,9,11,"Yes","Yes",2011
+"1915","Mal neo cereb ventricle",9,9,11,"Yes","Yes",2011
+"1916","Mal neo cerebellum NOS",9,9,11,"Yes","Yes",2011
+"1917","Mal neo brain stem",9,9,11,"Yes","Yes",2011
+"1918","Malig neo brain NEC",9,9,11,"Yes","Yes",2011
+"1919","Malig neo brain NOS",9,9,11,"Yes","Yes",2011
+"1920","Mal neo cranial nerves",9,9,11,"Yes","Yes",2011
+"1921","Mal neo cerebral mening",9,9,11,"Yes","Yes",2011
+"1922","Mal neo spinal cord",9,9,11,"Yes","Yes",2011
+"1923","Mal neo spinal meninges",9,9,11,"Yes","Yes",2011
+"1928","Mal neo nervous syst NEC",9,9,11,"Yes","Yes",2011
+"1929","Mal neo nervous syst NOS",9,9,11,"Yes","Yes",2011
+"193","Malign neopl thyroid",9,10,11,"Yes","Yes",2011
+"1940","Malign neopl adrenal",9,9,11,"Yes","Yes",2011
+"1941","Malig neo parathyroid",9,10,11,"Yes","Yes",2011
+"1943","Malig neo pituitary",9,9,11,"Yes","Yes",2011
+"1944","Malign neo pineal gland",9,9,11,"Yes","Yes",2011
+"1945","Mal neo carotid body",9,10,11,"Yes","Yes",2011
+"1946","Mal neo paraganglia NEC",9,10,11,"Yes","Yes",2011
+"1948","Mal neo endocrine NEC",9,10,11,"Yes","Yes",2011
+"1949","Mal neo endocrine NOS",9,10,11,"Yes","Yes",2011
+"1950","Mal neo head/face/neck",9,10,,"Yes","No",2011
+"1951","Malign neopl thorax",9,10,,"Yes","No",2011
+"1952","Malig neo abdomen",9,10,,"Yes","No",2011
+"1953","Malign neopl pelvis",9,10,,"Yes","No",2011
+"1954","Malign neopl arm",9,10,,"Yes","No",2011
+"1955","Malign neopl leg",9,10,,"Yes","No",2011
+"1958","Malig neo site NEC",9,10,,"Yes","No",2011
+"1960","Mal neo lymph-head/neck",9,7,,"Yes","No",2011
+"1961","Mal neo lymph-intrathor",9,7,,"Yes","No",2011
+"1962","Mal neo lymph intra-abd",9,7,,"Yes","No",2011
+"1963","Mal neo lymph-axilla/arm",9,7,11,"Yes","Yes",2011
+"1965","Mal neo lymph-inguin/leg",9,7,,"Yes","No",2011
+"1966","Mal neo lymph-intrapelv",9,7,,"Yes","No",2011
+"1968","Mal neo lymph node-mult",9,7,,"Yes","No",2011
+"1969","Mal neo lymph node NOS",9,7,11,"Yes","Yes",2011
+"1970","Secondary malig neo lung",9,7,10,"Yes","Yes",2011
+"1971","Sec mal neo mediastinum",9,7,10,"Yes","Yes",2011
+"1972","Second malig neo pleura",9,7,10,"Yes","Yes",2011
+"1973","Sec malig neo resp NEC",9,7,10,"Yes","Yes",2011
+"1974","Sec malig neo sm bowel",9,7,10,"Yes","Yes",2011
+"1975","Sec malig neo lg bowel",9,7,10,"Yes","Yes",2011
+"1976","Sec mal neo peritoneum",9,7,10,"Yes","Yes",2011
+"1977","Second malig neo liver",9,7,10,"Yes","Yes",2011
+"1978","Sec mal neo GI NEC",9,7,10,"Yes","Yes",2011
+"1980","Second malig neo kidney",9,7,11,"Yes","Yes",2011
+"1981","Sec malig neo urin NEC",9,7,11,"Yes","Yes",2011
+"1982","Secondary malig neo skin",9,7,,"Yes","No",2011
+"1983","Sec mal neo brain/spine",9,7,,"Yes","No",2011
+"1984","Sec malig neo nerve NEC",9,7,,"Yes","No",2011
+"1985","Secondary malig neo bone",9,7,10,"Yes","Yes",2011
+"1986","Second malig neo ovary",9,7,11,"Yes","Yes",2011
+"1987","Second malig neo adrenal",9,7,11,"Yes","Yes",2011
+"19881","Second malig neo breast",9,7,,"Yes","No",2011
+"19882","Second malig neo genital",9,7,,"Yes","No",2011
+"19889","Secondary malig neo NEC",9,7,11,"Yes","Yes",2011
+"1990","Malig neo disseminated",9,7,11,"Yes","Yes",2011
+"1991","Malignant neoplasm NOS",9,10,,"Yes","No",2011
+"1992","Malig neopl-transp organ",9,10,,"Yes","No",2011
+"20000","Retclsrc unsp xtrndl org",9,9,,"Yes","No",2011
+"20001","Reticulosarcoma head",9,9,,"Yes","No",2011
+"20002","Reticulosarcoma thorax",9,9,,"Yes","No",2011
+"20003","Reticulosarcoma abdom",9,9,,"Yes","No",2011
+"20004","Reticulosarcoma axilla",9,9,,"Yes","No",2011
+"20005","Reticulosarcoma inguin",9,9,,"Yes","No",2011
+"20006","Reticulosarcoma pelvic",9,9,,"Yes","No",2011
+"20007","Reticulosarcoma spleen",9,9,,"Yes","No",2011
+"20008","Reticulosarcoma mult",9,9,,"Yes","No",2011
+"20010","Lymphsrc unsp xtrndl org",9,9,,"Yes","No",2011
+"20011","Lymphosarcoma head",9,9,,"Yes","No",2011
+"20012","Lymphosarcoma thorax",9,9,,"Yes","No",2011
+"20013","Lymphosarcoma abdom",9,9,,"Yes","No",2011
+"20014","Lymphosarcoma axilla",9,9,,"Yes","No",2011
+"20015","Lymphosarcoma inguin",9,9,,"Yes","No",2011
+"20016","Lymphosarcoma pelvic",9,9,,"Yes","No",2011
+"20017","Lymphosarcoma spleen",9,9,,"Yes","No",2011
+"20018","Lymphosarcoma mult",9,9,,"Yes","No",2011
+"20020","Brkt tmr unsp xtrndl org",9,9,,"Yes","No",2011
+"20021","Burkitt's tumor head",9,9,,"Yes","No",2011
+"20022","Burkitt's tumor thorax",9,9,,"Yes","No",2011
+"20023","Burkitt's tumor abdom",9,9,,"Yes","No",2011
+"20024","Burkitt's tumor axilla",9,9,,"Yes","No",2011
+"20025","Burkitt's tumor inguin",9,9,,"Yes","No",2011
+"20026","Burkitt's tumor pelvic",9,9,,"Yes","No",2011
+"20027","Burkitt's tumor spleen",9,9,,"Yes","No",2011
+"20028","Burkitt's tumor mult",9,9,,"Yes","No",2011
+"20030","Margnl zone lym xtrndl",9,9,,"Yes","No",2011
+"20031","Margin zone lym head",9,9,,"Yes","No",2011
+"20032","Margin zone lym thorax",9,9,,"Yes","No",2011
+"20033","Margin zone lym abdom",9,9,,"Yes","No",2011
+"20034","Margin zone lym axilla",9,9,,"Yes","No",2011
+"20035","Margin zone lym inguin",9,9,,"Yes","No",2011
+"20036","Margin zone lym pelvic",9,9,,"Yes","No",2011
+"20037","Margin zone lymph spleen",9,9,,"Yes","No",2011
+"20038","Margin zone lymph multip",9,9,,"Yes","No",2011
+"20040","Mantle cell lym xtrrndl",9,9,,"Yes","No",2011
+"20041","Mantle cell lymph head",9,9,,"Yes","No",2011
+"20042","Mantle cell lymph thorax",9,9,,"Yes","No",2011
+"20043","Mantle cell lymph abdom",9,9,,"Yes","No",2011
+"20044","Mantle cell lymph axilla",9,9,,"Yes","No",2011
+"20045","Mantle cell lymph inguin",9,9,,"Yes","No",2011
+"20046","Mantle cell lymph pelvic",9,9,,"Yes","No",2011
+"20047","Mantle cell lymph spleen",9,9,,"Yes","No",2011
+"20048","Mantle cell lymph multip",9,9,,"Yes","No",2011
+"20050","Primary CNS lymph xtrndl",9,9,,"Yes","No",2011
+"20051","Primary CNS lymph head",9,9,,"Yes","No",2011
+"20052","Primary CNS lymph thorax",9,9,,"Yes","No",2011
+"20053","Primary CNS lymph abdom",9,9,,"Yes","No",2011
+"20054","Primary CNS lymph axilla",9,9,,"Yes","No",2011
+"20055","Primary CNS lym inguin",9,9,,"Yes","No",2011
+"20056","Primary CNS lymph pelvic",9,9,,"Yes","No",2011
+"20057","Primary CNS lymph spleen",9,9,,"Yes","No",2011
+"20058","Primary CNS lymph multip",9,9,,"Yes","No",2011
+"20060","Anaplastic lymph xtrndl",9,9,,"Yes","No",2011
+"20061","Anaplastic lymph head",9,9,,"Yes","No",2011
+"20062","Anaplastic lymph thorax",9,9,,"Yes","No",2011
+"20063","Anaplastic lymph abdom",9,9,,"Yes","No",2011
+"20064","Anaplastic lymph axilla",9,9,,"Yes","No",2011
+"20065","Anaplastic lymph inguin",9,9,,"Yes","No",2011
+"20066","Anaplastic lymph pelvic",9,9,,"Yes","No",2011
+"20067","Anaplastic lymph spleen",9,9,,"Yes","No",2011
+"20068","Anaplastic lymph multip",9,9,,"Yes","No",2011
+"20070","Large cell lymph xtrndl",9,9,,"Yes","No",2011
+"20071","Large cell lymphoma head",9,9,,"Yes","No",2011
+"20072","Large cell lymph thorax",9,9,,"Yes","No",2011
+"20073","Large cell lymph abdom",9,9,,"Yes","No",2011
+"20074","Large cell lymph axilla",9,9,,"Yes","No",2011
+"20075","Large cell lymph inguin",9,9,,"Yes","No",2011
+"20076","Large cell lymph pelvic",9,9,,"Yes","No",2011
+"20077","Large cell lymph spleen",9,9,,"Yes","No",2011
+"20078","Large cell lymph multip",9,9,,"Yes","No",2011
+"20080","Oth varn unsp xtrndl org",9,9,,"Yes","No",2011
+"20081","Mixed lymphosarc head",9,9,,"Yes","No",2011
+"20082","Mixed lymphosarc thorax",9,9,,"Yes","No",2011
+"20083","Mixed lymphosarc abdom",9,9,,"Yes","No",2011
+"20084","Mixed lymphosarc axilla",9,9,,"Yes","No",2011
+"20085","Mixed lymphosarc inguin",9,9,,"Yes","No",2011
+"20086","Mixed lymphosarc pelvic",9,9,,"Yes","No",2011
+"20087","Mixed lymphosarc spleen",9,9,,"Yes","No",2011
+"20088","Mixed lymphosarc mult",9,9,,"Yes","No",2011
+"20100","Hdgk prg unsp xtrndl org",9,9,,"Yes","No",2011
+"20101","Hodgkins paragran head",9,9,,"Yes","No",2011
+"20102","Hodgkins paragran thorax",9,9,,"Yes","No",2011
+"20103","Hodgkins paragran abdom",9,9,,"Yes","No",2011
+"20104","Hodgkins paragran axilla",9,9,,"Yes","No",2011
+"20105","Hodgkins paragran inguin",9,9,,"Yes","No",2011
+"20106","Hodgkins paragran pelvic",9,9,,"Yes","No",2011
+"20107","Hodgkins paragran spleen",9,9,,"Yes","No",2011
+"20108","Hodgkins paragran mult",9,9,,"Yes","No",2011
+"20110","Hdgk grn unsp xtrndl org",9,9,,"Yes","No",2011
+"20111","Hodgkins granulom head",9,9,,"Yes","No",2011
+"20112","Hodgkins granulom thorax",9,9,,"Yes","No",2011
+"20113","Hodgkins granulom abdom",9,9,,"Yes","No",2011
+"20114","Hodgkins granulom axilla",9,9,,"Yes","No",2011
+"20115","Hodgkins granulom inguin",9,9,,"Yes","No",2011
+"20116","Hodgkins granulom pelvic",9,9,,"Yes","No",2011
+"20117","Hodgkins granulom spleen",9,9,,"Yes","No",2011
+"20118","Hodgkins granulom mult",9,9,,"Yes","No",2011
+"20120","Hdgk src unsp xtrndl org",9,9,,"Yes","No",2011
+"20121","Hodgkins sarcoma head",9,9,,"Yes","No",2011
+"20122","Hodgkins sarcoma thorax",9,9,,"Yes","No",2011
+"20123","Hodgkins sarcoma abdom",9,9,,"Yes","No",2011
+"20124","Hodgkins sarcoma axilla",9,9,,"Yes","No",2011
+"20125","Hodgkins sarcoma inguin",9,9,,"Yes","No",2011
+"20126","Hodgkins sarcoma pelvic",9,9,,"Yes","No",2011
+"20127","Hodgkins sarcoma spleen",9,9,,"Yes","No",2011
+"20128","Hodgkins sarcoma mult",9,9,,"Yes","No",2011
+"20140","Lym-hst unsp xtrndl orgn",9,9,,"Yes","No",2011
+"20141","Hodg lymph-histio head",9,9,,"Yes","No",2011
+"20142","Hodg lymph-histio thorax",9,9,,"Yes","No",2011
+"20143","Hodg lymph-histio abdom",9,9,,"Yes","No",2011
+"20144","Hodg lymph-histio axilla",9,9,,"Yes","No",2011
+"20145","Hodg lymph-histio inguin",9,9,,"Yes","No",2011
+"20146","Hodg lymph-histio pelvic",9,9,,"Yes","No",2011
+"20147","Hodg lymph-histio spleen",9,9,,"Yes","No",2011
+"20148","Hodg lymph-histio mult",9,9,,"Yes","No",2011
+"20150","Ndr sclr unsp xtrndl org",9,9,,"Yes","No",2011
+"20151","Hodg nodul sclero head",9,9,,"Yes","No",2011
+"20152","Hodg nodul sclero thorax",9,9,,"Yes","No",2011
+"20153","Hodg nodul sclero abdom",9,9,,"Yes","No",2011
+"20154","Hodg nodul sclero axilla",9,9,,"Yes","No",2011
+"20155","Hodg nodul sclero inguin",9,9,,"Yes","No",2011
+"20156","Hodg nodul sclero pelvic",9,9,,"Yes","No",2011
+"20157","Hodg nodul sclero spleen",9,9,,"Yes","No",2011
+"20158","Hodg nodul sclero mult",9,9,,"Yes","No",2011
+"20160","Mxd celr unsp xtrndl org",9,9,,"Yes","No",2011
+"20161","Hodgkins mix cell head",9,9,,"Yes","No",2011
+"20162","Hodgkins mix cell thorax",9,9,,"Yes","No",2011
+"20163","Hodgkins mix cell abdom",9,9,,"Yes","No",2011
+"20164","Hodgkins mix cell axilla",9,9,,"Yes","No",2011
+"20165","Hodgkins mix cell inguin",9,9,,"Yes","No",2011
+"20166","Hodgkins mix cell pelvic",9,9,,"Yes","No",2011
+"20167","Hodgkins mix cell spleen",9,9,,"Yes","No",2011
+"20168","Hodgkins mix cell mult",9,9,,"Yes","No",2011
+"20170","Lym dplt unsp xtrndl org",9,9,,"Yes","No",2011
+"20171","Hodg lymph deplet head",9,9,,"Yes","No",2011
+"20172","Hodg lymph deplet thorax",9,9,,"Yes","No",2011
+"20173","Hodg lymph deplet abdom",9,9,,"Yes","No",2011
+"20174","Hodg lymph deplet axilla",9,9,,"Yes","No",2011
+"20175","Hodg lymph deplet inguin",9,9,,"Yes","No",2011
+"20176","Hodg lymph deplet pelvic",9,9,,"Yes","No",2011
+"20177","Hodg lymph deplet spleen",9,9,,"Yes","No",2011
+"20178","Hodg lymph deplet mult",9,9,,"Yes","No",2011
+"20190","Hdgk dis unsp xtrndl org",9,9,,"Yes","No",2011
+"20191","Hodgkins dis NOS head",9,9,,"Yes","No",2011
+"20192","Hodgkins dis NOS thorax",9,9,,"Yes","No",2011
+"20193","Hodgkins dis NOS abdom",9,9,,"Yes","No",2011
+"20194","Hodgkins dis NOS axilla",9,9,,"Yes","No",2011
+"20195","Hodgkins dis NOS inguin",9,9,,"Yes","No",2011
+"20196","Hodgkins dis NOS pelvic",9,9,,"Yes","No",2011
+"20197","Hodgkins dis NOS spleen",9,9,,"Yes","No",2011
+"20198","Hodgkins dis NOS mult",9,9,,"Yes","No",2011
+"20200","Ndlr lym unsp xtrndl org",9,9,,"Yes","No",2011
+"20201","Nodular lymphoma head",9,9,,"Yes","No",2011
+"20202","Nodular lymphoma thorax",9,9,,"Yes","No",2011
+"20203","Nodular lymphoma abdom",9,9,,"Yes","No",2011
+"20204","Nodular lymphoma axilla",9,9,,"Yes","No",2011
+"20205","Nodular lymphoma inguin",9,9,,"Yes","No",2011
+"20206","Nodular lymphoma pelvic",9,9,,"Yes","No",2011
+"20207","Nodular lymphoma spleen",9,9,,"Yes","No",2011
+"20208","Nodular lymphoma mult",9,9,,"Yes","No",2011
+"20210","Mycs fng unsp xtrndl org",9,9,,"Yes","No",2011
+"20211","Mycosis fungoides head",9,9,,"Yes","No",2011
+"20212","Mycosis fungoides thorax",9,9,,"Yes","No",2011
+"20213","Mycosis fungoides abdom",9,9,,"Yes","No",2011
+"20214","Mycosis fungoides axilla",9,9,,"Yes","No",2011
+"20215","Mycosis fungoides inguin",9,9,,"Yes","No",2011
+"20216","Mycosis fungoides pelvic",9,9,,"Yes","No",2011
+"20217","Mycosis fungoides spleen",9,9,,"Yes","No",2011
+"20218","Mycosis fungoides mult",9,9,,"Yes","No",2011
+"20220","Szry dis unsp xtrndl org",9,9,,"Yes","No",2011
+"20221","Sezary's disease head",9,9,,"Yes","No",2011
+"20222","Sezary's disease thorax",9,9,,"Yes","No",2011
+"20223","Sezary's disease abdom",9,9,,"Yes","No",2011
+"20224","Sezary's disease axilla",9,9,,"Yes","No",2011
+"20225","Sezary's disease inguin",9,9,,"Yes","No",2011
+"20226","Sezary's disease pelvic",9,9,,"Yes","No",2011
+"20227","Sezary's disease spleen",9,9,,"Yes","No",2011
+"20228","Sezary's disease mult",9,9,,"Yes","No",2011
+"20230","Mlg hist unsp xtrndl org",9,9,,"Yes","No",2011
+"20231","Mal histiocytosis head",9,9,,"Yes","No",2011
+"20232","Mal histiocytosis thorax",9,9,,"Yes","No",2011
+"20233","Mal histiocytosis abdom",9,9,,"Yes","No",2011
+"20234","Mal histiocytosis axilla",9,9,,"Yes","No",2011
+"20235","Mal histiocytosis inguin",9,9,,"Yes","No",2011
+"20236","Mal histiocytosis pelvic",9,9,,"Yes","No",2011
+"20237","Mal histiocytosis spleen",9,9,,"Yes","No",2011
+"20238","Mal histiocytosis mult",9,9,,"Yes","No",2011
+"20240","Lk rtctl unsp xtrndl org",9,9,,"Yes","No",2011
+"20241","Hairy-cell leukem head",9,9,,"Yes","No",2011
+"20242","Hairy-cell leukem thorax",9,9,,"Yes","No",2011
+"20243","Hairy-cell leukem abdom",9,9,,"Yes","No",2011
+"20244","Hairy-cell leukem axilla",9,9,,"Yes","No",2011
+"20245","Hairy-cell leukem inguin",9,9,,"Yes","No",2011
+"20246","Hairy-cell leukem pelvic",9,9,,"Yes","No",2011
+"20247","Hairy-cell leukem spleen",9,9,,"Yes","No",2011
+"20248","Hairy-cell leukem mult",9,9,,"Yes","No",2011
+"20250","Ltr-siwe unsp xtrndl org",9,9,,"Yes","No",2011
+"20251","Letterer-siwe dis head",9,9,,"Yes","No",2011
+"20252","Letterer-siwe dis thorax",9,9,,"Yes","No",2011
+"20253","Letterer-siwe dis abdom",9,9,,"Yes","No",2011
+"20254","Letterer-siwe dis axilla",9,9,,"Yes","No",2011
+"20255","Letterer-siwe dis inguin",9,9,,"Yes","No",2011
+"20256","Letterer-siwe dis pelvic",9,9,,"Yes","No",2011
+"20257","Letterer-siwe dis spleen",9,9,,"Yes","No",2011
+"20258","Letterer-siwe dis mult",9,9,,"Yes","No",2011
+"20260","Mlg mast unsp xtrndl org",9,9,,"Yes","No",2011
+"20261","Mal mastocytosis head",9,9,,"Yes","No",2011
+"20262","Mal mastocytosis thorax",9,9,,"Yes","No",2011
+"20263","Mal mastocytosis abdom",9,9,,"Yes","No",2011
+"20264","Mal mastocytosis axilla",9,9,,"Yes","No",2011
+"20265","Mal mastocytosis inguin",9,9,,"Yes","No",2011
+"20266","Mal mastocytosis pelvic",9,9,,"Yes","No",2011
+"20267","Mal mastocytosis spleen",9,9,,"Yes","No",2011
+"20268","Mal mastocytosis mult",9,9,,"Yes","No",2011
+"20270","Periph T cell lym xtrndl",9,9,,"Yes","No",2011
+"20271","Periph T cell lymph head",9,9,,"Yes","No",2011
+"20272","Periph T cell lym thorax",9,9,,"Yes","No",2011
+"20273","Periph T cell lym abdom",9,9,,"Yes","No",2011
+"20274","Periph T cell lym axilla",9,9,,"Yes","No",2011
+"20275","Periph T cell lym inguin",9,9,,"Yes","No",2011
+"20276","Periph T cell lym pelvic",9,9,,"Yes","No",2011
+"20277","Periph T cell lym spleen",9,9,,"Yes","No",2011
+"20278","Periph T cell lym multip",9,9,,"Yes","No",2011
+"20280","Oth lymp unsp xtrndl org",9,9,,"Yes","No",2011
+"20281","Lymphomas NEC head",9,9,,"Yes","No",2011
+"20282","Lymphomas NEC thorax",9,9,,"Yes","No",2011
+"20283","Lymphomas NEC abdom",9,9,,"Yes","No",2011
+"20284","Lymphomas NEC axilla",9,9,,"Yes","No",2011
+"20285","Lymphomas NEC inguin",9,9,,"Yes","No",2011
+"20286","Lymphomas NEC pelvic",9,9,,"Yes","No",2011
+"20287","Lymphomas NEC spleen",9,9,,"Yes","No",2011
+"20288","Lymphomas NEC mult",9,9,,"Yes","No",2011
+"20290","Unsp lym unsp xtrndl org",9,9,,"Yes","No",2011
+"20291","Lymphoid mal NEC head",9,9,,"Yes","No",2011
+"20292","Lymphoid mal NEC thorax",9,9,,"Yes","No",2011
+"20293","Lymphoid mal NEC abdom",9,9,,"Yes","No",2011
+"20294","Lymphoid mal NEC axilla",9,9,,"Yes","No",2011
+"20295","Lymphoid mal NEC inguin",9,9,,"Yes","No",2011
+"20296","Lymphoid mal NEC pelvic",9,9,,"Yes","No",2011
+"20297","Lymphoid mal NEC spleen",9,9,,"Yes","No",2011
+"20298","Lymphoid mal NEC mult",9,9,,"Yes","No",2011
+"20300","Mult mye w/o achv rmson",9,9,9,"Yes","Yes",2011
+"20301","Mult myelm w remission",9,9,9,"Yes","Yes",2011
+"20302","Mult myeloma in relapse",9,9,9,"Yes","Yes",2011
+"20310","Pls cl leu w/o achv rmsn",9,9,9,"Yes","Yes",2011
+"20311","Plsm cell leuk w rmson",9,9,9,"Yes","Yes",2011
+"20312","Plsm cel leuk in relapse",9,9,9,"Yes","Yes",2011
+"20380","Oth imno npl wo ach rmsn",9,9,9,"Yes","Yes",2011
+"20381","Oth imnprfl npl w rmsn",9,9,9,"Yes","Yes",2011
+"20382","Oth imnprlf neo-relapse",9,9,9,"Yes","Yes",2011
+"20400","Ac lym leuk wo achv rmsn",9,7,11,"Yes","Yes",2011
+"20401","Act lym leuk w rmsion",9,7,11,"Yes","Yes",2011
+"20402","Act lymp leuk in relapse",9,7,11,"Yes","Yes",2011
+"20410","Ch lym leuk wo achv rmsn",9,9,,"Yes","No",2011
+"20411","Chr lym leuk w rmsion",9,9,,"Yes","No",2011
+"20412","Chr lymp leuk in relapse",9,9,,"Yes","No",2011
+"20420","Sbac lym leu wo ach rmsn",9,9,,"Yes","No",2011
+"20421","Sbac lym leuk w rmsion",9,9,,"Yes","No",2011
+"20422","Sbac lym leuk in relapse",9,9,,"Yes","No",2011
+"20480","Oth lym leu wo achv rmsn",9,9,,"Yes","No",2011
+"20481","Oth lym leuk w rmsion",9,9,,"Yes","No",2011
+"20482","Oth lym leuk in relapse",9,9,,"Yes","No",2011
+"20490","Uns lym leu wo ach rmsn",9,9,,"Yes","No",2011
+"20491","Uns lym leuk w rmsion",9,9,,"Yes","No",2011
+"20492","Lymp leuk NOS relapse",9,9,,"Yes","No",2011
+"20500","Ac myl leuk wo achv rmsn",9,7,,"Yes","No",2011
+"20501","Act myl leuk w rmsion",9,7,,"Yes","No",2011
+"20502","Act myel leuk in relapse",9,7,,"Yes","No",2011
+"20510","Ch myl leuk wo achv rmsn",9,8,8,"Yes","Yes",2011
+"20511","Chr myl leuk w rmsion",9,8,8,"Yes","Yes",2011
+"20512","Chr myel leuk in relapse",9,8,8,"Yes","Yes",2011
+"20520","Sbac myl leu wo ach rmsn",9,8,8,"Yes","Yes",2011
+"20521","Sbac myl leuk w rmsion",9,8,8,"Yes","Yes",2011
+"20522","Sbac myl leuk in relapse",9,8,8,"Yes","Yes",2011
+"20530","Myl sarcoma wo achv rmsn",9,8,8,"Yes","Yes",2011
+"20531","Myl srcoma w rmsion",9,8,8,"Yes","Yes",2011
+"20532","Myel sarcoma in relapse",9,8,8,"Yes","Yes",2011
+"20580","Oth my leuk wo achv rmsn",9,8,8,"Yes","Yes",2011
+"20581","Oth myl leuk w rmsion",9,8,8,"Yes","Yes",2011
+"20582","Oth myel leuk in relapse",9,8,8,"Yes","Yes",2011
+"20590","Uns my leu wo ach rmsn",9,8,8,"Yes","Yes",2011
+"20591","Uns myl leuk w rmsion",9,8,8,"Yes","Yes",2011
+"20592","Myel leuk NOS in relapse",9,8,8,"Yes","Yes",2011
+"20600","Ac mono leu wo achv rmsn",9,7,11,"Yes","Yes",2011
+"20601","Act mono leuk w rmsion",9,7,11,"Yes","Yes",2011
+"20602","Act mono leuk in relapse",9,7,11,"Yes","Yes",2011
+"20610","Ch mono leu wo achv rmsn",9,8,8,"Yes","Yes",2011
+"20611","Chr mono leuk w rmsion",9,8,8,"Yes","Yes",2011
+"20612","Chr mono leuk in relapse",9,8,8,"Yes","Yes",2011
+"20620","Sbac mno leu wo ach rmsn",9,8,8,"Yes","Yes",2011
+"20621","Sbac mono leuk w rmsion",9,8,8,"Yes","Yes",2011
+"20622","Sbac mono leu in relapse",9,8,8,"Yes","Yes",2011
+"20680","Ot mono leu wo achv rmsn",9,8,8,"Yes","Yes",2011
+"20681","Oth mono leuk w rmsion",9,8,8,"Yes","Yes",2011
+"20682","Oth mono leuk in relapse",9,8,8,"Yes","Yes",2011
+"20690","Uns mno leu wo ach rmsn",9,8,8,"Yes","Yes",2011
+"20691","Uns mono leuk w rmsion",9,8,8,"Yes","Yes",2011
+"20692","Mono leuk NOS relapse",9,8,8,"Yes","Yes",2011
+"20700","Ac erth/erlk wo ach rmsn",9,7,11,"Yes","Yes",2011
+"20701","Act erth/erylk w rmson",9,7,11,"Yes","Yes",2011
+"20702","Ac erth/erylk in relapse",9,7,11,"Yes","Yes",2011
+"20710","Chr erythrm w/o ach rmsn",9,8,8,"Yes","Yes",2011
+"20711","Chr erythrm w remision",9,8,8,"Yes","Yes",2011
+"20712","Chr erythrmia in relapse",9,8,8,"Yes","Yes",2011
+"20720","Mgkrcyt leuk wo ach rmsn",9,8,8,"Yes","Yes",2011
+"20721","Mgkrycyt leuk w rmsion",9,8,8,"Yes","Yes",2011
+"20722","Mgkrycyt leuk in relapse",9,8,8,"Yes","Yes",2011
+"20780","Oth leuk w/o achv rmsn",9,8,8,"Yes","Yes",2011
+"20781","Oth spf leuk w remsion",9,8,8,"Yes","Yes",2011
+"20782","Oth spf leuk in relapse",9,8,8,"Yes","Yes",2011
+"20800","Ac leu un cl wo ach rmsn",9,7,11,"Yes","Yes",2011
+"20801","Act leuk uns cl w rmson",9,7,11,"Yes","Yes",2011
+"20802","Ac leuk uns cl relapse",9,7,11,"Yes","Yes",2011
+"20810","Ch leu un cl wo ach rmsn",9,9,,"Yes","No",2011
+"20811","Chr leuk uns cl w rmson",9,9,,"Yes","No",2011
+"20812","Ch leu uns cl in relapse",9,9,,"Yes","No",2011
+"20820","Sbc leu un cl wo ah rmsn",9,9,,"Yes","No",2011
+"20821","Sbac leuk uns cl w rmson",9,9,,"Yes","No",2011
+"20822","Sbac leu uns cl-relapse",9,9,,"Yes","No",2011
+"20880","Ot leu un cl wo ach rmsn",9,9,,"Yes","No",2011
+"20881","Oth leuk uns cl w rmson",9,9,,"Yes","No",2011
+"20882","Oth leuk uns cl-relapse",9,9,,"Yes","No",2011
+"20890","Leuk NOS w/o achv rmsn",9,9,,"Yes","No",2011
+"20891","Leukemia NOS w remission",9,9,,"Yes","No",2011
+"20892","Leukemia NOS in relapse",9,9,,"Yes","No",2011
+"20900","Mal crcnoid sm intst NOS",9,10,11,"Yes","Yes",2011
+"20901","Malig carcinoid duodenum",9,10,11,"Yes","Yes",2011
+"20902","Malig carcinoid jejunum",9,10,11,"Yes","Yes",2011
+"20903","Malig carcinoid ileum",9,10,11,"Yes","Yes",2011
+"20910","Mal crcnoid lg intst NOS",9,10,11,"Yes","Yes",2011
+"20911","Malig carcinoid appendix",9,10,11,"Yes","Yes",2011
+"20912","Malig carcinoid cecum",9,10,11,"Yes","Yes",2011
+"20913","Mal crcnoid ascend colon",9,10,11,"Yes","Yes",2011
+"20914","Mal crcnoid transv colon",9,10,11,"Yes","Yes",2011
+"20915","Mal carcinoid desc colon",9,10,11,"Yes","Yes",2011
+"20916","Mal carcinoid sig colon",9,10,11,"Yes","Yes",2011
+"20917","Malig carcinoid rectum",9,10,11,"Yes","Yes",2011
+"20920","Mal crcnd prim site unkn",9,10,11,"Yes","Yes",2011
+"20921","Mal carcinoid bronc/lung",9,10,11,"Yes","Yes",2011
+"20922","Malig carcinoid thymus",9,10,11,"Yes","Yes",2011
+"20923","Malig carcinoid stomach",9,10,11,"Yes","Yes",2011
+"20924","Malig carcinoid kidney",9,10,11,"Yes","Yes",2011
+"20925","Mal carcnoid foregut NOS",9,10,11,"Yes","Yes",2011
+"20926","Mal carcinoid midgut NOS",9,10,11,"Yes","Yes",2011
+"20927","Mal carcnoid hindgut NOS",9,10,11,"Yes","Yes",2011
+"20929","Malig carcinoid oth site",9,10,11,"Yes","Yes",2011
+"20930","Malig neuroendo ca NOS",9,10,11,"Yes","Yes",2011
+"20931","Merkel cell ca-face",9,10,11,"Yes","Yes",2011
+"20932","Merkel cell ca-sclp/neck",9,10,11,"Yes","Yes",2011
+"20933","Merkel cell ca-up limb",9,10,11,"Yes","Yes",2011
+"20934","Merkel cell ca-low limb",9,10,11,"Yes","Yes",2011
+"20935","Merkel cell ca-trunk",9,10,11,"Yes","Yes",2011
+"20936","Merkel cell ca-oth sites",9,10,11,"Yes","Yes",2011
+"20970","Sec neuroendo tumor NOS",9,7,11,"Yes","Yes",2011
+"20971","Sec neuroend tu dist lym",9,7,,"Yes","No",2011
+"20972","Sec neuroend tumor-liver",9,7,10,"Yes","Yes",2011
+"20973","Sec neuroendo tumor-bone",9,7,10,"Yes","Yes",2011
+"20974","Sec neuroendo tu-periton",9,7,10,"Yes","Yes",2011
+"20975","Secondary Merkel cell ca",9,7,11,"Yes","Yes",2011
+"20979","Sec neuroend tu oth site",9,7,11,"Yes","Yes",2011
+"2250","Benign neoplasm brain",9,10,11,"Yes","Yes",2011
+"2251","Benign neo cranial nerve",9,10,11,"Yes","Yes",2011
+"2252","Ben neo cerebr meninges",9,10,11,"Yes","Yes",2011
+"2253","Benign neo spinal cord",9,10,11,"Yes","Yes",2011
+"2254","Ben neo spinal meninges",9,10,11,"Yes","Yes",2011
+"2258","Benign neo nerv sys NEC",9,10,11,"Yes","Yes",2011
+"2259","Benign neo nerv sys NOS",9,10,11,"Yes","Yes",2011
+"2273","Benign neo pituitary",9,10,11,"Yes","Yes",2011
+"2274","Ben neopl pineal gland",9,10,11,"Yes","Yes",2011
+"22802","Hemangioma intracranial",9,10,11,"Yes","Yes",2011
+"2370","Unc behav neo pituitary",9,10,,"Yes","No",2011
+"2371","Unc behav neo pineal",9,10,,"Yes","No",2011
+"2373","Unc behav neo paragang",9,10,,"Yes","No",2011
+"2375","Unc beh neo brain/spinal",9,10,,"Yes","No",2011
+"2376","Unc behav neo meninges",9,10,,"Yes","No",2011
+"23770","Neurofibromatosis NOS",9,10,,"Yes","No",2011
+"23771","Neurofibromatosis type I",9,10,,"Yes","No",2011
+"23772","Neurofibromatosis typ II",9,10,,"Yes","No",2011
+"23773","Schwannomatosis",9,10,,"Yes","No",2011
+"23779","Neurofibromatosis NEC",9,10,,"Yes","No",2011
+"2379","Unc beh neo nerv sys NEC",9,10,,"Yes","No",2011
+"2386","Plasmacytoma NOS",9,,9,"No","Yes",2011
+"23872","Low grde myelody syn les",9,44,48,"Yes","Yes",2011
+"23873","Hi grde myelodys syn les",9,44,9,"Yes","Yes",2011
+"23874","Myelodyspls syn w 5q del",9,44,9,"Yes","Yes",2011
+"23875","Myelodysplastic synd NOS",9,44,48,"Yes","Yes",2011
+"23876","Myelofi w myelo metaplas",9,,9,"No","Yes",2011
+"23877","Post tp lymphprolif dis",9,,50,"No","Yes",2011
+"23879","Lymph/hematpoitc tis NEC",9,,50,"No","Yes",2011
+"2396","Brain neoplasm NOS",9,10,,"Yes","No",2011
+"2400","Simple goiter",9,,20,"No","Yes",2011
+"2409","Goiter NOS",9,,20,"No","Yes",2011
+"2410","Nontox uninodular goiter",9,,20,"No","Yes",2011
+"2411","Nontox multinodul goiter",9,,20,"No","Yes",2011
+"2419","Nontox nodul goiter NOS",9,,20,"No","Yes",2011
+"24200","Tox dif goiter no crisis",9,,20,"No","Yes",2011
+"24201","Tox dif goiter w crisis",9,,20,"No","Yes",2011
+"24210","Tox uninod goit no cris",9,,20,"No","Yes",2011
+"24211","Tox uninod goit w crisis",9,,20,"No","Yes",2011
+"24220","Tox multnod goit no cris",9,,20,"No","Yes",2011
+"24221","Tox multnod goit w cris",9,,20,"No","Yes",2011
+"24230","Tox nod goiter no crisis",9,,20,"No","Yes",2011
+"24231","Tox nod goiter w crisis",9,,20,"No","Yes",2011
+"24240","Thyrotox-ect nod no cris",9,,20,"No","Yes",2011
+"24241","Thyrotox-ect nod w cris",9,,20,"No","Yes",2011
+"24280","Thyrtox orig NEC no cris",9,,20,"No","Yes",2011
+"24281","Thyrotox orig NEC w cris",9,,20,"No","Yes",2011
+"24290","Thyrotox NOS no crisis",9,,20,"No","Yes",2011
+"24291","Thyrotox NOS w crisis",9,,20,"No","Yes",2011
+"243","Congenital hypothyroidsm",9,,20,"No","Yes",2011
+"2440","Postsurgical hypothyroid",9,,20,"No","Yes",2011
+"2441","Postablat hypothyr NEC",9,,20,"No","Yes",2011
+"2442","Iodine hypothyroidism",9,,20,"No","Yes",2011
+"2443","Iatrogen hypothyroid NEC",9,,20,"No","Yes",2011
+"2448","Acquired hypothyroid NEC",9,,20,"No","Yes",2011
+"2449","Hypothyroidism NOS",9,,20,"No","Yes",2011
+"2450","Acute thyroiditis",9,,20,"No","Yes",2011
+"2451","Subacute thyroiditis",9,,20,"No","Yes",2011
+"2452","Chr lymphocyt thyroidit",9,,20,"No","Yes",2011
+"2453","Chr fibrous thyroiditis",9,,20,"No","Yes",2011
+"2454","Iatrogenic thyroiditis",9,,20,"No","Yes",2011
+"2458","Chr thyroiditis NEC/NOS",9,,20,"No","Yes",2011
+"2459","Thyroiditis NOS",9,,20,"No","Yes",2011
+"2460","Dis thyrocalciton secret",9,,20,"No","Yes",2011
+"2461","Dyshormonogenic goiter",9,,20,"No","Yes",2011
+"2462","Cyst of thyroid",9,,20,"No","Yes",2011
+"2463","Hemorr/infarc thyroid",9,,20,"No","Yes",2011
+"2468","Disorders of thyroid NEC",9,,20,"No","Yes",2011
+"2469","Disorder of thyroid NOS",9,,20,"No","Yes",2011
+"24900","Sec DM wo cmp nt st uncn",9,19,15,"Yes","Yes",2011
+"24901","Sec DM wo comp uncontrld",9,19,15,"Yes","Yes",2011
+"24910","Sec DM keto nt st uncntr",9,17,14,"Yes","Yes",2011
+"24911","Sec DM ketoacd uncntrld",9,17,14,"Yes","Yes",2011
+"24920","Sec DM hpros nt st uncnr",9,17,14,"Yes","Yes",2011
+"24921","Sec DM hprosmlr uncntrld",9,17,14,"Yes","Yes",2011
+"24930","Sec DM ot cma nt st uncn",9,17,14,"Yes","Yes",2011
+"24931","Sec DM oth coma uncntrld",9,17,14,"Yes","Yes",2011
+"24940","Sec DM renl nt st uncntr",9,15,14,"Yes","Yes",2011
+"24941","Sec DM renal uncontrld",9,15,14,"Yes","Yes",2011
+"24950","Sec DM ophth nt st uncn",9,18,14,"Yes","Yes",2011
+"24951","Sec DM ophth uncontrld",9,18,14,"Yes","Yes",2011
+"24960","Sec DM neuro nt st uncn",9,16,14,"Yes","Yes",2011
+"24961","Sec DM neuro uncontrld",9,16,14,"Yes","Yes",2011
+"24970","Sec DM circ nt st uncntr",9,15,14,"Yes","Yes",2011
+"24971","Sec DM circ uncontrld",9,15,14,"Yes","Yes",2011
+"24980","Sec DM oth nt st uncontr",9,16,14,"Yes","Yes",2011
+"24981","Sec DM other uncontrld",9,16,14,"Yes","Yes",2011
+"24990","Sec DM unsp nt st uncon",9,18,14,"Yes","Yes",2011
+"24991","Sec DM unsp uncontrold",9,18,14,"Yes","Yes",2011
+"25000","DMII wo cmp nt st uncntr",9,19,15,"Yes","Yes",2011
+"25001","DMI wo cmp nt st uncntrl",9,19,15,"Yes","Yes",2011
+"25002","DMII wo cmp uncntrld",9,19,15,"Yes","Yes",2011
+"25003","DMI wo cmp uncntrld",9,19,15,"Yes","Yes",2011
+"25010","DMII keto nt st uncntrld",9,17,14,"Yes","Yes",2011
+"25011","DMI keto nt st uncntrld",9,17,14,"Yes","Yes",2011
+"25012","DMII ketoacd uncontrold",9,17,14,"Yes","Yes",2011
+"25013","DMI ketoacd uncontrold",9,17,14,"Yes","Yes",2011
+"25020","DMII hprsm nt st uncntrl",9,17,14,"Yes","Yes",2011
+"25021","DMI hprsm nt st uncntrld",9,17,14,"Yes","Yes",2011
+"25022","DMII hprosmlr uncontrold",9,17,14,"Yes","Yes",2011
+"25023","DMI hprosmlr uncontrold",9,17,14,"Yes","Yes",2011
+"25030","DMII o cm nt st uncntrld",9,17,14,"Yes","Yes",2011
+"25031","DMI o cm nt st uncntrld",9,17,14,"Yes","Yes",2011
+"25032","DMII oth coma uncontrold",9,17,14,"Yes","Yes",2011
+"25033","DMI oth coma uncontrold",9,17,14,"Yes","Yes",2011
+"25040","DMII renl nt st uncntrld",9,15,14,"Yes","Yes",2011
+"25041","DMI renl nt st uncntrld",9,15,14,"Yes","Yes",2011
+"25042","DMII renal uncntrld",9,15,14,"Yes","Yes",2011
+"25043","DMI renal uncntrld",9,15,14,"Yes","Yes",2011
+"25050","DMII ophth nt st uncntrl",9,18,14,"Yes","Yes",2011
+"25051","DMI ophth nt st uncntrld",9,18,14,"Yes","Yes",2011
+"25052","DMII ophth uncntrld",9,18,14,"Yes","Yes",2011
+"25053","DMI ophth uncntrld",9,18,14,"Yes","Yes",2011
+"25060","DMII neuro nt st uncntrl",9,16,14,"Yes","Yes",2011
+"25061","DMI neuro nt st uncntrld",9,16,14,"Yes","Yes",2011
+"25062","DMII neuro uncntrld",9,16,14,"Yes","Yes",2011
+"25063","DMI neuro uncntrld",9,16,14,"Yes","Yes",2011
+"25070","DMII circ nt st uncntrld",9,15,14,"Yes","Yes",2011
+"25071","DMI circ nt st uncntrld",9,15,14,"Yes","Yes",2011
+"25072","DMII circ uncntrld",9,15,14,"Yes","Yes",2011
+"25073","DMI circ uncntrld",9,15,14,"Yes","Yes",2011
+"25080","DMII oth nt st uncntrld",9,16,14,"Yes","Yes",2011
+"25081","DMI oth nt st uncntrld",9,16,14,"Yes","Yes",2011
+"25082","DMII oth uncntrld",9,16,14,"Yes","Yes",2011
+"25083","DMI oth uncntrld",9,16,14,"Yes","Yes",2011
+"25090","DMII unspf nt st uncntrl",9,18,14,"Yes","Yes",2011
+"25091","DMI unspf nt st uncntrld",9,18,14,"Yes","Yes",2011
+"25092","DMII unspf uncntrld",9,18,14,"Yes","Yes",2011
+"25093","DMI unspf uncntrld",9,18,14,"Yes","Yes",2011
+"2514","Abn secretion glucagon",9,32,31,"Yes","Yes",2011
+"2515","Abnorm secretion gastrin",9,32,31,"Yes","Yes",2011
+"2518","Pancreatic disorder NEC",9,32,31,"Yes","Yes",2011
+"2519","Pancreatic disorder NOS",9,32,31,"Yes","Yes",2011
+"25200","Hyperparathyroidism NOS",9,,19,"No","Yes",2011
+"25201","Primary hyperparathyroid",9,,19,"No","Yes",2011
+"25202","Sec hyprprthyrd nonrenal",9,,19,"No","Yes",2011
+"25208","Hyperparathyroidism NEC",9,,19,"No","Yes",2011
+"2521","Hypoparathyroidism",9,,19,"No","Yes",2011
+"2528","Parathyroid disorder NEC",9,,19,"No","Yes",2011
+"2529","Parathyroid disorder NOS",9,,19,"No","Yes",2011
+"2530","Acromegaly and gigantism",9,,18,"No","Yes",2011
+"2531","Ant pituit hyperfunc NEC",9,,18,"No","Yes",2011
+"2532","Panhypopituitarism",9,,18,"No","Yes",2011
+"2533","Pituitary dwarfism",9,,18,"No","Yes",2011
+"2534","Anter pituitary dis NEC",9,,18,"No","Yes",2011
+"2535","Diabetes insipidus",9,,18,"No","Yes",2011
+"2536","Neurohypophysis dis NEC",9,,19,"No","Yes",2011
+"2537","Iatrogenic pituitary dis",9,,19,"No","Yes",2011
+"2538","Pituitary disorder NEC",9,,19,"No","Yes",2011
+"2539","Pituitary disorder NOS",9,,19,"No","Yes",2011
+"2540","Persist hyperplas thymus",9,,19,"No","Yes",2011
+"2541","Abscess of thymus",9,,19,"No","Yes",2011
+"2548","Diseases of thymus NEC",9,,19,"No","Yes",2011
+"2549","Disease of thymus NOS",9,,19,"No","Yes",2011
+"2550","Cushing's syndrome",9,,19,"No","Yes",2011
+"25510","Hyperaldosteronism NOS",9,,19,"No","Yes",2011
+"25511","Glucrtcod-rem aldsternsm",9,,19,"No","Yes",2011
+"25512","Conn's syndrome",9,,19,"No","Yes",2011
+"25513","Bartter's syndrome",9,,19,"No","Yes",2011
+"25514","Secondry aldosternsm NEC",9,,19,"No","Yes",2011
+"2552","Adrenogenital disorders",9,,19,"No","Yes",2011
+"2553","Corticoadren overact NEC",9,,19,"No","Yes",2011
+"25541","Glucocorticoid deficient",9,,19,"No","Yes",2011
+"25542","Mineralcorticoid defcnt",9,,19,"No","Yes",2011
+"2555","Adrenal hypofunction NEC",9,,19,"No","Yes",2011
+"2556","Medulloadrenal hyperfunc",9,,19,"No","Yes",2011
+"2558","Adrenal disorder NEC",9,,19,"No","Yes",2011
+"2559","Adrenal disorder NOS",9,,19,"No","Yes",2011
+"25801","Mult endo neoplas type I",9,,19,"No","Yes",2011
+"25802","Mult endo neop type IIA",9,,19,"No","Yes",2011
+"25803","Mult endo neop type IIB",9,,19,"No","Yes",2011
+"2581","Comb endocr dysfunct NEC",9,,19,"No","Yes",2011
+"2588","Polyglandul dysfunc NEC",9,,19,"No","Yes",2011
+"2589","Polyglandul dysfunc NOS",9,,19,"No","Yes",2011
+"2592","Carcinoid syndrome",9,10,11,"Yes","Yes",2011
+"260","Kwashiorkor",9,21,,"Yes","No",2011
+"261","Nutritional marasmus",9,21,,"Yes","No",2011
+"262","Oth severe malnutrition",9,21,,"Yes","No",2011
+"2630","Malnutrition mod degree",9,21,,"Yes","No",2011
+"2631","Malnutrition mild degree",9,21,,"Yes","No",2011
+"2632","Arrest devel d/t malnutr",9,21,,"Yes","No",2011
+"2638","Protein-cal malnutr NEC",9,21,,"Yes","No",2011
+"2639","Protein-cal malnutr NOS",9,21,,"Yes","No",2011
+"2680","Rickets, active",9,,45,"No","Yes",2011
+"2682","Osteomalacia NOS",9,,45,"No","Yes",2011
+"2700","Amino-acid transport dis",9,,19,"No","Yes",2011
+"2701","Phenylketonuria - pku",9,,19,"No","Yes",2011
+"2702","Arom amin-acid metab NEC",9,,19,"No","Yes",2011
+"2703","Bran-chain amin-acid dis",9,,19,"No","Yes",2011
+"2704","Sulph amino-acid met dis",9,,19,"No","Yes",2011
+"2705","Dis histidine metabolism",9,,19,"No","Yes",2011
+"2706","Dis urea cycle metabol",9,,19,"No","Yes",2011
+"2707","Straig amin-acid met NEC",9,,19,"No","Yes",2011
+"2708","Dis amino-acid metab NEC",9,,19,"No","Yes",2011
+"2709","Dis amino-acid metab NOS",9,,19,"No","Yes",2011
+"2710","Glycogenosis",9,,18,"No","Yes",2011
+"2711","Galactosemia",9,,19,"No","Yes",2011
+"2714","Renal glycosuria",9,,19,"No","Yes",2011
+"2718","Dis carbohydr metab NEC",9,,19,"No","Yes",2011
+"2719","Dis carbohydr metab NOS",9,,19,"No","Yes",2011
+"2720","Pure hypercholesterolem",9,,23,"No","Yes",2011
+"2721","Pure hyperglyceridemia",9,,23,"No","Yes",2011
+"2722","Mixed hyperlipidemia",9,,23,"No","Yes",2011
+"2723","Hyperchylomicronemia",9,,23,"No","Yes",2011
+"2724","Hyperlipidemia NEC/NOS",9,,23,"No","Yes",2011
+"2725","Lipoprotein deficiencies",9,,23,"No","Yes",2011
+"2728","Lipoid metabol dis NEC",9,,23,"No","Yes",2011
+"2729","Lipoid metabol dis NOS",9,,23,"No","Yes",2011
+"2734","Alpha-1-antitrypsin def",9,,18,"No","Yes",2011
+"2750","Dis iron metabolism",9,,19,"No","Yes",2011
+"27501","Heredit hemochromatosis",9,,19,"No","Yes",2011
+"27503","Hemochromatosis NEC",9,,19,"No","Yes",2011
+"27509","Disord iron metablsm NEC",9,,19,"No","Yes",2011
+"2751","Dis copper metabolism",9,,19,"No","Yes",2011
+"2753","Dis phosphorus metabol",9,,19,"No","Yes",2011
+"27700","Cystic fibros w/o ileus",9,107,103,"Yes","Yes",2011
+"27701","Cystic fibrosis w ileus",9,107,103,"Yes","Yes",2011
+"27702","Cystic fibros w pul man",9,107,103,"Yes","Yes",2011
+"27703","Cystic fibrosis w GI man",9,107,103,"Yes","Yes",2011
+"27709","Cystic fibrosis NEC",9,107,103,"Yes","Yes",2011
+"2771","Dis porphyrin metabolism",9,,19,"No","Yes",2011
+"2772","Purine/pyrimid dis NEC",9,,19,"No","Yes",2011
+"2775","Mucopolysaccharidosis",9,,18,"No","Yes",2011
+"2776","Defic circul enzyme NEC",9,,18,"No","Yes",2011
+"27781","Primary carnitine defncy",9,,19,"No","Yes",2011
+"27782","Crnitne def d/t nb met",9,,19,"No","Yes",2011
+"27783","Iatrogenic carnitine def",9,,19,"No","Yes",2011
+"27784","Sec carnitine defncy NEC",9,,19,"No","Yes",2011
+"27785","Disorders acid oxidation",9,,19,"No","Yes",2011
+"27786","Peroxisomal disorders",9,,19,"No","Yes",2011
+"27787","Dis mitochondrial metab",9,,19,"No","Yes",2011
+"27789","Metabolism disorder NEC",9,,19,"No","Yes",2011
+"27801","Morbid obesity",9,,21,"No","Yes",2011
+"27803","Obesity hypovent synd",9,,21,"No","Yes",2011
+"27900","Hypogammaglobulinem NOS",9,45,49,"Yes","Yes",2011
+"27901","Selective iga immunodef",9,45,49,"Yes","Yes",2011
+"27902","Selective IgM immunodef",9,45,49,"Yes","Yes",2011
+"27903","Selective ig defic NEC",9,45,49,"Yes","Yes",2011
+"27904","Cong hypogammaglobulinem",9,45,49,"Yes","Yes",2011
+"27905","Immunodefic w hyper-igm",9,45,49,"Yes","Yes",2011
+"27906","Common variabl immunodef",9,45,49,"Yes","Yes",2011
+"27909","Humoral immunity def NEC",9,45,49,"Yes","Yes",2011
+"27910","Immundef t-cell def NOS",9,45,49,"Yes","Yes",2011
+"27911","Digeorge's syndrome",9,45,49,"Yes","Yes",2011
+"27912","Wiskott-aldrich syndrome",9,45,49,"Yes","Yes",2011
+"27913","Nezelof's syndrome",9,45,49,"Yes","Yes",2011
+"27919","Defic cell immunity NOS",9,45,49,"Yes","Yes",2011
+"2792","Combined immunity defic",9,45,49,"Yes","Yes",2011
+"2793","Immunity deficiency NOS",9,45,49,"Yes","Yes",2011
+"27941","Autoimmun lymphprof synd",9,45,49,"Yes","Yes",2011
+"27949","Autoimmune disease NEC",9,45,49,"Yes","Yes",2011
+"27950","Graft-versus-host NOS",9,45,49,"Yes","Yes",2011
+"27951","Ac graft-versus-host dis",9,45,49,"Yes","Yes",2011
+"27952","Chronc graft-vs-host dis",9,45,49,"Yes","Yes",2011
+"27953","Ac on chrn grft-vs-host",9,45,49,"Yes","Yes",2011
+"2798","Immune mechanism dis NEC",9,45,49,"Yes","Yes",2011
+"2799","Immune mechanism dis NOS",9,45,49,"Yes","Yes",2011
+"28241","Thlasema Hb-S w/o crisis",9,44,50,"Yes","Yes",2011
+"28242","Thlassemia Hb-S w crisis",9,44,50,"Yes","Yes",2011
+"28260","Sickle cell disease NOS",9,44,50,"Yes","Yes",2011
+"28261","Hb-SS disease w/o crisis",9,44,47,"Yes","Yes",2011
+"28262","Hb-SS disease w crisis",9,44,47,"Yes","Yes",2011
+"28263","Hb-SS/hb-C dis w/o crsis",9,44,50,"Yes","Yes",2011
+"28264","Hb-S/Hb-C dis w crisis",9,44,50,"Yes","Yes",2011
+"28268","Hb-S dis w/o crisis NEC",9,44,50,"Yes","Yes",2011
+"28269","Hb-SS dis NEC w crisis",9,44,50,"Yes","Yes",2011
+"2830","Autoimmun hemolytic anem",9,44,50,"Yes","Yes",2011
+"28310","Nonauto hem anemia NOS",9,44,50,"Yes","Yes",2011
+"28311","Hemolytic uremic synd",9,44,50,"Yes","Yes",2011
+"28319","Oth nonauto hem anemia",9,44,50,"Yes","Yes",2011
+"2832","Hemolytic hemoglobinuria",9,44,50,"Yes","Yes",2011
+"2839","Acq hemolytic anemia NOS",9,44,50,"Yes","Yes",2011
+"28401","Constitution RBC aplasia",9,44,50,"Yes","Yes",2011
+"28409","Const aplastc anemia NEC",9,44,50,"Yes","Yes",2011
+"2841","Pancytopenia",9,44,50,"Yes","Yes",2011
+"2842","Myelophthisis",9,44,50,"Yes","Yes",2011
+"28481","Red cell aplasia",9,44,50,"Yes","Yes",2011
+"28489","Aplastic anemias NEC",9,44,50,"Yes","Yes",2011
+"2849","Aplastic anemia NOS",9,44,50,"Yes","Yes",2011
+"2850","Sideroblastic anemia",9,,50,"No","Yes",2011
+"2860","Cong factor viii diord",9,44,50,"Yes","Yes",2011
+"2861","Cong factor IX disorder",9,44,50,"Yes","Yes",2011
+"28800","Neutropenia NOS",9,45,,"Yes","No",2011
+"28801","Congenital neutropenia",9,45,,"Yes","No",2011
+"28802","Cyclic neutropenia",9,45,,"Yes","No",2011
+"28803","Drug induced neutropenia",9,45,,"Yes","No",2011
+"28804","Neutropenia d/t infectn",9,45,,"Yes","No",2011
+"28809","Neutropenia NEC",9,45,,"Yes","No",2011
+"2881","Function dis neutrophils",9,45,,"Yes","No",2011
+"2882","Genetic anomaly leukocyt",9,45,,"Yes","No",2011
+"2884","Hemophagocytic syndromes",9,45,,"Yes","No",2011
+"28952","Splenic sequestration",9,44,50,"Yes","Yes",2011
+"28981","Prim hypercoagulable st",9,,50,"No","Yes",2011
+"28982","Sec hypercoagulable st",9,,50,"No","Yes",2011
+"28983","Myelofibrosis",9,,9,"No","Yes",2011
+"2900","Senile dementia uncomp",9,,55,"No","Yes",2011
+"29010","Presenile dementia",9,,55,"No","Yes",2011
+"29011","Presenile delirium",9,,55,"No","Yes",2011
+"29012","Presenile delusion",9,,55,"No","Yes",2011
+"29013","Presenile depression",9,,55,"No","Yes",2011
+"29020","Senile delusion",9,,55,"No","Yes",2011
+"29021","Senile depressive",9,,55,"No","Yes",2011
+"2903","Senile delirium",9,,55,"No","Yes",2011
+"29040","Vascular dementia,uncomp",9,,55,"No","Yes",2011
+"29041","Vasc dementia w delirium",9,,55,"No","Yes",2011
+"29042","Vasc dementia w delusion",9,,55,"No","Yes",2011
+"29043","Vasc dementia w depressn",9,,55,"No","Yes",2011
+"2908","Senile psychosis NEC",9,,55,"No","Yes",2011
+"2909","Senile psychot cond NOS",9,,55,"No","Yes",2011
+"2910","Delirium tremens",9,51,,"Yes","No",2011
+"2911","Alcohol amnestic disordr",9,51,,"Yes","No",2011
+"2912","Alcohol persist dementia",9,51,,"Yes","No",2011
+"2913","Alcoh psy dis w hallucin",9,51,,"Yes","No",2011
+"2914","Pathologic alcohol intox",9,51,,"Yes","No",2011
+"2915","Alcoh psych dis w delus",9,51,,"Yes","No",2011
+"29181","Alcohol withdrawal",9,51,,"Yes","No",2011
+"29182","Alcoh induce sleep disor",9,51,,"Yes","No",2011
+"29189","Alcohol mental disor NEC",9,51,,"Yes","No",2011
+"2919","Alcohol mental disor NOS",9,51,,"Yes","No",2011
+"2920","Drug withdrawal",9,51,,"Yes","No",2011
+"29211","Drug psych disor w delus",9,51,,"Yes","No",2011
+"29212","Drug psy dis w hallucin",9,51,,"Yes","No",2011
+"2922","Pathologic drug intox",9,51,,"Yes","No",2011
+"29281","Drug-induced delirium",9,51,,"Yes","No",2011
+"29282","Drug persisting dementia",9,51,,"Yes","No",2011
+"29283","Drug persist amnestc dis",9,51,,"Yes","No",2011
+"29284","Drug-induced mood disord",9,51,,"Yes","No",2011
+"29285","Drug induced sleep disor",9,51,,"Yes","No",2011
+"29289","Drug mental disorder NEC",9,51,,"Yes","No",2011
+"2929","Drug mental disorder NOS",9,51,,"Yes","No",2011
+"2940","Amnestic disord oth dis",9,,55,"No","Yes",2011
+"29410","Dementia w/o behav dist",9,,55,"No","Yes",2011
+"29411","Dementia w behavior dist",9,,55,"No","Yes",2011
+"2948","Mental disor NEC oth dis",9,,55,"No","Yes",2011
+"2949","Mental disor NOS oth dis",9,,55,"No","Yes",2011
+"29500","Simpl schizophren-unspec",9,54,58,"Yes","Yes",2011
+"29501","Simpl schizophren-subchr",9,54,58,"Yes","Yes",2011
+"29502","Simple schizophren-chr",9,54,58,"Yes","Yes",2011
+"29503","Simp schiz-subchr/exacer",9,54,58,"Yes","Yes",2011
+"29504","Simpl schizo-chr/exacerb",9,54,58,"Yes","Yes",2011
+"29505","Simpl schizophren-remiss",9,54,58,"Yes","Yes",2011
+"29510","Hebephrenia-unspec",9,54,58,"Yes","Yes",2011
+"29511","Hebephrenia-subchronic",9,54,58,"Yes","Yes",2011
+"29512","Hebephrenia-chronic",9,54,58,"Yes","Yes",2011
+"29513","Hebephren-subchr/exacerb",9,54,58,"Yes","Yes",2011
+"29514","Hebephrenia-chr/exacerb",9,54,58,"Yes","Yes",2011
+"29515","Hebephrenia-remission",9,54,58,"Yes","Yes",2011
+"29520","Catatonia-unspec",9,54,58,"Yes","Yes",2011
+"29521","Catatonia-subchronic",9,54,58,"Yes","Yes",2011
+"29522","Catatonia-chronic",9,54,58,"Yes","Yes",2011
+"29523","Catatonia-subchr/exacerb",9,54,58,"Yes","Yes",2011
+"29524","Catatonia-chr/exacerb",9,54,58,"Yes","Yes",2011
+"29525","Catatonia-remission",9,54,58,"Yes","Yes",2011
+"29530","Paranoid schizo-unspec",9,54,58,"Yes","Yes",2011
+"29531","Paranoid schizo-subchr",9,54,58,"Yes","Yes",2011
+"29532","Paranoid schizo-chronic",9,54,58,"Yes","Yes",2011
+"29533","Paran schizo-subchr/exac",9,54,58,"Yes","Yes",2011
+"29534","Paran schizo-chr/exacerb",9,54,58,"Yes","Yes",2011
+"29535","Paranoid schizo-remiss",9,54,58,"Yes","Yes",2011
+"29540","Schizophreniform dis NOS",9,54,58,"Yes","Yes",2011
+"29541","Schizophrenic dis-subchr",9,54,58,"Yes","Yes",2011
+"29542","Schizophren dis-chronic",9,54,58,"Yes","Yes",2011
+"29543","Schizo dis-subchr/exacer",9,54,58,"Yes","Yes",2011
+"29544","Schizophr dis-chr/exacer",9,54,58,"Yes","Yes",2011
+"29545","Schizophrenic dis-remiss",9,54,58,"Yes","Yes",2011
+"29550","Latent schizophren-unsp",9,54,58,"Yes","Yes",2011
+"29551","Lat schizophren-subchr",9,54,58,"Yes","Yes",2011
+"29552","Latent schizophren-chr",9,54,58,"Yes","Yes",2011
+"29553","Lat schizo-subchr/exacer",9,54,58,"Yes","Yes",2011
+"29554","Latent schizo-chr/exacer",9,54,58,"Yes","Yes",2011
+"29555","Lat schizophren-remiss",9,54,58,"Yes","Yes",2011
+"29560","Schizophr dis resid NOS",9,54,58,"Yes","Yes",2011
+"29561","Schizoph dis resid-subch",9,54,58,"Yes","Yes",2011
+"29562","Schizophr dis resid-chr",9,54,58,"Yes","Yes",2011
+"29563","Schizo resid subchr/exac",9,54,58,"Yes","Yes",2011
+"29564","Schizoph resid-chro/exac",9,54,58,"Yes","Yes",2011
+"29565","Schizoph dis resid-remis",9,54,58,"Yes","Yes",2011
+"29570","Schizoaffective dis NOS",9,54,58,"Yes","Yes",2011
+"29571","Schizoaffectv dis-subchr",9,54,58,"Yes","Yes",2011
+"29572","Schizoaffective dis-chr",9,54,58,"Yes","Yes",2011
+"29573","Schizoaff dis-subch/exac",9,54,58,"Yes","Yes",2011
+"29574","Schizoafftv dis-chr/exac",9,54,58,"Yes","Yes",2011
+"29575","Schizoaffectve dis-remis",9,54,58,"Yes","Yes",2011
+"29580","Schizophrenia NEC-unspec",9,54,58,"Yes","Yes",2011
+"29581","Schizophrenia NEC-subchr",9,54,58,"Yes","Yes",2011
+"29582","Schizophrenia NEC-chr",9,54,58,"Yes","Yes",2011
+"29583","Schizo NEC-subchr/exacer",9,54,58,"Yes","Yes",2011
+"29584","Schizo NEC-chr/exacerb",9,54,58,"Yes","Yes",2011
+"29585","Schizophrenia NEC-remiss",9,54,58,"Yes","Yes",2011
+"29590","Schizophrenia NOS-unspec",9,54,58,"Yes","Yes",2011
+"29591","Schizophrenia NOS-subchr",9,54,58,"Yes","Yes",2011
+"29592","Schizophrenia NOS-chr",9,54,58,"Yes","Yes",2011
+"29593","Schizo NOS-subchr/exacer",9,54,58,"Yes","Yes",2011
+"29594","Schizo NOS-chr/exacerb",9,54,58,"Yes","Yes",2011
+"29595","Schizophrenia NOS-remiss",9,54,58,"Yes","Yes",2011
+"29600","Bipol I single manic NOS",9,55,59,"Yes","Yes",2011
+"29601","Bipol I single manc-mild",9,55,59,"Yes","Yes",2011
+"29602","Bipol I single manic-mod",9,55,59,"Yes","Yes",2011
+"29603","Bipol I sing-sev w/o psy",9,55,59,"Yes","Yes",2011
+"29604","Bipo I sin man-sev w psy",9,55,59,"Yes","Yes",2011
+"29605","Bipol I sing man rem NOS",9,55,59,"Yes","Yes",2011
+"29606","Bipol I single manic rem",9,55,59,"Yes","Yes",2011
+"29610","Recur manic dis-unspec",9,55,59,"Yes","Yes",2011
+"29611","Recur manic dis-mild",9,55,59,"Yes","Yes",2011
+"29612","Recur manic dis-mod",9,55,59,"Yes","Yes",2011
+"29613","Recur manic dis-severe",9,55,59,"Yes","Yes",2011
+"29614","Recur manic-sev w psycho",9,55,59,"Yes","Yes",2011
+"29615","Recur manic-part remiss",9,55,59,"Yes","Yes",2011
+"29616","Recur manic-full remiss",9,55,59,"Yes","Yes",2011
+"29620","Depress psychosis-unspec",9,55,60,"Yes","Yes",2011
+"29621","Depress psychosis-mild",9,55,60,"Yes","Yes",2011
+"29622","Depressive psychosis-mod",9,55,60,"Yes","Yes",2011
+"29623","Depress psychosis-severe",9,55,60,"Yes","Yes",2011
+"29624","Depr psychos-sev w psych",9,55,60,"Yes","Yes",2011
+"29625","Depr psychos-part remiss",9,55,60,"Yes","Yes",2011
+"29626","Depr psychos-full remiss",9,55,60,"Yes","Yes",2011
+"29630","Recurr depr psychos-unsp",9,55,60,"Yes","Yes",2011
+"29631","Recurr depr psychos-mild",9,55,60,"Yes","Yes",2011
+"29632","Recurr depr psychos-mod",9,55,60,"Yes","Yes",2011
+"29633","Recur depr psych-severe",9,55,60,"Yes","Yes",2011
+"29634","Rec depr psych-psychotic",9,55,60,"Yes","Yes",2011
+"29635","Recur depr psyc-part rem",9,55,60,"Yes","Yes",2011
+"29636","Recur depr psyc-full rem",9,55,60,"Yes","Yes",2011
+"29640","Bipol I currnt manic NOS",9,55,59,"Yes","Yes",2011
+"29641","Bipol I curnt manic-mild",9,55,59,"Yes","Yes",2011
+"29642","Bipol I currnt manic-mod",9,55,59,"Yes","Yes",2011
+"29643","Bipol I manc-sev w/o psy",9,55,59,"Yes","Yes",2011
+"29644","Bipol I manic-sev w psy",9,55,59,"Yes","Yes",2011
+"29645","Bipol I cur man part rem",9,55,59,"Yes","Yes",2011
+"29646","Bipol I cur man full rem",9,55,59,"Yes","Yes",2011
+"29650","Bipol I cur depres NOS",9,55,59,"Yes","Yes",2011
+"29651","Bipol I cur depress-mild",9,55,59,"Yes","Yes",2011
+"29652","Bipol I cur depress-mod",9,55,59,"Yes","Yes",2011
+"29653","Bipol I curr dep w/o psy",9,55,59,"Yes","Yes",2011
+"29654","Bipol I currnt dep w psy",9,55,59,"Yes","Yes",2011
+"29655","Bipol I cur dep rem NOS",9,55,59,"Yes","Yes",2011
+"29656","Bipol I currnt dep remis",9,55,59,"Yes","Yes",2011
+"29660","Bipol I currnt mixed NOS",9,55,59,"Yes","Yes",2011
+"29661","Bipol I currnt mix-mild",9,55,59,"Yes","Yes",2011
+"29662","Bipol I currnt mixed-mod",9,55,59,"Yes","Yes",2011
+"29663","Bipol I cur mix w/o psy",9,55,59,"Yes","Yes",2011
+"29664","Bipol I cur mixed w psy",9,55,59,"Yes","Yes",2011
+"29665","Bipol I cur mix-part rem",9,55,59,"Yes","Yes",2011
+"29666","Bipol I cur mixed remiss",9,55,59,"Yes","Yes",2011
+"2967","Bipolor I current NOS",9,55,59,"Yes","Yes",2011
+"29680","Bipolar disorder NOS",9,55,59,"Yes","Yes",2011
+"29681","Atypical manic disorder",9,55,59,"Yes","Yes",2011
+"29682","Atypical depressive dis",9,55,59,"Yes","Yes",2011
+"29689","Bipolar disorder NEC",9,55,59,"Yes","Yes",2011
+"29690","Episodic mood disord NOS",9,55,59,"Yes","Yes",2011
+"29699","Episodic mood disord NEC",9,55,59,"Yes","Yes",2011
+"2970","Paranoid state, simple",9,55,,"Yes","No",2011
+"2971","Delusional disorder",9,55,,"Yes","No",2011
+"2972","Paraphrenia",9,55,,"Yes","No",2011
+"2973","Shared psychotic disord",9,55,,"Yes","No",2011
+"2978","Paranoid states NEC",9,55,,"Yes","No",2011
+"2979","Paranoid state NOS",9,55,,"Yes","No",2011
+"29900","Autistic disord-current",9,,65,"No","Yes",2011
+"29901","Autistic disord-residual",9,,65,"No","Yes",2011
+"29910","Childhd disintegr-active",9,,65,"No","Yes",2011
+"29911","Childhd disintegr-resid",9,,65,"No","Yes",2011
+"29980","Pervasv dev dis-cur NEC",9,,65,"No","Yes",2011
+"29981","Pervasv dev dis-res NEC",9,,65,"No","Yes",2011
+"29990","Pervasv dev dis-cur NOS",9,,65,"No","Yes",2011
+"29991","Pervasv dev dis-res NOS",9,,65,"No","Yes",2011
+"30001","Panic dis w/o agorphobia",9,,63,"No","Yes",2011
+"30002","Generalized anxiety dis",9,,63,"No","Yes",2011
+"30010","Hysteria NOS",9,,63,"No","Yes",2011
+"30011","Conversion disorder",9,,63,"No","Yes",2011
+"30012","Dissociative amnesia",9,,61,"No","Yes",2011
+"30013","Dissociative fugue",9,,61,"No","Yes",2011
+"30014","Dissociatve identity dis",9,,61,"No","Yes",2011
+"30015","Dissociative react NOS",9,,61,"No","Yes",2011
+"30016","Factitious dis w symptom",9,,63,"No","Yes",2011
+"30019","Factitious ill NEC/NOS",9,,63,"No","Yes",2011
+"30020","Phobia NOS",9,,63,"No","Yes",2011
+"30021","Agoraphobia w panic dis",9,,63,"No","Yes",2011
+"30022","Agoraphobia w/o panic",9,,63,"No","Yes",2011
+"30023","Social phobia",9,,63,"No","Yes",2011
+"30029","Isolated/spec phobia NEC",9,,63,"No","Yes",2011
+"3003","Obsessive-compulsive dis",9,,61,"No","Yes",2011
+"3004","Dysthymic disorder",9,,62,"No","Yes",2011
+"3006","Depersonalization disord",9,,61,"No","Yes",2011
+"3007","Hypochondriasis",9,,63,"No","Yes",2011
+"30081","Somatization disorder",9,,63,"No","Yes",2011
+"30082","Undiff somatoform disrdr",9,,63,"No","Yes",2011
+"30089","Somatoform disorders NEC",9,,63,"No","Yes",2011
+"30110","Affectiv personality NOS",9,,62,"No","Yes",2011
+"30111","Chronic hypomanic person",9,,62,"No","Yes",2011
+"30112","Chr depressive person",9,,62,"No","Yes",2011
+"30113","Cyclothymic disorder",9,,62,"No","Yes",2011
+"3013","Explosive personality",9,,61,"No","Yes",2011
+"3014","Obsessive-compulsive dis",9,,61,"No","Yes",2011
+"30183","Borderline personality",9,,61,"No","Yes",2011
+"30300","Ac alcohol intox-unspec",9,52,,"Yes","No",2011
+"30301","Ac alcohol intox-contin",9,52,,"Yes","No",2011
+"30302","Ac alcohol intox-episod",9,52,,"Yes","No",2011
+"30303","Ac alcohol intox-remiss",9,52,,"Yes","No",2011
+"30390","Alcoh dep NEC/NOS-unspec",9,52,,"Yes","No",2011
+"30391","Alcoh dep NEC/NOS-contin",9,52,,"Yes","No",2011
+"30392","Alcoh dep NEC/NOS-episod",9,52,,"Yes","No",2011
+"30393","Alcoh dep NEC/NOS-remiss",9,52,,"Yes","No",2011
+"30400","Opioid dependence-unspec",9,52,,"Yes","No",2011
+"30401","Opioid dependence-contin",9,52,,"Yes","No",2011
+"30402","Opioid dependence-episod",9,52,,"Yes","No",2011
+"30403","Opioid dependence-remiss",9,52,,"Yes","No",2011
+"30410","Sed,hyp,anxiolyt dep-NOS",9,52,,"Yes","No",2011
+"30411","Sed,hyp,anxiolyt dep-con",9,52,,"Yes","No",2011
+"30412","Sed,hyp,anxiolyt dep-epi",9,52,,"Yes","No",2011
+"30413","Sed,hyp,anxiolyt dep-rem",9,52,,"Yes","No",2011
+"30420","Cocaine depend-unspec",9,52,,"Yes","No",2011
+"30421","Cocaine depend-contin",9,52,,"Yes","No",2011
+"30422","Cocaine depend-episodic",9,52,,"Yes","No",2011
+"30423","Cocaine depend-remiss",9,52,,"Yes","No",2011
+"30430","Cannabis depend-unspec",9,52,,"Yes","No",2011
+"30431","Cannabis depend-contin",9,52,,"Yes","No",2011
+"30432","Cannabis depend-episodic",9,52,,"Yes","No",2011
+"30433","Cannabis depend-remiss",9,52,,"Yes","No",2011
+"30440","Amphetamin depend-unspec",9,52,,"Yes","No",2011
+"30441","Amphetamin depend-contin",9,52,,"Yes","No",2011
+"30442","Amphetamin depend-episod",9,52,,"Yes","No",2011
+"30443","Amphetamin depend-remiss",9,52,,"Yes","No",2011
+"30450","Hallucinogen dep-unspec",9,52,,"Yes","No",2011
+"30451","Hallucinogen dep-contin",9,52,,"Yes","No",2011
+"30452","Hallucinogen dep-episod",9,52,,"Yes","No",2011
+"30453","Hallucinogen dep-remiss",9,52,,"Yes","No",2011
+"30460","Drug depend NEC-unspec",9,52,,"Yes","No",2011
+"30461","Drug depend NEC-contin",9,52,,"Yes","No",2011
+"30462","Drug depend NEC-episodic",9,52,,"Yes","No",2011
+"30463","Drug depend NEC-in rem",9,52,,"Yes","No",2011
+"30470","Opioid/other dep-unspec",9,52,,"Yes","No",2011
+"30471","Opioid/other dep-contin",9,52,,"Yes","No",2011
+"30472","Opioid/other dep-episod",9,52,,"Yes","No",2011
+"30473","Opioid/other dep-remiss",9,52,,"Yes","No",2011
+"30480","Comb drug dep NEC-unspec",9,52,,"Yes","No",2011
+"30481","Comb drug dep NEC-contin",9,52,,"Yes","No",2011
+"30482","Comb drug dep NEC-episod",9,52,,"Yes","No",2011
+"30483","Comb drug dep NEC-remiss",9,52,,"Yes","No",2011
+"30490","Drug depend NOS-unspec",9,52,,"Yes","No",2011
+"30491","Drug depend NOS-contin",9,52,,"Yes","No",2011
+"30492","Drug depend NOS-episodic",9,52,,"Yes","No",2011
+"30493","Drug depend NOS-remiss",9,52,,"Yes","No",2011
+"3071","Anorexia nervosa",9,,61,"No","Yes",2011
+"30723","Tourette's disorder",9,,61,"No","Yes",2011
+"3073","Stereotypic movement dis",9,,61,"No","Yes",2011
+"30751","Bulimia nervosa",9,,61,"No","Yes",2011
+"3091","Prolong depressive react",9,,62,"No","Yes",2011
+"30981","Posttraumatic stress dis",9,,61,"No","Yes",2011
+"311","Depressive disorder NEC",9,,62,"No","Yes",2011
+"31200","Unsocial aggress-unspec",9,,61,"No","Yes",2011
+"31201","Unsocial aggression-mild",9,,61,"No","Yes",2011
+"31202","Unsocial aggression-mod",9,,61,"No","Yes",2011
+"31203","Unsocial aggress-severe",9,,61,"No","Yes",2011
+"31210","Unsocial unaggress-unsp",9,,61,"No","Yes",2011
+"31211","Unsocial unaggress-mild",9,,61,"No","Yes",2011
+"31212","Unsocial unaggress-mod",9,,61,"No","Yes",2011
+"31213","Unsocial unaggr-severe",9,,61,"No","Yes",2011
+"31220","Social conduct dis-unsp",9,,61,"No","Yes",2011
+"31221","Social conduct dis-mild",9,,61,"No","Yes",2011
+"31222","Social conduct dis-mod",9,,61,"No","Yes",2011
+"31223","Social conduct dis-sev",9,,61,"No","Yes",2011
+"31230","Impulse control dis NOS",9,,61,"No","Yes",2011
+"31231","Pathological gambling",9,,61,"No","Yes",2011
+"31232","Kleptomania",9,,61,"No","Yes",2011
+"31233","Pyromania",9,,61,"No","Yes",2011
+"31234","Intermitt explosive dis",9,,61,"No","Yes",2011
+"31235","Isolated explosive dis",9,,61,"No","Yes",2011
+"31239","Impulse control dis NEC",9,,61,"No","Yes",2011
+"3124","Mix dis conduct/emotion",9,,61,"No","Yes",2011
+"31281","Cndct dsrdr chldhd onst",9,,61,"No","Yes",2011
+"31282","Cndct dsrdr adlscnt onst",9,,61,"No","Yes",2011
+"31289","Other conduct disorder",9,,61,"No","Yes",2011
+"3129","Conduct disturbance NOS",9,,61,"No","Yes",2011
+"31381","Opposition defiant disor",9,,61,"No","Yes",2011
+"31400","Attn defic nonhyperact",9,,61,"No","Yes",2011
+"31401","Attn deficit w hyperact",9,,61,"No","Yes",2011
+"3141","Hyperkinet w devel delay",9,,61,"No","Yes",2011
+"3142","Hyperkinetic conduct dis",9,,61,"No","Yes",2011
+"3148","Other hyperkinetic synd",9,,61,"No","Yes",2011
+"3149","Hyperkinetic synd NOS",9,,61,"No","Yes",2011
+"317","Mild mental retardation",9,,68,"No","Yes",2011
+"3180","Mod mental retardation",9,,67,"No","Yes",2011
+"3181","Severe mental retardat",9,,66,"No","Yes",2011
+"3182","Profound mental retardat",9,,66,"No","Yes",2011
+"319","Mental retardation NOS",9,,68,"No","Yes",2011
+"3210","Cryptococcal meningitis",9,5,5,"Yes","Yes",2011
+"32302","Myelitis-oth viral dis",9,,72,"No","Yes",2011
+"32342","Myelitis d/t oth infect",9,,72,"No","Yes",2011
+"32352","Myelitis follwg immune",9,,72,"No","Yes",2011
+"32363","Postinfectious myelitis",9,,72,"No","Yes",2011
+"32372","Toxic myelitis",9,,72,"No","Yes",2011
+"32382","Myelitis cause NEC",9,,72,"No","Yes",2011
+"3300","Leukodystrophy",9,,55,"No","Yes",2011
+"3301","Cerebral lipidoses",9,,55,"No","Yes",2011
+"3302","Cereb degen in lipidosis",9,,55,"No","Yes",2011
+"3303","Cerb deg chld in oth dis",9,,55,"No","Yes",2011
+"3308","Cereb degen in child NEC",9,,55,"No","Yes",2011
+"3309","Cereb degen in child NOS",9,,55,"No","Yes",2011
+"3310","Alzheimer's disease",9,,54,"No","Yes",2011
+"33111","Pick's disease",9,,55,"No","Yes",2011
+"33119","Frontotemp dementia NEC",9,,55,"No","Yes",2011
+"3312","Senile degenerat brain",9,,55,"No","Yes",2011
+"3317","Cereb degen in oth dis",9,,55,"No","Yes",2011
+"33181","Reye's syndrome",9,,55,"No","Yes",2011
+"33182","Dementia w Lewy bodies",9,,55,"No","Yes",2011
+"33189","Cereb degeneration NEC",9,,55,"No","Yes",2011
+"3319","Cereb degeneration NOS",9,,55,"No","Yes",2011
+"3320","Paralysis agitans",9,73,76,"Yes","Yes",2011
+"3321","Secondary parkinsonism",9,73,76,"Yes","Yes",2011
+"3330","Degen basal ganglia NEC",9,73,,"Yes","No",2011
+"3334","Huntington's chorea",9,73,,"Yes","No",2011
+"33371","Athetoid cerebral palsy",9,101,,"Yes","No",2011
+"3340","Friedreich's ataxia",9,69,72,"Yes","Yes",2011
+"3341","Hered spastic paraplegia",9,69,72,"Yes","Yes",2011
+"3342","Primary cerebellar degen",9,69,72,"Yes","Yes",2011
+"3343","Cerebellar ataxia NEC",9,69,72,"Yes","Yes",2011
+"3344","Cerebel atax in oth dis",9,69,72,"Yes","Yes",2011
+"3348","Spinocerebellar dis NEC",9,69,72,"Yes","Yes",2011
+"3349","Spinocerebellar dis NOS",9,69,72,"Yes","Yes",2011
+"3350","Werdnig-hoffmann disease",9,67,72,"Yes","Yes",2011
+"33510","Spinal muscl atrophy NOS",9,67,72,"Yes","Yes",2011
+"33511","Kugelberg-welander dis",9,67,72,"Yes","Yes",2011
+"33519","Spinal muscl atrophy NEC",9,67,72,"Yes","Yes",2011
+"33520","Amyotrophic sclerosis",9,67,71,"Yes","Yes",2011
+"33521","Prog muscular atrophy",9,67,71,"Yes","Yes",2011
+"33522","Progressive bulbar palsy",9,67,71,"Yes","Yes",2011
+"33523","Pseudobulbar palsy",9,67,71,"Yes","Yes",2011
+"33524","Prim lateral sclerosis",9,67,71,"Yes","Yes",2011
+"33529","Motor neuron disease NEC",9,67,71,"Yes","Yes",2011
+"3358","Ant horn cell dis NEC",9,67,72,"Yes","Yes",2011
+"3359","Ant horn cell dis NOS",9,67,72,"Yes","Yes",2011
+"3360","Syringomyelia",9,69,72,"Yes","Yes",2011
+"3361","Vascular myelopathies",9,69,72,"Yes","Yes",2011
+"3362","Comb deg cord in oth dis",9,69,72,"Yes","Yes",2011
+"3363","Myelopathy in oth dis",9,69,72,"Yes","Yes",2011
+"3368","Myelopathy NEC",9,69,72,"Yes","Yes",2011
+"3369","Spinal cord disease NOS",9,69,72,"Yes","Yes",2011
+"33700","Idio perph auto neur NOS",9,71,74,"Yes","Yes",2011
+"33701","Carotid sinus syndrome",9,,74,"No","Yes",2011
+"33709","Idio perph auto neur NEC",9,71,74,"Yes","Yes",2011
+"3371","Aut neuropthy in oth dis",9,71,74,"Yes","Yes",2011
+"33720","Unsp rflx sympth dystrph",9,71,74,"Yes","Yes",2011
+"33721","Rflx sym dystrph up limb",9,71,74,"Yes","Yes",2011
+"33722","Rflx sym dystrph lwr lmb",9,71,74,"Yes","Yes",2011
+"33729","Rflx sym dystrph oth st",9,71,74,"Yes","Yes",2011
+"3373","Autonomic dysreflexia",9,71,74,"Yes","Yes",2011
+"3379","Autonomic nerve dis NEC",9,71,74,"Yes","Yes",2011
+"340","Multiple sclerosis",9,72,75,"Yes","Yes",2011
+"3410","Neuromyelitis optica",9,72,75,"Yes","Yes",2011
+"3411","Schilder's disease",9,72,75,"Yes","Yes",2011
+"34120","Acute myelitis NOS",9,,72,"No","Yes",2011
+"34121","Acute myelitis oth cond",9,,72,"No","Yes",2011
+"34122","Idiopathc trans myelitis",9,,72,"No","Yes",2011
+"3418","Cns demyelination NEC",9,72,,"Yes","No",2011
+"3419","Cns demyelination NOS",9,72,,"Yes","No",2011
+"34200","Flccd hmiplga unspf side",9,100,,"Yes","No",2011
+"34201","Flccd hmiplga domnt side",9,100,,"Yes","No",2011
+"34202","Flccd hmiplg nondmnt sde",9,100,,"Yes","No",2011
+"34210","Spstc hmiplga unspf side",9,100,98,"Yes","Yes",2011
+"34211","Spstc hmiplga domnt side",9,100,98,"Yes","Yes",2011
+"34212","Spstc hmiplg nondmnt sde",9,100,98,"Yes","Yes",2011
+"34280","Ot sp hmiplga unspf side",9,100,,"Yes","No",2011
+"34281","Ot sp hmiplga domnt side",9,100,,"Yes","No",2011
+"34282","Ot sp hmiplg nondmnt sde",9,100,,"Yes","No",2011
+"34290","Unsp hemiplga unspf side",9,100,,"Yes","No",2011
+"34291","Unsp hemiplga domnt side",9,100,,"Yes","No",2011
+"34292","Unsp hmiplga nondmnt sde",9,100,,"Yes","No",2011
+"3430","Congenital diplegia",9,68,,"Yes","No",2011
+"3431","Congenital hemiplegia",9,100,,"Yes","No",2011
+"3432","Congenital quadriplegia",9,67,,"Yes","No",2011
+"3433","Congenital monoplegia",9,101,,"Yes","No",2011
+"3434","Infantile hemiplegia",9,100,,"Yes","No",2011
+"3438","Cerebral palsy NEC",9,101,,"Yes","No",2011
+"3439","Cerebral palsy NOS",9,101,,"Yes","No",2011
+"34400","Quadriplegia, unspecifd",9,67,,"Yes","No",2011
+"34401","Quadrplg c1-c4, complete",9,67,,"Yes","No",2011
+"34402","Quadrplg c1-c4, incomplt",9,67,,"Yes","No",2011
+"34403","Quadrplg c5-c7, complete",9,67,,"Yes","No",2011
+"34404","Quadrplg c5-c7, incomplt",9,67,,"Yes","No",2011
+"34409","Other quadriplegia",9,67,,"Yes","No",2011
+"3441","Paraplegia NOS",9,68,,"Yes","No",2011
+"3442","Diplegia of upper limbs",9,101,,"Yes","No",2011
+"34430","Monplga lwr lmb unsp sde",9,101,,"Yes","No",2011
+"34431","Monplga lwr lmb dmnt sde",9,101,,"Yes","No",2011
+"34432","Mnplg lwr lmb nondmnt sd",9,101,,"Yes","No",2011
+"34440","Monplga upr lmb unsp sde",9,101,,"Yes","No",2011
+"34441","Monplga upr lmb dmnt sde",9,101,,"Yes","No",2011
+"34442","Mnplg upr lmb nondmnt sd",9,101,,"Yes","No",2011
+"3445","Monoplegia NOS",9,101,,"Yes","No",2011
+"34460","Cauda equina synd NOS",9,69,72,"Yes","Yes",2011
+"34461","Neurogenic bladder",9,69,72,"Yes","Yes",2011
+"34481","Locked-in state",9,67,,"Yes","No",2011
+"34489","Oth spcf paralytic synd",9,101,,"Yes","No",2011
+"3449","Paralysis NOS",9,101,,"Yes","No",2011
+"34500","Gen noncv ep w/o intr ep",9,74,79,"Yes","Yes",2011
+"34501","Gen nonconv ep w intr ep",9,74,78,"Yes","Yes",2011
+"34510","Gen cnv epil w/o intr ep",9,74,79,"Yes","Yes",2011
+"34511","Gen cnv epil w intr epil",9,74,78,"Yes","Yes",2011
+"3452","Petit mal status",9,74,79,"Yes","Yes",2011
+"3453","Grand mal status",9,74,79,"Yes","Yes",2011
+"34540","Psymotr epil w/o int epi",9,74,79,"Yes","Yes",2011
+"34541","Psymotr epil w intr epil",9,74,78,"Yes","Yes",2011
+"34550","Part epil w/o intr epil",9,74,79,"Yes","Yes",2011
+"34551","Part epil w intr epil",9,74,78,"Yes","Yes",2011
+"34560","Inf spasm w/o intr epil",9,74,79,"Yes","Yes",2011
+"34561","Inf spasm w intract epil",9,74,78,"Yes","Yes",2011
+"34570","Epil par cont w/o int ep",9,74,79,"Yes","Yes",2011
+"34571","Epil par cont w intr epi",9,74,78,"Yes","Yes",2011
+"34580","Epilep NEC w/o intr epil",9,74,79,"Yes","Yes",2011
+"34581","Epilepsy NEC w intr epil",9,74,78,"Yes","Yes",2011
+"34590","Epilep NOS w/o intr epil",9,74,79,"Yes","Yes",2011
+"34591","Epilepsy NOS w intr epil",9,74,78,"Yes","Yes",2011
+"34600","Mgrn w aura wo ntrc mgrn",9,,81,"No","Yes",2011
+"34601","Mgrn w aura w ntrc mgrn",9,,81,"No","Yes",2011
+"34602","Mgrn w aur wo ntrc mgrn",9,,81,"No","Yes",2011
+"34603","Mgrn w aura w ntrc mgrn",9,,81,"No","Yes",2011
+"34610","Mgrn wo aura wo ntrc mgr",9,,81,"No","Yes",2011
+"34611","Mgrn wo aura w ntrc mgrn",9,,81,"No","Yes",2011
+"34612","Mgrn wo aura wo ntrc mgr",9,,81,"No","Yes",2011
+"34613","Mgrn wo aura w ntrc mgrn",9,,81,"No","Yes",2011
+"34620","Vrnt mgrn wo ntr mgr NEC",9,,81,"No","Yes",2011
+"34621","Vrnt mgrn w ntrc mgr NEC",9,,81,"No","Yes",2011
+"34622","Var mgr NEC wo ntc mgr",9,,81,"No","Yes",2011
+"34623","Var mgrn NEC w ntrc mgr",9,,81,"No","Yes",2011
+"34630","Hmplg mgr wo ntrc wo st",9,,81,"No","Yes",2011
+"34631","Hmplg mgrn w ntrc wo st",9,,81,"No","Yes",2011
+"34632","Hemplg mgr wo ntrc w st",9,,81,"No","Yes",2011
+"34633","Hmplg mgrn w ntrc w st",9,,81,"No","Yes",2011
+"34640","Menst mgr wo ntrc wo st",9,,81,"No","Yes",2011
+"34641","Menstl mgrn w ntrc wo st",9,,81,"No","Yes",2011
+"34642","Menstl mgr wo ntrc w st",9,,81,"No","Yes",2011
+"34643","Menstl mgrn w ntrc w st",9,,81,"No","Yes",2011
+"34650","Prst aura wo inf/ntr/st",9,,81,"No","Yes",2011
+"34651","Prs ara w ntr wo inf/st",9,,81,"No","Yes",2011
+"34652","Prs ara wo inf/ntr w st",9,,81,"No","Yes",2011
+"34653","Prs ara wo inf w ntr/st",9,,81,"No","Yes",2011
+"34660","Prs ara w inf wo ntr/st",9,,81,"No","Yes",2011
+"34661","Prs ara w/inf/ntr wo st",9,,81,"No","Yes",2011
+"34662","Prs ara wo ntr w inf/st",9,,81,"No","Yes",2011
+"34663","Prst ara w inf w ntr/st",9,,81,"No","Yes",2011
+"34670","Ch mgr wo ar wo nt wo st",9,,81,"No","Yes",2011
+"34671","Ch mgr wo ara w nt wo st",9,,81,"No","Yes",2011
+"34672","Ch mgr wo ara wo nt w st",9,,81,"No","Yes",2011
+"34673","Ch mgr wo ara w ntr w st",9,,81,"No","Yes",2011
+"34680","Othr migrne wo ntrc mgrn",9,,81,"No","Yes",2011
+"34681","Othr migrne w ntrc mgrne",9,,81,"No","Yes",2011
+"34682","Oth mgr wo ntrc w st mgr",9,,81,"No","Yes",2011
+"34683","Oth mgr w ntrc w st mgr",9,,81,"No","Yes",2011
+"34690","Migrne unsp wo ntrc mgrn",9,,81,"No","Yes",2011
+"34691","Mgrn unsp w ntrc mgr std",9,,81,"No","Yes",2011
+"34692","Mgr NOS wo ntrc w st mgr",9,,81,"No","Yes",2011
+"34693","Mgrn NOS w ntrc w st mgr",9,,81,"No","Yes",2011
+"34700","Narcolepsy w/o cataplexy",9,,156,"No","Yes",2011
+"34701","Narcolepsy w cataplexy",9,,156,"No","Yes",2011
+"34710","Narclpsy w/o cat oth dis",9,,156,"No","Yes",2011
+"34711","Narcolepsy w cat oth dis",9,,156,"No","Yes",2011
+"3481","Anoxic brain damage",9,75,,"Yes","No",2011
+"3484","Compression of brain",9,75,,"Yes","No",2011
+"3485","Cerebral edema",9,75,,"Yes","No",2011
+"3491","Complication cns device",9,164,,"Yes","No",2011
+"3501","Trigeminal neuralgia",9,,83,"No","Yes",2011
+"3502","Atypical face pain",9,,83,"No","Yes",2011
+"3508","Trigeminal nerve dis NEC",9,,83,"No","Yes",2011
+"3509","Trigeminal nerve dis NOS",9,,83,"No","Yes",2011
+"3536","Phantom limb (syndrome)",9,177,,"Yes","No",2011
+"3560","Hered periph neuropathy",9,71,74,"Yes","Yes",2011
+"3561","Peroneal muscle atrophy",9,71,74,"Yes","Yes",2011
+"3562","Hered sensory neuropathy",9,71,74,"Yes","Yes",2011
+"3563","Refsum's disease",9,71,74,"Yes","Yes",2011
+"3564","Idio prog polyneuropathy",9,71,74,"Yes","Yes",2011
+"3568","Idio periph neurpthy NEC",9,71,74,"Yes","Yes",2011
+"3569","Idio periph neurpthy NOS",9,71,74,"Yes","Yes",2011
+"3570","Ac infect polyneuritis",9,71,74,"Yes","Yes",2011
+"3571","Neurpthy in col vasc dis",9,71,74,"Yes","Yes",2011
+"3572","Neuropathy in diabetes",9,71,74,"Yes","Yes",2011
+"3573","Neuropathy in malig dis",9,71,74,"Yes","Yes",2011
+"3574","Neuropathy in other dis",9,71,74,"Yes","Yes",2011
+"3575","Alcoholic polyneuropathy",9,71,74,"Yes","Yes",2011
+"3576","Neuropathy due to drugs",9,71,74,"Yes","Yes",2011
+"3577","Neurpthy toxic agent NEC",9,71,74,"Yes","Yes",2011
+"35781","Chr inflam polyneuritis",9,71,74,"Yes","Yes",2011
+"35782","Crit illness neuropathy",9,71,74,"Yes","Yes",2011
+"35789","Inflam/tox neuropthy NEC",9,71,74,"Yes","Yes",2011
+"3579","Inflam/tox neuropthy NOS",9,71,74,"Yes","Yes",2011
+"35800","Mysthna grvs w/o ac exac",9,71,71,"Yes","Yes",2011
+"35801","Myasthna gravs w ac exac",9,71,71,"Yes","Yes",2011
+"3581","Myasthenia in oth dis",9,71,71,"Yes","Yes",2011
+"3582","Toxic myoneural disorder",9,71,71,"Yes","Yes",2011
+"3588","Myoneural disorders NEC",9,71,71,"Yes","Yes",2011
+"3589","Myoneural disorders NOS",9,71,71,"Yes","Yes",2011
+"3590","Cong hered musc dystrphy",9,70,,"Yes","No",2011
+"3591","Hered prog musc dystrphy",9,70,,"Yes","No",2011
+"35921","Myotonic musclr dystrphy",9,70,,"Yes","No",2011
+"35922","Myotonia congenita",9,71,74,"Yes","Yes",2011
+"35923","Myotonic chondrodystrphy",9,71,74,"Yes","Yes",2011
+"35924","Drug induced myotonia",9,71,74,"Yes","Yes",2011
+"35929","Myotonic disorder NEC",9,71,74,"Yes","Yes",2011
+"3593","Periodic paralysis",9,71,74,"Yes","Yes",2011
+"3594","Toxic myopathy",9,71,74,"Yes","Yes",2011
+"3595","Myopathy in endocrin dis",9,71,74,"Yes","Yes",2011
+"3596","Infl myopathy in oth dis",9,71,74,"Yes","Yes",2011
+"35971","Inclusion body myositis",9,71,74,"Yes","Yes",2011
+"35979","Inflm/immune myopath NEC",9,71,74,"Yes","Yes",2011
+"35981","Critical illness myopthy",9,71,74,"Yes","Yes",2011
+"35989","Myopathies NEC",9,71,74,"Yes","Yes",2011
+"3599","Myopathy NOS",9,71,74,"Yes","Yes",2011
+"36201","Diabetic retinopathy NOS",9,,111,"No","Yes",2011
+"36202","Prolif diab retinopathy",9,119,111,"Yes","Yes",2011
+"36203","Nonprolf db retnoph NOS",9,,111,"No","Yes",2011
+"36204","Mild nonprolf db retnoph",9,,111,"No","Yes",2011
+"36205","Mod nonprolf db retinoph",9,,111,"No","Yes",2011
+"36206","Sev nonprolf db retinoph",9,,111,"No","Yes",2011
+"36207","Diabetic macular edema",9,,111,"No","Yes",2011
+"36510","Open-angle glaucoma NOS",9,,113,"No","Yes",2011
+"36511","Prim open angle glaucoma",9,,113,"No","Yes",2011
+"36512","Low tension glaucoma",9,,113,"No","Yes",2011
+"36513","Pigmentary glaucoma",9,,113,"No","Yes",2011
+"36514","Glaucoma of childhood",9,,113,"No","Yes",2011
+"36515","Residual opn ang glaucma",9,,113,"No","Yes",2011
+"36641","Diabetic cataract",9,,14,"No","Yes",2011
+"37923","Vitreous hemorrhage",9,119,,"Yes","No",2011
+"39891","Rheumatic heart failure",9,,87,"No","Yes",2011
+"4010","Malignant hypertension",9,,88,"No","Yes",2011
+"4011","Benign hypertension",9,,88,"No","Yes",2011
+"4019","Hypertension NOS",9,,88,"No","Yes",2011
+"40200","Mal hyp ht dis w/o hf",9,,88,"No","Yes",2011
+"40201","Mal hypert hrt dis w hf",9,80,87,"Yes","Yes",2011
+"40210","Benign hyp ht dis w/o hf",9,,88,"No","Yes",2011
+"40211","Benign hyp ht dis w hf",9,80,87,"Yes","Yes",2011
+"40290","Hyp hrt dis NOS w/o hf",9,,88,"No","Yes",2011
+"40291","Hyp ht dis NOS w ht fail",9,80,87,"Yes","Yes",2011
+"40300","Mal hy kid w cr kid I-IV",9,,125,"No","Yes",2011
+"40301","Mal hyp kid w cr kid V",9,131,122,"Yes","Yes",2011
+"40310","Ben hy kid w cr kid I-IV",9,,125,"No","Yes",2011
+"40311","Ben hyp kid w cr kid V",9,131,122,"Yes","Yes",2011
+"40390","Hy kid NOS w cr kid I-IV",9,,125,"No","Yes",2011
+"40391","Hyp kid NOS w cr kid V",9,131,122,"Yes","Yes",2011
+"40400","Mal hy ht/kd I-IV w/o hf",9,,125,"No","Yes",2011
+"40401","Mal hyp ht/kd I-IV w hf",9,80,125,"Yes","Yes",2011
+"40402","Mal hy ht/kd st V w/o hf",9,131,122,"Yes","Yes",2011
+"40403","Mal hyp ht/kd stg V w hf",9,131,122,"Yes","Yes",2011
+"40410","Ben hy ht/kd I-IV w/o hf",9,,125,"No","Yes",2011
+"40411","Ben hyp ht/kd I-IV w hf",9,80,125,"Yes","Yes",2011
+"40412","Ben hy ht/kd st V w/o hf",9,131,122,"Yes","Yes",2011
+"40413","Ben hyp ht/kd stg V w hf",9,131,122,"Yes","Yes",2011
+"40490","Hy ht/kd NOS I-IV w/o hf",9,,125,"No","Yes",2011
+"40491","Hyp ht/kd NOS I-IV w hf",9,80,125,"Yes","Yes",2011
+"40492","Hy ht/kd NOS st V w/o hf",9,131,122,"Yes","Yes",2011
+"40493","Hyp ht/kd NOS st V w hf",9,131,122,"Yes","Yes",2011
+"40501","Mal renovasc hypertens",9,,88,"No","Yes",2011
+"40509","Mal second hyperten NEC",9,,88,"No","Yes",2011
+"40511","Benign renovasc hyperten",9,,88,"No","Yes",2011
+"40519","Benign second hypert NEC",9,,88,"No","Yes",2011
+"40591","Renovasc hypertension",9,,88,"No","Yes",2011
+"40599","Second hypertension NEC",9,,88,"No","Yes",2011
+"41000","AMI anterolateral,unspec",9,82,89,"Yes","Yes",2011
+"41001","AMI anterolateral, init",9,81,89,"Yes","Yes",2011
+"41002","AMI anterolateral,subseq",9,82,89,"Yes","Yes",2011
+"41010","AMI anterior wall,unspec",9,82,89,"Yes","Yes",2011
+"41011","AMI anterior wall, init",9,81,89,"Yes","Yes",2011
+"41012","AMI anterior wall,subseq",9,82,89,"Yes","Yes",2011
+"41020","AMI inferolateral,unspec",9,82,89,"Yes","Yes",2011
+"41021","AMI inferolateral, init",9,81,89,"Yes","Yes",2011
+"41022","AMI inferolateral,subseq",9,82,89,"Yes","Yes",2011
+"41030","AMI inferopost, unspec",9,82,89,"Yes","Yes",2011
+"41031","AMI inferopost, initial",9,81,89,"Yes","Yes",2011
+"41032","AMI inferopost, subseq",9,82,89,"Yes","Yes",2011
+"41040","AMI inferior wall,unspec",9,82,89,"Yes","Yes",2011
+"41041","AMI inferior wall, init",9,81,89,"Yes","Yes",2011
+"41042","AMI inferior wall,subseq",9,82,89,"Yes","Yes",2011
+"41050","AMI lateral NEC, unspec",9,82,89,"Yes","Yes",2011
+"41051","AMI lateral NEC, initial",9,81,89,"Yes","Yes",2011
+"41052","AMI lateral NEC, subseq",9,82,89,"Yes","Yes",2011
+"41060","True post infarct,unspec",9,82,89,"Yes","Yes",2011
+"41061","True post infarct, init",9,81,89,"Yes","Yes",2011
+"41062","True post infarct,subseq",9,82,89,"Yes","Yes",2011
+"41070","Subendo infarct, unspec",9,82,89,"Yes","Yes",2011
+"41071","Subendo infarct, initial",9,81,89,"Yes","Yes",2011
+"41072","Subendo infarct, subseq",9,82,89,"Yes","Yes",2011
+"41080","AMI NEC, unspecified",9,82,89,"Yes","Yes",2011
+"41081","AMI NEC, initial",9,81,89,"Yes","Yes",2011
+"41082","AMI NEC, subsequent",9,82,89,"Yes","Yes",2011
+"41090","AMI NOS, unspecified",9,82,89,"Yes","Yes",2011
+"41091","AMI NOS, initial",9,81,89,"Yes","Yes",2011
+"41092","AMI NOS, subsequent",9,82,89,"Yes","Yes",2011
+"4110","Post MI syndrome",9,82,89,"Yes","Yes",2011
+"4111","Intermed coronary synd",9,82,89,"Yes","Yes",2011
+"41181","Acute cor occlsn w/o MI",9,82,89,"Yes","Yes",2011
+"41189","Ac ischemic hrt dis NEC",9,82,89,"Yes","Yes",2011
+"412","Old myocardial infarct",9,83,89,"Yes","Yes",2011
+"4130","Angina decubitus",9,83,89,"Yes","Yes",2011
+"4131","Prinzmetal angina",9,83,89,"Yes","Yes",2011
+"4139","Angina pectoris NEC/NOS",9,83,89,"Yes","Yes",2011
+"41400","Cor ath unsp vsl ntv/gft",9,,89,"No","Yes",2011
+"41401","Crnry athrscl natve vssl",9,,89,"No","Yes",2011
+"41402","Crn ath atlg vn bps grft",9,,89,"No","Yes",2011
+"41403","Crn ath nonatlg blg grft",9,,89,"No","Yes",2011
+"41404","Cor ath artry bypas grft",9,,89,"No","Yes",2011
+"41405","Cor ath bypass graft NOS",9,,89,"No","Yes",2011
+"41406","Cor ath natv art tp hrt",9,,89,"No","Yes",2011
+"41407","Cor ath bps graft tp hrt",9,,89,"No","Yes",2011
+"41410","Aneurysm of heart",9,,89,"No","Yes",2011
+"41411","Aneurysm coronary vessel",9,,89,"No","Yes",2011
+"41412","Dissection cor artery",9,,89,"No","Yes",2011
+"41419","Aneurysm of heart NEC",9,,89,"No","Yes",2011
+"4142","Chr tot occlus cor artry",9,,89,"No","Yes",2011
+"4143","Cor ath d/t lpd rch plaq",9,,89,"No","Yes",2011
+"4148","Chr ischemic hrt dis NEC",9,,89,"No","Yes",2011
+"4149","Chr ischemic hrt dis NOS",9,,89,"No","Yes",2011
+"4150","Acute cor pulmonale",9,80,86,"Yes","Yes",2011
+"41511","Iatrogen pulm emb/infarc",9,104,100,"Yes","Yes",2011
+"41512","Septic pulmonary embolsm",9,104,100,"Yes","Yes",2011
+"41519","Pulm embol/infarct NEC",9,104,100,"Yes","Yes",2011
+"4160","Prim pulm hypertension",9,80,86,"Yes","Yes",2011
+"4161","Kyphoscoliotic heart dis",9,80,86,"Yes","Yes",2011
+"4162","Chr pulmonary embolism",9,104,100,"Yes","Yes",2011
+"4168","Chr pulmon heart dis NEC",9,80,86,"Yes","Yes",2011
+"4169","Chr pulmon heart dis NOS",9,80,86,"Yes","Yes",2011
+"4170","Arterioven fistu pul ves",9,80,86,"Yes","Yes",2011
+"4171","Pulmon artery aneurysm",9,80,86,"Yes","Yes",2011
+"4178","Pulmon circulat dis NEC",9,80,86,"Yes","Yes",2011
+"4179","Pulmon circulat dis NOS",9,80,86,"Yes","Yes",2011
+"4250","Endomyocardial fibrosis",9,80,87,"Yes","Yes",2011
+"4251","Hypertr obstr cardiomyop",9,80,87,"Yes","Yes",2011
+"4252","Obsc afric cardiomyopath",9,80,87,"Yes","Yes",2011
+"4253","Endocard fibroelastosis",9,80,87,"Yes","Yes",2011
+"4254","Prim cardiomyopathy NEC",9,80,87,"Yes","Yes",2011
+"4255","Alcoholic cardiomyopathy",9,80,87,"Yes","Yes",2011
+"4257","Metabolic cardiomyopathy",9,80,87,"Yes","Yes",2011
+"4258","Cardiomyopath in oth dis",9,80,87,"Yes","Yes",2011
+"4259","Second cardiomyopath NOS",9,80,87,"Yes","Yes",2011
+"4260","Atriovent block complete",9,92,,"Yes","No",2011
+"4270","Parox atrial tachycardia",9,92,93,"Yes","Yes",2011
+"4271","Parox ventric tachycard",9,92,,"Yes","No",2011
+"4272","Parox tachycardia NOS",9,92,93,"Yes","Yes",2011
+"42731","Atrial fibrillation",9,92,93,"Yes","Yes",2011
+"42732","Atrial flutter",9,92,93,"Yes","Yes",2011
+"42741","Ventricular fibrillation",9,79,,"Yes","No",2011
+"42742","Ventricular flutter",9,79,,"Yes","No",2011
+"4275","Cardiac arrest",9,79,,"Yes","No",2011
+"42781","Sinoatrial node dysfunct",9,92,,"Yes","No",2011
+"4280","CHF NOS",9,80,87,"Yes","Yes",2011
+"4281","Left heart failure",9,80,87,"Yes","Yes",2011
+"42820","Systolic hrt failure NOS",9,80,87,"Yes","Yes",2011
+"42821","Ac systolic hrt failure",9,80,87,"Yes","Yes",2011
+"42822","Chr systolic hrt failure",9,80,87,"Yes","Yes",2011
+"42823","Ac on chr syst hrt fail",9,80,87,"Yes","Yes",2011
+"42830","Diastolc hrt failure NOS",9,80,87,"Yes","Yes",2011
+"42831","Ac diastolic hrt failure",9,80,87,"Yes","Yes",2011
+"42832","Chr diastolic hrt fail",9,80,87,"Yes","Yes",2011
+"42833","Ac on chr diast hrt fail",9,80,87,"Yes","Yes",2011
+"42840","Syst/diast hrt fail NOS",9,80,87,"Yes","Yes",2011
+"42841","Ac syst/diastol hrt fail",9,80,87,"Yes","Yes",2011
+"42842","Chr syst/diastl hrt fail",9,80,87,"Yes","Yes",2011
+"42843","Ac/chr syst/dia hrt fail",9,80,87,"Yes","Yes",2011
+"4289","Heart failure NOS",9,80,87,"Yes","Yes",2011
+"4290","Myocarditis NOS",9,80,87,"Yes","Yes",2011
+"4291","Myocardial degeneration",9,80,87,"Yes","Yes",2011
+"4295","Chordae tendinae rupture",9,81,89,"Yes","Yes",2011
+"4296","Papillary muscle rupture",9,81,89,"Yes","Yes",2011
+"430","Subarachnoid hemorrhage",9,95,,"Yes","No",2011
+"431","Intracerebral hemorrhage",9,95,,"Yes","No",2011
+"4320","Nontraum extradural hem",9,95,,"Yes","No",2011
+"4321","Subdural hemorrhage",9,95,,"Yes","No",2011
+"4329","Intracranial hemorr NOS",9,95,,"Yes","No",2011
+"43300","Ocl bslr art wo infrct",9,,97,"No","Yes",2011
+"43301","Ocl bslr art w infrct",9,96,97,"Yes","Yes",2011
+"43310","Ocl crtd art wo infrct",9,,97,"No","Yes",2011
+"43311","Ocl crtd art w infrct",9,96,97,"Yes","Yes",2011
+"43320","Ocl vrtb art wo infrct",9,,97,"No","Yes",2011
+"43321","Ocl vrtb art w infrct",9,96,97,"Yes","Yes",2011
+"43330","Ocl mlt bi art wo infrct",9,,97,"No","Yes",2011
+"43331","Ocl mlt bi art w infrct",9,96,97,"Yes","Yes",2011
+"43380","Ocl spcf art wo infrct",9,,97,"No","Yes",2011
+"43381","Ocl spcf art w infrct",9,96,97,"Yes","Yes",2011
+"43390","Ocl art NOS wo infrct",9,,97,"No","Yes",2011
+"43391","Ocl art NOS w infrct",9,96,97,"Yes","Yes",2011
+"43400","Crbl thrmbs wo infrct",9,,97,"No","Yes",2011
+"43401","Crbl thrmbs w infrct",9,96,97,"Yes","Yes",2011
+"43410","Crbl emblsm wo infrct",9,,97,"No","Yes",2011
+"43411","Crbl emblsm w infrct",9,96,97,"Yes","Yes",2011
+"43490","Crbl art oc NOS wo infrc",9,,97,"No","Yes",2011
+"43491","Crbl art ocl NOS w infrc",9,96,97,"Yes","Yes",2011
+"4350","Basilar artery syndrome",9,,97,"No","Yes",2011
+"4351","Vertebral artery syndrom",9,,97,"No","Yes",2011
+"4352","Subclavian steal syndrom",9,,97,"No","Yes",2011
+"4353","Vertbrobaslr artery synd",9,,97,"No","Yes",2011
+"4358","Trans cereb ischemia NEC",9,,97,"No","Yes",2011
+"4359","Trans cereb ischemia NOS",9,,97,"No","Yes",2011
+"436","Cva",9,96,97,"Yes","Yes",2011
+"4370","Cerebral atherosclerosis",9,,97,"No","Yes",2011
+"4371","Ac cerebrovasc insuf NOS",9,,97,"No","Yes",2011
+"4372","Hypertens encephalopathy",9,,88,"No","Yes",2011
+"4374","Cerebral arteritis",9,,97,"No","Yes",2011
+"4375","Moyamoya disease",9,,97,"No","Yes",2011
+"4376","Nonpyogen thrombos sinus",9,,97,"No","Yes",2011
+"4378","Cerebrovasc disease NEC",9,,97,"No","Yes",2011
+"4379","Cerebrovasc disease NOS",9,,97,"No","Yes",2011
+"43820","Late ef-hemplga side NOS",9,100,,"Yes","No",2011
+"43821","Late ef-hemplga dom side",9,100,,"Yes","No",2011
+"43822","Late ef-hemiplga non-dom",9,100,,"Yes","No",2011
+"43830","Late ef-mplga up lmb NOS",9,101,,"Yes","No",2011
+"43831","Late ef-mplga up lmb dom",9,101,,"Yes","No",2011
+"43832","Lt ef-mplga uplmb nondom",9,101,,"Yes","No",2011
+"43840","Lte ef-mplga low lmb NOS",9,101,,"Yes","No",2011
+"43841","Lte ef-mplga low lmb dom",9,101,,"Yes","No",2011
+"43842","Lt ef-mplga lowlmb nondm",9,101,,"Yes","No",2011
+"43850","Lt ef oth paral side NOS",9,101,,"Yes","No",2011
+"43851","Lt ef oth paral dom side",9,101,,"Yes","No",2011
+"43852","Lt ef oth parals non-dom",9,101,,"Yes","No",2011
+"43853","Lt ef oth parals-bilat",9,101,,"Yes","No",2011
+"4400","Aortic atherosclerosis",9,105,101,"Yes","Yes",2011
+"4401","Renal artery atheroscler",9,105,101,"Yes","Yes",2011
+"44020","Athscl extrm ntv art NOS",9,105,101,"Yes","Yes",2011
+"44021","Ath ext ntv at w claudct",9,105,101,"Yes","Yes",2011
+"44022","Ath ext ntv at w rst pn",9,105,101,"Yes","Yes",2011
+"44023","Ath ext ntv art ulcrtion",9,104,,"Yes","No",2011
+"44024","Ath ext ntv art gngrene",9,104,,"Yes","No",2011
+"44029","Athrsc extrm ntv art oth",9,105,101,"Yes","Yes",2011
+"44030","Athscl extrm bps gft NOS",9,105,101,"Yes","Yes",2011
+"44031","Ath ext autologs bps gft",9,105,101,"Yes","Yes",2011
+"44032","Ath ext nonautlg bps gft",9,105,101,"Yes","Yes",2011
+"4404","Chr tot occl art extrem",9,105,101,"Yes","Yes",2011
+"44100","Dsct of aorta unsp site",9,104,,"Yes","No",2011
+"44101","Dsct of thoracic aorta",9,104,,"Yes","No",2011
+"44102","Dsct of abdominal aorta",9,104,,"Yes","No",2011
+"44103","Dsct of thoracoabd aorta",9,104,,"Yes","No",2011
+"4411","Ruptur thoracic aneurysm",9,104,,"Yes","No",2011
+"4412","Thoracic aortic aneurysm",9,105,,"Yes","No",2011
+"4413","Rupt abd aortic aneurysm",9,104,,"Yes","No",2011
+"4414","Abdom aortic aneurysm",9,105,,"Yes","No",2011
+"4415","Rupt aortic aneurysm NOS",9,104,,"Yes","No",2011
+"4416","Thoracoabd aneurysm rupt",9,104,,"Yes","No",2011
+"4417","Thracabd anurysm wo rupt",9,105,,"Yes","No",2011
+"4419","Aortic aneurysm NOS",9,105,,"Yes","No",2011
+"4420","Upper extremity aneurysm",9,105,,"Yes","No",2011
+"4421","Renal artery aneurysm",9,105,,"Yes","No",2011
+"4422","Iliac artery aneurysm",9,105,,"Yes","No",2011
+"4423","Lower extremity aneurysm",9,105,,"Yes","No",2011
+"44281","Aneurysm of neck",9,105,,"Yes","No",2011
+"44282","Subclavian aneurysm",9,105,,"Yes","No",2011
+"44283","Splenic artery aneurysm",9,105,,"Yes","No",2011
+"44284","Visceral aneurysm NEC",9,105,,"Yes","No",2011
+"44289","Aneurysm NEC",9,105,,"Yes","No",2011
+"4429","Aneurysm NOS",9,105,,"Yes","No",2011
+"4431","Thromboangiit obliterans",9,105,101,"Yes","Yes",2011
+"44321","Dissect carotid artery",9,104,,"Yes","No",2011
+"44322","Dissection iliac artery",9,104,,"Yes","No",2011
+"44323","Dissection renal artery",9,104,,"Yes","No",2011
+"44324","Dissect vertebral artery",9,104,,"Yes","No",2011
+"44329","Dissection artery NEC",9,104,,"Yes","No",2011
+"44381","Angiopathy in other dis",9,105,101,"Yes","Yes",2011
+"44382","Erythromelalgia",9,105,101,"Yes","Yes",2011
+"44389","Periph vascular dis NEC",9,105,101,"Yes","Yes",2011
+"4439","Periph vascular dis NOS",9,105,101,"Yes","Yes",2011
+"4440","Abd aortic embolism",9,104,,"Yes","No",2011
+"4441","Thoracic aortic embolism",9,104,,"Yes","No",2011
+"44421","Upper extremity embolism",9,104,,"Yes","No",2011
+"44422","Lower extremity embolism",9,104,,"Yes","No",2011
+"44481","Iliac artery embolism",9,104,,"Yes","No",2011
+"44489","Arterial embolism NEC",9,104,,"Yes","No",2011
+"4449","Arterial embolism NOS",9,104,,"Yes","No",2011
+"44501","Atheroembolism,upper ext",9,104,,"Yes","No",2011
+"44502","Atheroembolism,lower ext",9,104,,"Yes","No",2011
+"44581","Atheroembolism, kidney",9,104,,"Yes","No",2011
+"44589","Atheroembolism, site NEC",9,104,,"Yes","No",2011
+"4460","Polyarteritis nodosa",9,38,42,"Yes","Yes",2011
+"4461","Mucocutan lymph node syn",9,38,42,"Yes","Yes",2011
+"44620","Hypersensit angiitis NOS",9,38,42,"Yes","Yes",2011
+"44621","Goodpasture's syndrome",9,38,42,"Yes","Yes",2011
+"44629","Hypersensit angiitis NEC",9,38,42,"Yes","Yes",2011
+"4463","Lethal midline granuloma",9,38,42,"Yes","Yes",2011
+"4464","Wegener's granulomatosis",9,38,42,"Yes","Yes",2011
+"4465","Giant cell arteritis",9,38,42,"Yes","Yes",2011
+"4466","Thrombot microangiopathy",9,38,42,"Yes","Yes",2011
+"4467","Takayasu's disease",9,38,42,"Yes","Yes",2011
+"4470","Acq arterioven fistula",9,105,,"Yes","No",2011
+"4471","Stricture of artery",9,105,,"Yes","No",2011
+"4472","Rupture of artery",9,105,,"Yes","No",2011
+"4473","Renal artery hyperplasia",9,105,,"Yes","No",2011
+"4474","Celiac art compress syn",9,105,,"Yes","No",2011
+"4475","Necrosis of artery",9,105,,"Yes","No",2011
+"4476","Arteritis NOS",9,105,,"Yes","No",2011
+"44770","Aortic ectasia, site NOS",9,105,,"Yes","No",2011
+"44771","Thoracic aortic ectasia",9,105,,"Yes","No",2011
+"44772","Abdominal aortic ectasia",9,105,,"Yes","No",2011
+"44773","Thoracoabd aortc ectasia",9,105,,"Yes","No",2011
+"4478","Arterial disease NEC",9,105,,"Yes","No",2011
+"4479","Arterial disease NOS",9,105,,"Yes","No",2011
+"4480","Heredit hemorr telangiec",9,105,,"Yes","No",2011
+"449","Septic arterial embolism",9,104,,"Yes","No",2011
+"45111","Femoral vein phlebitis",9,105,100,"Yes","Yes",2011
+"45119","Deep phlebitis-leg NEC",9,105,100,"Yes","Yes",2011
+"45181","Iliac thrombophlebitis",9,105,100,"Yes","Yes",2011
+"45183","Phlbts deep vn up extrm",9,105,100,"Yes","Yes",2011
+"4530","Budd-chiari syndrome",9,105,100,"Yes","Yes",2011
+"4532","Oth inf vena cava thromb",9,105,100,"Yes","Yes",2011
+"4533","Renal vein thrombosis",9,105,100,"Yes","Yes",2011
+"45340","Ac DVT/embl low ext NOS",9,105,100,"Yes","Yes",2011
+"45341","Ac DVT/emb prox low ext",9,105,100,"Yes","Yes",2011
+"45342","Ac DVT/emb distl low ext",9,105,100,"Yes","Yes",2011
+"45350","Ch DVT/embl low ext NOS",9,105,100,"Yes","Yes",2011
+"45351","Ch DVT/embl prox low ext",9,105,100,"Yes","Yes",2011
+"45352","Ch DVT/embl dstl low ext",9,105,100,"Yes","Yes",2011
+"45372","Ch DVT/embl up ext",9,105,100,"Yes","Yes",2011
+"45374","Ch emblsm axillary veins",9,105,100,"Yes","Yes",2011
+"45375","Ch emblsm subclav veins",9,105,100,"Yes","Yes",2011
+"45376","Ch embl internl jug vein",9,105,100,"Yes","Yes",2011
+"45377","Ch embl thorac vein NEC",9,105,100,"Yes","Yes",2011
+"45382","Ac DVT/embl up ext",9,105,100,"Yes","Yes",2011
+"45384","Ac emblsm axillary veins",9,105,100,"Yes","Yes",2011
+"45385","Ac embl subclav veins",9,105,100,"Yes","Yes",2011
+"45386","Ac embl internl jug vein",9,105,100,"Yes","Yes",2011
+"45387","Ac embl thorac vein NEC",9,105,100,"Yes","Yes",2011
+"4560","Esophag varices w bleed",9,25,,"Yes","No",2011
+"4561","Esoph varices w/o bleed",9,25,,"Yes","No",2011
+"45620","Bleed esoph var oth dis",9,25,,"Yes","No",2011
+"45621","Esoph varice oth dis NOS",9,25,,"Yes","No",2011
+"481","Pneumococcal pneumonia",9,112,,"Yes","No",2011
+"4820","K. pneumoniae pneumonia",9,111,106,"Yes","Yes",2011
+"4821","Pseudomonal pneumonia",9,111,106,"Yes","Yes",2011
+"4822","H.influenzae pneumonia",9,112,,"Yes","No",2011
+"48230","Streptococcal pneumn NOS",9,112,,"Yes","No",2011
+"48231","Pneumonia strptococcus a",9,112,,"Yes","No",2011
+"48232","Pneumonia strptococcus b",9,112,,"Yes","No",2011
+"48239","Pneumonia oth strep",9,112,,"Yes","No",2011
+"48240","Staphylococcal pneu NOS",9,111,106,"Yes","Yes",2011
+"48241","Meth sus pneum d/t Staph",9,111,106,"Yes","Yes",2011
+"48242","Meth res pneu d/t Staph",9,111,106,"Yes","Yes",2011
+"48249","Staph pneumonia NEC",9,111,106,"Yes","Yes",2011
+"48281","Pneumonia anaerobes",9,111,106,"Yes","Yes",2011
+"48282","Pneumonia e coli",9,111,106,"Yes","Yes",2011
+"48283","Pneumo oth grm-neg bact",9,111,106,"Yes","Yes",2011
+"48284","Legionnaires' disease",9,111,106,"Yes","Yes",2011
+"48289","Pneumonia oth spcf bact",9,111,106,"Yes","Yes",2011
+"4841","Pneum w cytomeg incl dis",9,5,5,"Yes","Yes",2011
+"4846","Pneum in aspergillosis",9,112,5,"Yes","Yes",2011
+"4847","Pneum in oth sys mycoses",9,112,106,"Yes","Yes",2011
+"4910","Simple chr bronchitis",9,108,104,"Yes","Yes",2011
+"4911","Mucopurul chr bronchitis",9,108,104,"Yes","Yes",2011
+"49120","Obst chr bronc w/o exac",9,108,104,"Yes","Yes",2011
+"49121","Obs chr bronc w(ac) exac",9,108,104,"Yes","Yes",2011
+"49122","Obs chr bronc w ac bronc",9,108,104,"Yes","Yes",2011
+"4918","Chronic bronchitis NEC",9,108,104,"Yes","Yes",2011
+"4919","Chronic bronchitis NOS",9,108,104,"Yes","Yes",2011
+"4920","Emphysematous bleb",9,108,104,"Yes","Yes",2011
+"4928","Emphysema NEC",9,108,104,"Yes","Yes",2011
+"49300","Extrinsic asthma NOS",9,,104,"No","Yes",2011
+"49301","Ext asthma w status asth",9,,104,"No","Yes",2011
+"49302","Ext asthma w(acute) exac",9,,104,"No","Yes",2011
+"49310","Intrinsic asthma NOS",9,,104,"No","Yes",2011
+"49311","Int asthma w status asth",9,,104,"No","Yes",2011
+"49312","Int asthma w (ac) exac",9,,104,"No","Yes",2011
+"49320","Chronic obst asthma NOS",9,108,104,"Yes","Yes",2011
+"49321","Ch ob asthma w stat asth",9,108,104,"Yes","Yes",2011
+"49322","Ch obst asth w (ac) exac",9,108,104,"Yes","Yes",2011
+"49381","Exercse ind bronchospasm",9,,104,"No","Yes",2011
+"49382","Cough variant asthma",9,,104,"No","Yes",2011
+"49390","Asthma NOS",9,,104,"No","Yes",2011
+"49391","Asthma w status asthmat",9,,104,"No","Yes",2011
+"49392","Asthma NOS w (ac) exac",9,,104,"No","Yes",2011
+"4940","Bronchiectas w/o ac exac",9,,105,"No","Yes",2011
+"4941","Bronchiectasis w ac exac",9,,105,"No","Yes",2011
+"496","Chr airway obstruct NEC",9,108,104,"Yes","Yes",2011
+"5070","Food/vomit pneumonitis",9,111,,"Yes","No",2011
+"5071","Oil/essence pneumonitis",9,111,,"Yes","No",2011
+"5078","Solid/liq pneumonit NEC",9,111,,"Yes","No",2011
+"5080","Ac pul manif d/t radiat",9,,105,"No","Yes",2011
+"5081","Chr pul manif d/t radiat",9,,105,"No","Yes",2011
+"5088","Resp cond: ext agent NEC",9,,105,"No","Yes",2011
+"5089","Resp cond: ext agent NOS",9,,105,"No","Yes",2011
+"5100","Empyema with fistula",9,112,106,"Yes","Yes",2011
+"5109","Empyema w/o fistula",9,112,106,"Yes","Yes",2011
+"5130","Abscess of lung",9,112,106,"Yes","Yes",2011
+"5131","Abscess of mediastinum",9,112,106,"Yes","Yes",2011
+"515","Postinflam pulm fibrosis",9,,105,"No","Yes",2011
+"5160","Pul alveolar proteinosis",9,,105,"No","Yes",2011
+"5161","Idio pulm hemosiderosis",9,,105,"No","Yes",2011
+"5162","Pulm alveolar microlith",9,,105,"No","Yes",2011
+"5163","Idio fibros alveolitis",9,,105,"No","Yes",2011
+"5168","Alveol pneumonopathy NEC",9,,105,"No","Yes",2011
+"5169","Alveol pneumonopathy NOS",9,,105,"No","Yes",2011
+"5171","Rheumatic pneumonia",9,,105,"No","Yes",2011
+"5172","Syst sclerosis lung dis",9,,105,"No","Yes",2011
+"5173","Acute chest syndrome",9,44,50,"Yes","Yes",2011
+"5178","Lung involv in oth dis",9,,105,"No","Yes",2011
+"5181","Interstitial emphysema",9,108,104,"Yes","Yes",2011
+"5182","Compensatory emphysema",9,108,104,"Yes","Yes",2011
+"5184","Acute lung edema NOS",9,79,,"Yes","No",2011
+"5185","Post traum pulm insuffic",9,79,,"Yes","No",2011
+"5186","Alrgc brncpul asprglosis",9,,105,"No","Yes",2011
+"51881","Acute respiratry failure",9,79,,"Yes","No",2011
+"51882","Other pulmonary insuff",9,79,,"Yes","No",2011
+"51883","Chronic respiratory fail",9,79,,"Yes","No",2011
+"51884","Acute & chronc resp fail",9,79,,"Yes","No",2011
+"51900","Tracheostomy comp NOS",9,77,,"Yes","No",2011
+"51901","Tracheostomy infection",9,77,,"Yes","No",2011
+"51902","Tracheostomy - mech comp",9,77,,"Yes","No",2011
+"51909","Tracheostomy comp NEC",9,77,,"Yes","No",2011
+"5300","Achalasia & cardiospasm",9,,33,"No","Yes",2011
+"53010","Esophagitis, unspecified",9,,33,"No","Yes",2011
+"53011","Reflux esophagitis",9,,33,"No","Yes",2011
+"53012","Acute esophagitis",9,,33,"No","Yes",2011
+"53013","Eosinophilic esophagitis",9,,33,"No","Yes",2011
+"53019","Other esophagitis",9,,33,"No","Yes",2011
+"5303","Esophageal stricture",9,,33,"No","Yes",2011
+"5304","Perforation of esophagus",9,,33,"No","Yes",2011
+"5305","Dyskinesia of esophagus",9,,33,"No","Yes",2011
+"5306","Acq esophag diverticulum",9,,33,"No","Yes",2011
+"53081","Esophageal reflux",9,,33,"No","Yes",2011
+"53083","Esophageal leukoplakia",9,,33,"No","Yes",2011
+"53084","Tracheoesophageal fstula",9,,33,"No","Yes",2011
+"53085","Barrett's esophagus",9,,33,"No","Yes",2011
+"53086","Esophagostomy infection",9,176,,"Yes","No",2011
+"53087","Mech comp esophagostomy",9,176,,"Yes","No",2011
+"53089","Other dsrders esophagus",9,,33,"No","Yes",2011
+"5309","Esophageal disorder NOS",9,,33,"No","Yes",2011
+"53110","Ac stomach ulcer w perf",9,31,,"Yes","No",2011
+"53111","Ac stom ulc w perf-obst",9,31,,"Yes","No",2011
+"53120","Ac stomac ulc w hem/perf",9,31,,"Yes","No",2011
+"53121","Ac stom ulc hem/perf-obs",9,31,,"Yes","No",2011
+"53150","Chr stomach ulcer w perf",9,31,,"Yes","No",2011
+"53151","Chr stom ulc w perf-obst",9,31,,"Yes","No",2011
+"53160","Chr stomach ulc hem/perf",9,31,,"Yes","No",2011
+"53161","Chr stom ulc hem/perf-ob",9,31,,"Yes","No",2011
+"53210","Ac duodenal ulcer w perf",9,31,,"Yes","No",2011
+"53211","Ac duoden ulc perf-obstr",9,31,,"Yes","No",2011
+"53220","Ac duoden ulc w hem/perf",9,31,,"Yes","No",2011
+"53221","Ac duod ulc hem/perf-obs",9,31,,"Yes","No",2011
+"53250","Chr duoden ulcer w perf",9,31,,"Yes","No",2011
+"53251","Chr duoden ulc perf-obst",9,31,,"Yes","No",2011
+"53260","Chr duoden ulc hem/perf",9,31,,"Yes","No",2011
+"53261","Chr duod ulc hem/perf-ob",9,31,,"Yes","No",2011
+"53310","Ac peptic ulcer w perfor",9,31,,"Yes","No",2011
+"53311","Ac peptic ulc w perf-obs",9,31,,"Yes","No",2011
+"53320","Ac peptic ulc w hem/perf",9,31,,"Yes","No",2011
+"53321","Ac pept ulc hem/perf-obs",9,31,,"Yes","No",2011
+"53350","Chr peptic ulcer w perf",9,31,,"Yes","No",2011
+"53351","Chr peptic ulc perf-obst",9,31,,"Yes","No",2011
+"53360","Chr pept ulc w hem/perf",9,31,,"Yes","No",2011
+"53361","Chr pept ulc hem/perf-ob",9,31,,"Yes","No",2011
+"53410","Ac marginal ulcer w perf",9,31,,"Yes","No",2011
+"53411","Ac margin ulc w perf-obs",9,31,,"Yes","No",2011
+"53420","Ac margin ulc w hem/perf",9,31,,"Yes","No",2011
+"53421","Ac marg ulc hem/perf-obs",9,31,,"Yes","No",2011
+"53450","Chr marginal ulc w perf",9,31,,"Yes","No",2011
+"53451","Chr margin ulc perf-obst",9,31,,"Yes","No",2011
+"53460","Chr margin ulc hem/perf",9,31,,"Yes","No",2011
+"53461","Chr marg ulc hem/perf-ob",9,31,,"Yes","No",2011
+"53640","Gastrostomy comp NOS",9,176,,"Yes","No",2011
+"53641","Gastrostomy infection",9,176,,"Yes","No",2011
+"53642","Gastrostomy comp - mech",9,176,,"Yes","No",2011
+"53649","Gastrostomy comp NEC",9,176,,"Yes","No",2011
+"5550","Reg enteritis, sm intest",9,33,32,"Yes","Yes",2011
+"5551","Reg enteritis, lg intest",9,33,32,"Yes","Yes",2011
+"5552","Reg enterit sm/lg intest",9,33,32,"Yes","Yes",2011
+"5559","Regional enteritis NOS",9,33,32,"Yes","Yes",2011
+"5560","Ulcerative enterocolitis",9,33,32,"Yes","Yes",2011
+"5561","Ulcerative ileocolitis",9,33,32,"Yes","Yes",2011
+"5562","Ulcerative proctitis",9,33,32,"Yes","Yes",2011
+"5563","Ulcertve prctosigmoidtis",9,33,32,"Yes","Yes",2011
+"5564","Pseudopolyposis colon",9,33,32,"Yes","Yes",2011
+"5565","Lftsded ulcertve colitis",9,33,32,"Yes","Yes",2011
+"5566","Univrsl ulcertve colitis",9,33,32,"Yes","Yes",2011
+"5568","Other ulcerative colitis",9,33,32,"Yes","Yes",2011
+"5569","Ulceratve colitis unspcf",9,33,32,"Yes","Yes",2011
+"5570","Ac vasc insuff intestine",9,104,,"Yes","No",2011
+"5571","Chr vasc insuff intest",9,105,,"Yes","No",2011
+"5579","Vasc insuff intest NOS",9,105,,"Yes","No",2011
+"5600","Intussusception",9,31,,"Yes","No",2011
+"5601","Paralytic ileus",9,31,,"Yes","No",2011
+"5602","Volvulus of intestine",9,31,,"Yes","No",2011
+"56030","Impaction intestine NOS",9,31,,"Yes","No",2011
+"56031","Gallstone ileus",9,31,,"Yes","No",2011
+"56032","Fecal impaction",9,31,,"Yes","No",2011
+"56039","Impaction intestine NEC",9,31,,"Yes","No",2011
+"56081","Intestinal adhes w obstr",9,31,,"Yes","No",2011
+"56089","Intestinal obstruct NEC",9,31,,"Yes","No",2011
+"5609","Intestinal obstruct NOS",9,31,,"Yes","No",2011
+"5670","Peritonitis in infec dis",9,31,,"Yes","No",2011
+"5671","Pneumococcal peritonitis",9,31,,"Yes","No",2011
+"56721","Peritonitis (acute) gen",9,31,,"Yes","No",2011
+"56722","Peritoneal abscess",9,31,,"Yes","No",2011
+"56723","Spontan bact peritonitis",9,31,,"Yes","No",2011
+"56729","Suppurat peritonitis NEC",9,31,,"Yes","No",2011
+"56731","Psoas muscle abscess",9,31,,"Yes","No",2011
+"56738","Retroperiton abscess NEC",9,31,,"Yes","No",2011
+"56739","Retroperiton infect NEC",9,31,,"Yes","No",2011
+"56781","Choleperitonitis",9,31,,"Yes","No",2011
+"56782","Sclerosing mesenteritis",9,31,,"Yes","No",2011
+"56789","Peritonitis NEC",9,31,,"Yes","No",2011
+"5679","Peritonitis NOS",9,31,,"Yes","No",2011
+"56960","Colstomy/enter comp NOS",9,176,,"Yes","No",2011
+"56961","Colosty/enterost infectn",9,176,,"Yes","No",2011
+"56962","Colosty/enter comp-mech",9,176,,"Yes","No",2011
+"56969","Colstmy/enteros comp NEC",9,176,,"Yes","No",2011
+"56971","Pouchitis",9,176,,"Yes","No",2011
+"56979","Comp intest pouch NEC",9,176,,"Yes","No",2011
+"56983","Perforation of intestine",9,31,,"Yes","No",2011
+"5712","Alcohol cirrhosis liver",9,26,,"Yes","No",2011
+"5713","Alcohol liver damage NOS",9,26,,"Yes","No",2011
+"57140","Chronic hepatitis NOS",9,27,,"Yes","No",2011
+"57141","Chr persistent hepatitis",9,27,,"Yes","No",2011
+"57142","Autoimmune hepatitis",9,27,,"Yes","No",2011
+"57149","Chronic hepatitis NEC",9,27,,"Yes","No",2011
+"5715","Cirrhosis of liver NOS",9,26,,"Yes","No",2011
+"5716","Biliary cirrhosis",9,26,,"Yes","No",2011
+"5722","Hepatic encephalopathy",9,25,,"Yes","No",2011
+"5723","Portal hypertension",9,25,,"Yes","No",2011
+"5724","Hepatorenal syndrome",9,25,,"Yes","No",2011
+"5728","Oth sequela, chr liv dis",9,25,,"Yes","No",2011
+"5770","Acute pancreatitis",9,32,,"Yes","No",2011
+"5771","Chronic pancreatitis",9,32,30,"Yes","Yes",2011
+"5772","Pancreat cyst/pseudocyst",9,32,31,"Yes","Yes",2011
+"5778","Pancreatic disease NEC",9,32,31,"Yes","Yes",2011
+"5779","Pancreatic disease NOS",9,32,31,"Yes","Yes",2011
+"5790","Celiac disease",9,32,31,"Yes","Yes",2011
+"5791","Tropical sprue",9,32,31,"Yes","Yes",2011
+"5792","Blind loop syndrome",9,32,31,"Yes","Yes",2011
+"5793","Intest postop nonabsorb",9,32,31,"Yes","Yes",2011
+"5794","Pancreatic steatorrhea",9,32,31,"Yes","Yes",2011
+"5798","Intest malabsorption NEC",9,32,31,"Yes","Yes",2011
+"5799","Intest malabsorption NOS",9,32,31,"Yes","Yes",2011
+"5800","Ac proliferat nephritis",9,132,126,"Yes","Yes",2011
+"5804","Ac rapidly progr nephrit",9,132,126,"Yes","Yes",2011
+"58081","Ac nephritis in oth dis",9,132,126,"Yes","Yes",2011
+"58089","Acute nephritis NEC",9,132,126,"Yes","Yes",2011
+"5809","Acute nephritis NOS",9,132,126,"Yes","Yes",2011
+"5810","Nephrotic syn, prolifer",9,132,126,"Yes","Yes",2011
+"5811","Epimembranous nephritis",9,132,126,"Yes","Yes",2011
+"5812","Membranoprolif nephrosis",9,132,126,"Yes","Yes",2011
+"5813","Minimal change nephrosis",9,132,126,"Yes","Yes",2011
+"58181","Nephrotic syn in oth dis",9,132,126,"Yes","Yes",2011
+"58189","Nephrotic syndrome NEC",9,132,126,"Yes","Yes",2011
+"5819","Nephrotic syndrome NOS",9,132,126,"Yes","Yes",2011
+"5820","Chr proliferat nephritis",9,132,126,"Yes","Yes",2011
+"5821","Chr membranous nephritis",9,132,126,"Yes","Yes",2011
+"5822","Chr membranoprolif nephr",9,132,126,"Yes","Yes",2011
+"5824","Chr rapid progr nephrit",9,132,126,"Yes","Yes",2011
+"58281","Chr nephritis in oth dis",9,132,126,"Yes","Yes",2011
+"58289","Chronic nephritis NEC",9,132,126,"Yes","Yes",2011
+"5829","Chronic nephritis NOS",9,132,126,"Yes","Yes",2011
+"5830","Proliferat nephritis NOS",9,132,126,"Yes","Yes",2011
+"5831","Membranous nephritis NOS",9,132,126,"Yes","Yes",2011
+"5832","Membranoprolif nephr NOS",9,132,126,"Yes","Yes",2011
+"5834","Rapidly prog nephrit NOS",9,132,126,"Yes","Yes",2011
+"5836","Renal cort necrosis NOS",9,132,126,"Yes","Yes",2011
+"5837","Nephr NOS/medull necros",9,132,126,"Yes","Yes",2011
+"58381","Nephritis NOS in oth dis",9,132,126,"Yes","Yes",2011
+"58389","Nephritis NEC",9,132,126,"Yes","Yes",2011
+"5839","Nephritis NOS",9,132,126,"Yes","Yes",2011
+"5845","Ac kidny fail, tubr necr",9,131,,"Yes","No",2011
+"5846","Ac kidny fail, cort necr",9,131,,"Yes","No",2011
+"5847","Ac kidny fail, medu necr",9,131,,"Yes","No",2011
+"5848","Acute kidney failure NEC",9,131,,"Yes","No",2011
+"5849","Acute kidney failure NOS",9,131,,"Yes","No",2011
+"5851","Chro kidney dis stage I",9,131,125,"Yes","Yes",2011
+"5852","Chro kidney dis stage II",9,131,125,"Yes","Yes",2011
+"5853","Chr kidney dis stage III",9,131,124,"Yes","Yes",2011
+"5854","Chr kidney dis stage IV",9,131,123,"Yes","Yes",2011
+"5855","Chron kidney dis stage V",9,131,122,"Yes","Yes",2011
+"5856","End stage renal disease",9,131,121,"Yes","Yes",2011
+"5859","Chronic kidney dis NOS",9,131,125,"Yes","Yes",2011
+"586","Renal failure NOS",9,131,,"Yes","No",2011
+"5880","Renal osteodystrophy",9,,45,"No","Yes",2011
+"5881","Nephrogen diabetes insip",9,,18,"No","Yes",2011
+"58881","Sec hyperparathyrd-renal",9,,19,"No","Yes",2011
+"59381","Renal vascular disorder",9,104,,"Yes","No",2011
+"6944","Pemphigus",9,,145,"No","Yes",2011
+"6960","Psoriatic arthropathy",9,,40,"No","Yes",2011
+"6961","Other psoriasis",9,,147,"No","Yes",2011
+"6962","Parapsoriasis",9,,147,"No","Yes",2011
+"70700","Pressure ulcer, site NOS",9,148,,"Yes","No",2011
+"70701","Pressure ulcer, elbow",9,148,,"Yes","No",2011
+"70702","Pressure ulcer, upr back",9,148,,"Yes","No",2011
+"70703","Pressure ulcer, low back",9,148,,"Yes","No",2011
+"70704","Pressure ulcer, hip",9,148,,"Yes","No",2011
+"70705","Pressure ulcer, buttock",9,148,,"Yes","No",2011
+"70706","Pressure ulcer, ankle",9,148,,"Yes","No",2011
+"70707","Pressure ulcer, heel",9,148,,"Yes","No",2011
+"70709","Pressure ulcer, site NEC",9,148,,"Yes","No",2011
+"70710","Ulcer of lower limb NOS",9,149,142,"Yes","Yes",2011
+"70711","Ulcer of thigh",9,149,142,"Yes","Yes",2011
+"70712","Ulcer of calf",9,149,142,"Yes","Yes",2011
+"70713","Ulcer of ankle",9,149,142,"Yes","Yes",2011
+"70714","Ulcer of heel & midfoot",9,149,142,"Yes","Yes",2011
+"70715","Ulcer other part of foot",9,149,142,"Yes","Yes",2011
+"70719","Ulcer oth part low limb",9,149,142,"Yes","Yes",2011
+"70720","Pressure ulcer,stage NOS",9,148,,"Yes","No",2011
+"70721","Pressure ulcer, stage I",9,148,,"Yes","No",2011
+"70722","Pressure ulcer, stage II",9,148,,"Yes","No",2011
+"70723","Pressure ulcer,stage III",9,148,,"Yes","No",2011
+"70724","Pressure ulcer, stage IV",9,148,,"Yes","No",2011
+"70725","Pressure ulcer,unstagebl",9,148,,"Yes","No",2011
+"7078","Chronic skin ulcer NEC",9,149,142,"Yes","Yes",2011
+"7079","Chronic skin ulcer NOS",9,149,142,"Yes","Yes",2011
+"7100","Syst lupus erythematosus",9,38,42,"Yes","Yes",2011
+"7101","Systemic sclerosis",9,38,42,"Yes","Yes",2011
+"7102","Sicca syndrome",9,38,42,"Yes","Yes",2011
+"7103","Dermatomyositis",9,38,42,"Yes","Yes",2011
+"7104","Polymyositis",9,38,42,"Yes","Yes",2011
+"7105","Eosinophilia myalgia snd",9,38,42,"Yes","Yes",2011
+"7108","Diff connect tis dis NEC",9,38,42,"Yes","Yes",2011
+"7109","Diff connect tis dis NOS",9,38,42,"Yes","Yes",2011
+"71100","Pyogen arthritis-unspec",9,37,,"Yes","No",2011
+"71101","Pyogen arthritis-shlder",9,37,,"Yes","No",2011
+"71102","Pyogen arthritis-up/arm",9,37,,"Yes","No",2011
+"71103","Pyogen arthritis-forearm",9,37,,"Yes","No",2011
+"71104","Pyogen arthritis-hand",9,37,,"Yes","No",2011
+"71105","Pyogen arthritis-pelvis",9,37,,"Yes","No",2011
+"71106","Pyogen arthritis-l/leg",9,37,,"Yes","No",2011
+"71107","Pyogen arthritis-ankle",9,37,,"Yes","No",2011
+"71108","Pyogen arthritis NEC",9,37,,"Yes","No",2011
+"71109","Pyogen arthritis-mult",9,37,,"Yes","No",2011
+"71110","Reiter arthritis-unspec",9,37,41,"Yes","Yes",2011
+"71111","Reiter arthritis-shlder",9,37,41,"Yes","Yes",2011
+"71112","Reiter arthritis-up/arm",9,37,41,"Yes","Yes",2011
+"71113","Reiter arthritis-forearm",9,37,41,"Yes","Yes",2011
+"71114","Reiter arthritis-hand",9,37,41,"Yes","Yes",2011
+"71115","Reiter arthritis-pelvis",9,37,41,"Yes","Yes",2011
+"71116","Reiter arthritis-l/leg",9,37,41,"Yes","Yes",2011
+"71117","Reiter arthritis-ankle",9,37,41,"Yes","Yes",2011
+"71118","Reiter arthritis NEC",9,37,41,"Yes","Yes",2011
+"71119","Reiter arthritis-mult",9,37,41,"Yes","Yes",2011
+"71120","Behcet arthritis-unspec",9,37,41,"Yes","Yes",2011
+"71121","Behcet arthritis-shlder",9,37,41,"Yes","Yes",2011
+"71122","Behcet arthritis-up/arm",9,37,41,"Yes","Yes",2011
+"71123","Behcet arthritis-forearm",9,37,41,"Yes","Yes",2011
+"71124","Behcet arthritis-hand",9,37,41,"Yes","Yes",2011
+"71125","Behcet arthritis-pelvis",9,37,41,"Yes","Yes",2011
+"71126","Behcet arthritis-l/leg",9,37,41,"Yes","Yes",2011
+"71127","Behcet arthritis-ankle",9,37,41,"Yes","Yes",2011
+"71128","Behcet arthritis NEC",9,37,41,"Yes","Yes",2011
+"71129","Behcet arthritis-mult",9,37,41,"Yes","Yes",2011
+"71130","Dysenter arthrit-unspec",9,37,,"Yes","No",2011
+"71131","Dysenter arthrit-shlder",9,37,,"Yes","No",2011
+"71132","Dysenter arthrit-up/arm",9,37,,"Yes","No",2011
+"71133","Dysenter arthrit-forearm",9,37,,"Yes","No",2011
+"71134","Dysenter arthrit-hand",9,37,,"Yes","No",2011
+"71135","Dysenter arthrit-pelvis",9,37,,"Yes","No",2011
+"71136","Dysenter arthrit-l/leg",9,37,,"Yes","No",2011
+"71137","Dysenter arthrit-ankle",9,37,,"Yes","No",2011
+"71138","Dysenter arthrit NEC",9,37,,"Yes","No",2011
+"71139","Dysenter arthrit-mult",9,37,,"Yes","No",2011
+"71140","Bact arthritis-unspec",9,37,,"Yes","No",2011
+"71141","Bact arthritis-shlder",9,37,,"Yes","No",2011
+"71142","Bact arthritis-up/arm",9,37,,"Yes","No",2011
+"71143","Bact arthritis-forearm",9,37,,"Yes","No",2011
+"71144","Bact arthritis-hand",9,37,,"Yes","No",2011
+"71145","Bact arthritis-pelvis",9,37,,"Yes","No",2011
+"71146","Bact arthritis-l/leg",9,37,,"Yes","No",2011
+"71147","Bact arthritis-ankle",9,37,,"Yes","No",2011
+"71148","Bact arthritis NEC",9,37,,"Yes","No",2011
+"71149","Bact arthritis-mult",9,37,,"Yes","No",2011
+"71150","Viral arthritis-unspec",9,37,,"Yes","No",2011
+"71151","Viral arthritis-shlder",9,37,,"Yes","No",2011
+"71152","Viral arthritis-up/arm",9,37,,"Yes","No",2011
+"71153","Viral arthritis-forearm",9,37,,"Yes","No",2011
+"71154","Viral arthritis-hand",9,37,,"Yes","No",2011
+"71155","Viral arthritis-pelvis",9,37,,"Yes","No",2011
+"71156","Viral arthritis-l/leg",9,37,,"Yes","No",2011
+"71157","Viral arthritis-ankle",9,37,,"Yes","No",2011
+"71158","Viral arthritis NEC",9,37,,"Yes","No",2011
+"71159","Viral arthritis-mult",9,37,,"Yes","No",2011
+"71160","Mycotic arthritis-unspec",9,37,,"Yes","No",2011
+"71161","Mycotic arthritis-shlder",9,37,,"Yes","No",2011
+"71162","Mycotic arthritis-up/arm",9,37,,"Yes","No",2011
+"71163","Mycotic arthrit-forearm",9,37,,"Yes","No",2011
+"71164","Mycotic arthritis-hand",9,37,,"Yes","No",2011
+"71165","Mycotic arthritis-pelvis",9,37,,"Yes","No",2011
+"71166","Mycotic arthritis-l/leg",9,37,,"Yes","No",2011
+"71167","Mycotic arthritis-ankle",9,37,,"Yes","No",2011
+"71168","Mycotic arthritis NEC",9,37,,"Yes","No",2011
+"71169","Mycotic arthritis-mult",9,37,,"Yes","No",2011
+"71170","Helminth arthrit-unspec",9,37,,"Yes","No",2011
+"71171","Helminth arthrit-shlder",9,37,,"Yes","No",2011
+"71172","Helminth arthrit-up/arm",9,37,,"Yes","No",2011
+"71173","Helminth arthrit-forearm",9,37,,"Yes","No",2011
+"71174","Helminth arthrit-hand",9,37,,"Yes","No",2011
+"71175","Helminth arthrit-pelvis",9,37,,"Yes","No",2011
+"71176","Helminth arthrit-l/leg",9,37,,"Yes","No",2011
+"71177","Helminth arthrit-ankle",9,37,,"Yes","No",2011
+"71178","Helminth arthrit NEC",9,37,,"Yes","No",2011
+"71179","Helminth arthrit-mult",9,37,,"Yes","No",2011
+"71180","Inf arthritis NEC-unspec",9,37,,"Yes","No",2011
+"71181","Inf arthritis NEC-shlder",9,37,,"Yes","No",2011
+"71182","Inf arthritis NEC-up/arm",9,37,,"Yes","No",2011
+"71183","Inf arthrit NEC-forearm",9,37,,"Yes","No",2011
+"71184","Inf arthritis NEC-hand",9,37,,"Yes","No",2011
+"71185","Inf arthritis NEC-pelvis",9,37,,"Yes","No",2011
+"71186","Inf arthritis NEC-l/leg",9,37,,"Yes","No",2011
+"71187","Inf arthritis NEC-ankle",9,37,,"Yes","No",2011
+"71188","Inf arthrit NEC-oth site",9,37,,"Yes","No",2011
+"71189","Inf arthritis NEC-mult",9,37,,"Yes","No",2011
+"71190","Inf arthritis NOS-unspec",9,37,,"Yes","No",2011
+"71191","Inf arthritis NOS-shlder",9,37,,"Yes","No",2011
+"71192","Inf arthritis NOS-up/arm",9,37,,"Yes","No",2011
+"71193","Inf arthrit NOS-forearm",9,37,,"Yes","No",2011
+"71194","Inf arthrit NOS-hand",9,37,,"Yes","No",2011
+"71195","Inf arthrit NOS-pelvis",9,37,,"Yes","No",2011
+"71196","Inf arthrit NOS-l/leg",9,37,,"Yes","No",2011
+"71197","Inf arthrit NOS-ankle",9,37,,"Yes","No",2011
+"71198","Inf arthrit NOS-oth site",9,37,,"Yes","No",2011
+"71199","Inf arthritis NOS-mult",9,37,,"Yes","No",2011
+"7140","Rheumatoid arthritis",9,38,41,"Yes","Yes",2011
+"7141","Felty's syndrome",9,38,41,"Yes","Yes",2011
+"7142","Syst rheum arthritis NEC",9,38,41,"Yes","Yes",2011
+"71430","Juv rheum arthritis NOS",9,38,41,"Yes","Yes",2011
+"71431","Polyart juv rheum arthr",9,38,41,"Yes","Yes",2011
+"71432","Pauciart juv rheum arthr",9,38,41,"Yes","Yes",2011
+"71433","Monoart juv rheum arthr",9,38,41,"Yes","Yes",2011
+"7144","Chr postrheum arthritis",9,38,41,"Yes","Yes",2011
+"71481","Rheumatoid lung",9,38,41,"Yes","Yes",2011
+"71489","Inflamm polyarthrop NEC",9,38,41,"Yes","Yes",2011
+"7149","Inflamm polyarthrop NOS",9,38,41,"Yes","Yes",2011
+"7200","Ankylosing spondylitis",9,38,42,"Yes","Yes",2011
+"7201","Spinal enthesopathy",9,38,42,"Yes","Yes",2011
+"7202","Sacroiliitis NEC",9,38,42,"Yes","Yes",2011
+"72081","Spondylopathy in oth dis",9,38,42,"Yes","Yes",2011
+"72089","Inflam spondylopathy NEC",9,38,42,"Yes","Yes",2011
+"7209","Inflam spondylopathy NOS",9,38,42,"Yes","Yes",2011
+"725","Polymyalgia rheumatica",9,38,,"Yes","No",2011
+"72886","Necrotizing fasciitis",9,37,,"Yes","No",2011
+"73000","Ac osteomyelitis-unspec",9,37,,"Yes","No",2011
+"73001","Ac osteomyelitis-shlder",9,37,,"Yes","No",2011
+"73002","Ac osteomyelitis-up/arm",9,37,,"Yes","No",2011
+"73003","Ac osteomyelitis-forearm",9,37,,"Yes","No",2011
+"73004","Ac osteomyelitis-hand",9,37,,"Yes","No",2011
+"73005","Ac osteomyelitis-pelvis",9,37,,"Yes","No",2011
+"73006","Ac osteomyelitis-l/leg",9,37,,"Yes","No",2011
+"73007","Ac osteomyelitis-ankle",9,37,,"Yes","No",2011
+"73008","Ac osteomyelitis NEC",9,37,,"Yes","No",2011
+"73009","Ac osteomyelitis-mult",9,37,,"Yes","No",2011
+"73010","Chr osteomyelitis-unsp",9,37,,"Yes","No",2011
+"73011","Chr osteomyelit-shlder",9,37,,"Yes","No",2011
+"73012","Chr osteomyelit-up/arm",9,37,,"Yes","No",2011
+"73013","Chr osteomyelit-forearm",9,37,,"Yes","No",2011
+"73014","Chr osteomyelit-hand",9,37,,"Yes","No",2011
+"73015","Chr osteomyelit-pelvis",9,37,,"Yes","No",2011
+"73016","Chr osteomyelit-l/leg",9,37,,"Yes","No",2011
+"73017","Chr osteomyelit-ankle",9,37,,"Yes","No",2011
+"73018","Chr osteomyelit NEC",9,37,,"Yes","No",2011
+"73019","Chr osteomyelit-mult",9,37,,"Yes","No",2011
+"73020","Osteomyelitis NOS-unspec",9,37,,"Yes","No",2011
+"73021","Osteomyelitis NOS-shlder",9,37,,"Yes","No",2011
+"73022","Osteomyelitis NOS-up/arm",9,37,,"Yes","No",2011
+"73023","Osteomyelit NOS-forearm",9,37,,"Yes","No",2011
+"73024","Osteomyelitis NOS-hand",9,37,,"Yes","No",2011
+"73025","Osteomyelitis NOS-pelvis",9,37,,"Yes","No",2011
+"73026","Osteomyelitis NOS-l/leg",9,37,,"Yes","No",2011
+"73027","Osteomyelitis NOS-ankle",9,37,,"Yes","No",2011
+"73028","Osteomyelit NOS-oth site",9,37,,"Yes","No",2011
+"73029","Osteomyelitis NOS-mult",9,37,,"Yes","No",2011
+"73030","Periostitis-unspec",9,37,,"Yes","No",2011
+"73031","Periostitis-shlder",9,37,,"Yes","No",2011
+"73032","Periostitis-up/arm",9,37,,"Yes","No",2011
+"73033","Periostitis-forearm",9,37,,"Yes","No",2011
+"73034","Periostitis-hand",9,37,,"Yes","No",2011
+"73035","Periostitis-pelvis",9,37,,"Yes","No",2011
+"73036","Periostitis-l/leg",9,37,,"Yes","No",2011
+"73037","Periostitis-ankle",9,37,,"Yes","No",2011
+"73038","Periostitis NEC",9,37,,"Yes","No",2011
+"73039","Periostitis-mult",9,37,,"Yes","No",2011
+"73070","Polio osteopathy-unspec",9,37,,"Yes","No",2011
+"73071","Polio osteopathy-shlder",9,37,,"Yes","No",2011
+"73072","Polio osteopathy-up/arm",9,37,,"Yes","No",2011
+"73073","Polio osteopathy-forearm",9,37,,"Yes","No",2011
+"73074","Polio osteopathy-hand",9,37,,"Yes","No",2011
+"73075","Polio osteopathy-pelvis",9,37,,"Yes","No",2011
+"73076","Polio osteopathy-l/leg",9,37,,"Yes","No",2011
+"73077","Polio osteopathy-ankle",9,37,,"Yes","No",2011
+"73078","Polio osteopathy NEC",9,37,,"Yes","No",2011
+"73079","Polio osteopathy-mult",9,37,,"Yes","No",2011
+"73080","Bone infect NEC-unspec",9,37,,"Yes","No",2011
+"73081","Bone infect NEC-shlder",9,37,,"Yes","No",2011
+"73082","Bone infect NEC-up/arm",9,37,,"Yes","No",2011
+"73083","Bone infect NEC-forearm",9,37,,"Yes","No",2011
+"73084","Bone infect NEC-hand",9,37,,"Yes","No",2011
+"73085","Bone infect NEC-pelvis",9,37,,"Yes","No",2011
+"73086","Bone infect NEC-l/leg",9,37,,"Yes","No",2011
+"73087","Bone infect NEC-ankle",9,37,,"Yes","No",2011
+"73088","Bone infect NEC-oth site",9,37,,"Yes","No",2011
+"73089","Bone infect NEC-mult",9,37,,"Yes","No",2011
+"73090","Bone infec NOS-unsp site",9,37,,"Yes","No",2011
+"73091","Bone infect NOS-shlder",9,37,,"Yes","No",2011
+"73092","Bone infect NOS-up/arm",9,37,,"Yes","No",2011
+"73093","Bone infect NOS-forearm",9,37,,"Yes","No",2011
+"73094","Bone infect NOS-hand",9,37,,"Yes","No",2011
+"73095","Bone infect NOS-pelvis",9,37,,"Yes","No",2011
+"73096","Bone infect NOS-l/leg",9,37,,"Yes","No",2011
+"73097","Bone infect NOS-ankle",9,37,,"Yes","No",2011
+"73098","Bone infect NOS-oth site",9,37,,"Yes","No",2011
+"73099","Bone infect NOS-mult",9,37,,"Yes","No",2011
+"73300","Osteoporosis NOS",9,,45,"No","Yes",2011
+"73301","Senile osteoporosis",9,,45,"No","Yes",2011
+"73302","Idiopathic osteoporosis",9,,45,"No","Yes",2011
+"73303","Disuse osteoporosis",9,,45,"No","Yes",2011
+"73309","Osteoporosis NEC",9,,45,"No","Yes",2011
+"73310","Path fx unspecified site",9,,45,"No","Yes",2011
+"73311","Path fx humerus",9,,45,"No","Yes",2011
+"73312","Path fx dstl radius ulna",9,,45,"No","Yes",2011
+"73313","Path fx vertebrae",9,157,45,"Yes","Yes",2011
+"73314","Path fx neck of femur",9,158,45,"Yes","Yes",2011
+"73315","Path fx oth spcf prt fmr",9,158,45,"Yes","Yes",2011
+"73316","Path fx tibia fibula",9,,45,"No","Yes",2011
+"73319","Path fx oth specif site",9,,45,"No","Yes",2011
+"73340","Asept necrosis bone NOS",9,37,38,"Yes","Yes",2011
+"73341","Aseptic necrosis humerus",9,37,38,"Yes","Yes",2011
+"73342","Aseptic necrosis femur",9,37,38,"Yes","Yes",2011
+"73343","Asept necro femur condyl",9,37,38,"Yes","Yes",2011
+"73344","Aseptic necrosis talus",9,37,38,"Yes","Yes",2011
+"73345","Aseptic necrosis of jaw",9,37,38,"Yes","Yes",2011
+"73349","Asept necrosis bone NEC",9,37,38,"Yes","Yes",2011
+"7400","Anencephalus",9,69,72,"Yes","Yes",2011
+"7401","Craniorachischisis",9,69,72,"Yes","Yes",2011
+"7402","Iniencephaly",9,69,72,"Yes","Yes",2011
+"74100","Spin bif w hydroceph NOS",9,69,72,"Yes","Yes",2011
+"74101","Spin bif w hydrceph-cerv",9,69,72,"Yes","Yes",2011
+"74102","Spin bif w hydrceph-dors",9,69,72,"Yes","Yes",2011
+"74103","Spin bif w hydrceph-lumb",9,69,72,"Yes","Yes",2011
+"74190","Spina bifida",9,69,72,"Yes","Yes",2011
+"74191","Spina bifida-cerv",9,69,72,"Yes","Yes",2011
+"74192","Spina bifida-dorsal",9,69,72,"Yes","Yes",2011
+"74193","Spina bifida-lumbar",9,69,72,"Yes","Yes",2011
+"7420","Encephalocele",9,69,72,"Yes","Yes",2011
+"7421","Microcephalus",9,69,72,"Yes","Yes",2011
+"7422","Reduction deform, brain",9,69,72,"Yes","Yes",2011
+"7423","Congenital hydrocephalus",9,69,72,"Yes","Yes",2011
+"7424","Brain anomaly NEC",9,69,72,"Yes","Yes",2011
+"74251","Diastematomyelia",9,69,72,"Yes","Yes",2011
+"74253","Hydromyelia",9,69,72,"Yes","Yes",2011
+"74259","Spinal cord anomaly NEC",9,69,72,"Yes","Yes",2011
+"7428","Nervous system anom NEC",9,69,72,"Yes","Yes",2011
+"7429","Nervous system anom NOS",9,69,72,"Yes","Yes",2011
+"74685","Coronary artery anomaly",9,,89,"No","Yes",2011
+"75314","Polycyst kid-autosom rec",9,131,125,"Yes","Yes",2011
+"75683","Ehlers-danlos syndrome",9,,42,"No","Yes",2011
+"7581","Patau's syndrome",9,,68,"No","Yes",2011
+"7582","Edwards' syndrome",9,,68,"No","Yes",2011
+"75831","Cri-du-chat syndrome",9,,68,"No","Yes",2011
+"75832","Velo-cardio-facial synd",9,,68,"No","Yes",2011
+"75833","Microdeletions NEC",9,,68,"No","Yes",2011
+"75839","Autosomal deletions NEC",9,,68,"No","Yes",2011
+"7585","Autosomal anomalies NEC",9,,68,"No","Yes",2011
+"7595","Tuberous sclerosis",9,10,10,"Yes","Yes",2011
+"7596","Hamartoses NEC",9,10,10,"Yes","Yes",2011
+"75981","Prader-willi syndrome",9,,68,"No","Yes",2011
+"75982","Marfan syndrome",9,,42,"No","Yes",2011
+"75983","Fragile x syndrome",9,,68,"No","Yes",2011
+"77181","NB septicemia [sepsis]",9,2,,"Yes","No",2011
+"78001","Coma",9,75,,"Yes","No",2011
+"78003","Persistent vegtv state",9,75,,"Yes","No",2011
+"78031","Febrile convulsions NOS",9,74,80,"Yes","Yes",2011
+"78032","Complx febrile convulsns",9,74,80,"Yes","Yes",2011
+"78033","Post traumatic seizures",9,74,80,"Yes","Yes",2011
+"78039","Convulsions NEC",9,74,80,"Yes","Yes",2011
+"78072","Functional quadriplegia",9,67,,"Yes","No",2011
+"7854","Gangrene",9,104,,"Yes","No",2011
+"78550","Shock NOS",9,79,,"Yes","No",2011
+"78551","Cardiogenic shock",9,79,,"Yes","No",2011
+"78552","Septic shock",9,2,,"Yes","No",2011
+"78559","Shock w/o trauma NEC",9,2,,"Yes","No",2011
+"7980","Sudden infant death synd",9,79,,"Yes","No",2011
+"7981","Instantaneous death",9,79,,"Yes","No",2011
+"7982","Death within 24 hr sympt",9,79,,"Yes","No",2011
+"7989","Unattended death",9,79,,"Yes","No",2011
+"79901","Asphyxia",9,79,,"Yes","No",2011
+"79902","Hypoxemia",9,79,,"Yes","No",2011
+"7991","Respiratory arrest",9,78,,"Yes","No",2011
+"7994","Cachexia",9,21,,"Yes","No",2011
+"80000","Closed skull vault fx",9,155,,"Yes","No",2011
+"80001","Cl skull vlt fx w/o coma",9,155,,"Yes","No",2011
+"80002","Cl skull vlt fx-brf coma",9,155,,"Yes","No",2011
+"80003","Cl skull vlt fx-mod coma",9,154,,"Yes","No",2011
+"80004","Cl skl vlt fx-proln coma",9,154,,"Yes","No",2011
+"80005","Cl skul vlt fx-deep coma",9,154,,"Yes","No",2011
+"80006","Cl skull vlt fx-coma NOS",9,155,,"Yes","No",2011
+"80009","Cl skl vlt fx-concus NOS",9,155,,"Yes","No",2011
+"80010","Cl skl vlt fx/cerebr lac",9,155,,"Yes","No",2011
+"80011","Cl skull vlt fx w/o coma",9,155,,"Yes","No",2011
+"80012","Cl skull vlt fx-brf coma",9,155,,"Yes","No",2011
+"80013","Cl skull vlt fx-mod coma",9,154,,"Yes","No",2011
+"80014","Cl skl vlt fx-proln coma",9,154,,"Yes","No",2011
+"80015","Cl skul vlt fx-deep coma",9,154,,"Yes","No",2011
+"80016","Cl skull vlt fx-coma NOS",9,155,,"Yes","No",2011
+"80019","Cl skl vlt fx-concus NOS",9,155,,"Yes","No",2011
+"80020","Cl skl vlt fx/mening hem",9,155,,"Yes","No",2011
+"80021","Cl skull vlt fx w/o coma",9,155,,"Yes","No",2011
+"80022","Cl skull vlt fx-brf coma",9,155,,"Yes","No",2011
+"80023","Cl skull vlt fx-mod coma",9,154,,"Yes","No",2011
+"80024","Cl skl vlt fx-proln coma",9,154,,"Yes","No",2011
+"80025","Cl skul vlt fx-deep coma",9,154,,"Yes","No",2011
+"80026","Cl skull vlt fx-coma NOS",9,155,,"Yes","No",2011
+"80029","Cl skl vlt fx-concus NOS",9,155,,"Yes","No",2011
+"80030","Cl skull vlt fx/hem NEC",9,155,,"Yes","No",2011
+"80031","Cl skull vlt fx w/o coma",9,155,,"Yes","No",2011
+"80032","Cl skull vlt fx-brf coma",9,155,,"Yes","No",2011
+"80033","Cl skull vlt fx-mod coma",9,154,,"Yes","No",2011
+"80034","Cl skl vlt fx-proln coma",9,154,,"Yes","No",2011
+"80035","Cl skul vlt fx-deep coma",9,154,,"Yes","No",2011
+"80036","Cl skull vlt fx-coma NOS",9,155,,"Yes","No",2011
+"80039","Cl skl vlt fx-concus NOS",9,155,,"Yes","No",2011
+"80040","Cl skl vlt fx/br inj NEC",9,155,,"Yes","No",2011
+"80041","Cl skull vlt fx w/o coma",9,155,,"Yes","No",2011
+"80042","Cl skull vlt fx-brf coma",9,155,,"Yes","No",2011
+"80043","Cl skull vlt fx-mod coma",9,154,,"Yes","No",2011
+"80044","Cl skl vlt fx-proln coma",9,154,,"Yes","No",2011
+"80045","Cl skul vlt fx-deep coma",9,154,,"Yes","No",2011
+"80046","Cl skull vlt fx-coma NOS",9,155,,"Yes","No",2011
+"80049","Cl skl vlt fx-concus NOS",9,155,,"Yes","No",2011
+"80050","Opn skull vault fracture",9,155,,"Yes","No",2011
+"80051","Opn skul vlt fx w/o coma",9,155,,"Yes","No",2011
+"80052","Opn skul vlt fx-brf coma",9,155,,"Yes","No",2011
+"80053","Opn skul vlt fx-mod coma",9,154,,"Yes","No",2011
+"80054","Opn skl vlt fx-proln com",9,154,,"Yes","No",2011
+"80055","Opn skl vlt fx-deep coma",9,154,,"Yes","No",2011
+"80056","Opn skul vlt fx-coma NOS",9,155,,"Yes","No",2011
+"80059","Op skl vlt fx-concus NOS",9,155,,"Yes","No",2011
+"80060","Opn skl vlt fx/cereb lac",9,155,,"Yes","No",2011
+"80061","Opn skul vlt fx w/o coma",9,155,,"Yes","No",2011
+"80062","Opn skul vlt fx-brf coma",9,155,,"Yes","No",2011
+"80063","Opn skul vlt fx-mod coma",9,154,,"Yes","No",2011
+"80064","Opn skl vlt fx-proln com",9,154,,"Yes","No",2011
+"80065","Opn skl vlt fx-deep coma",9,154,,"Yes","No",2011
+"80066","Opn skul vlt fx-coma NOS",9,155,,"Yes","No",2011
+"80069","Op skl vlt fx-concus NOS",9,155,,"Yes","No",2011
+"80070","Opn skl vlt fx/menin hem",9,155,,"Yes","No",2011
+"80071","Opn skul vlt fx w/o coma",9,155,,"Yes","No",2011
+"80072","Opn skul vlt fx-brf coma",9,155,,"Yes","No",2011
+"80073","Opn skul vlt fx-mod coma",9,154,,"Yes","No",2011
+"80074","Opn skl vlt fx-proln com",9,154,,"Yes","No",2011
+"80075","Opn skl vlt fx-deep coma",9,154,,"Yes","No",2011
+"80076","Opn skul vlt fx-coma NOS",9,155,,"Yes","No",2011
+"80079","Op skl vlt fx-concus NOS",9,155,,"Yes","No",2011
+"80080","Opn skull vlt fx/hem NEC",9,155,,"Yes","No",2011
+"80081","Opn skul vlt fx w/o coma",9,155,,"Yes","No",2011
+"80082","Opn skul vlt fx-brf coma",9,155,,"Yes","No",2011
+"80083","Opn skul vlt fx-mod coma",9,154,,"Yes","No",2011
+"80084","Opn skl vlt fx-proln com",9,154,,"Yes","No",2011
+"80085","Opn skl vlt fx-deep coma",9,154,,"Yes","No",2011
+"80086","Opn skul vlt fx-coma NOS",9,155,,"Yes","No",2011
+"80089","Op skl vlt fx-concus NOS",9,155,,"Yes","No",2011
+"80090","Op skl vlt fx/br inj NEC",9,155,,"Yes","No",2011
+"80091","Opn skul vlt fx w/o coma",9,155,,"Yes","No",2011
+"80092","Opn skul vlt fx-brf coma",9,155,,"Yes","No",2011
+"80093","Opn skul vlt fx-mod coma",9,154,,"Yes","No",2011
+"80094","Opn skl vlt fx-proln com",9,154,,"Yes","No",2011
+"80095","Op skul vlt fx-deep coma",9,154,,"Yes","No",2011
+"80096","Opn skul vlt fx-coma NOS",9,155,,"Yes","No",2011
+"80099","Op skl vlt fx-concus NOS",9,155,,"Yes","No",2011
+"80100","Clos skull base fracture",9,155,,"Yes","No",2011
+"80101","Cl skul base fx w/o coma",9,155,,"Yes","No",2011
+"80102","Cl skul base fx-brf coma",9,155,,"Yes","No",2011
+"80103","Cl skul base fx-mod coma",9,154,,"Yes","No",2011
+"80104","Cl skl base fx-prol coma",9,154,,"Yes","No",2011
+"80105","Cl skl base fx-deep coma",9,154,,"Yes","No",2011
+"80106","Cl skul base fx-coma NOS",9,155,,"Yes","No",2011
+"80109","Cl skull base fx-concuss",9,155,,"Yes","No",2011
+"80110","Cl skl base fx/cereb lac",9,155,,"Yes","No",2011
+"80111","Cl skul base fx w/o coma",9,155,,"Yes","No",2011
+"80112","Cl skul base fx-brf coma",9,155,,"Yes","No",2011
+"80113","Cl skul base fx-mod coma",9,154,,"Yes","No",2011
+"80114","Cl skl base fx-prol coma",9,154,,"Yes","No",2011
+"80115","Cl skl base fx-deep coma",9,154,,"Yes","No",2011
+"80116","Cl skul base fx-coma NOS",9,155,,"Yes","No",2011
+"80119","Cl skull base fx-concuss",9,155,,"Yes","No",2011
+"80120","Cl skl base fx/menin hem",9,155,,"Yes","No",2011
+"80121","Cl skul base fx w/o coma",9,155,,"Yes","No",2011
+"80122","Cl skul base fx/brf coma",9,155,,"Yes","No",2011
+"80123","Cl skul base fx-mod coma",9,154,,"Yes","No",2011
+"80124","Cl skl base fx-prol coma",9,154,,"Yes","No",2011
+"80125","Cl skl base fx-deep coma",9,154,,"Yes","No",2011
+"80126","Cl skul base fx-coma NOS",9,155,,"Yes","No",2011
+"80129","Cl skull base fx-concuss",9,155,,"Yes","No",2011
+"80130","Cl skull base fx/hem NEC",9,155,,"Yes","No",2011
+"80131","Cl skul base fx w/o coma",9,155,,"Yes","No",2011
+"80132","Cl skul base fx-brf coma",9,155,,"Yes","No",2011
+"80133","Cl skul base fx-mod coma",9,154,,"Yes","No",2011
+"80134","Cl skl base fx-prol coma",9,154,,"Yes","No",2011
+"80135","Cl skl base fx-deep coma",9,154,,"Yes","No",2011
+"80136","Cl skul base fx-coma NOS",9,155,,"Yes","No",2011
+"80139","Cl skull base fx-concuss",9,155,,"Yes","No",2011
+"80140","Cl sk base fx/br inj NEC",9,155,,"Yes","No",2011
+"80141","Cl skul base fx w/o coma",9,155,,"Yes","No",2011
+"80142","Cl skul base fx-brf coma",9,155,,"Yes","No",2011
+"80143","Cl skul base fx-mod coma",9,154,,"Yes","No",2011
+"80144","Cl skl base fx-prol coma",9,154,,"Yes","No",2011
+"80145","Cl skl base fx-deep coma",9,154,,"Yes","No",2011
+"80146","Cl skul base fx-coma NOS",9,155,,"Yes","No",2011
+"80149","Cl skull base fx-concuss",9,155,,"Yes","No",2011
+"80150","Open skull base fracture",9,155,,"Yes","No",2011
+"80151","Opn skl base fx w/o coma",9,155,,"Yes","No",2011
+"80152","Opn skl base fx-brf coma",9,155,,"Yes","No",2011
+"80153","Opn skl base fx-mod coma",9,154,,"Yes","No",2011
+"80154","Op skl base fx-prol coma",9,154,,"Yes","No",2011
+"80155","Op skl base fx-deep coma",9,154,,"Yes","No",2011
+"80156","Opn skl base fx-coma NOS",9,155,,"Yes","No",2011
+"80159","Opn skul base fx-concuss",9,155,,"Yes","No",2011
+"80160","Op skl base fx/cereb lac",9,155,,"Yes","No",2011
+"80161","Opn skl base fx w/o coma",9,155,,"Yes","No",2011
+"80162","Opn skl base fx-brf coma",9,155,,"Yes","No",2011
+"80163","Opn skl base fx-mod coma",9,154,,"Yes","No",2011
+"80164","Op skl base fx-prol coma",9,154,,"Yes","No",2011
+"80165","Op skl base fx-deep coma",9,154,,"Yes","No",2011
+"80166","Opn skl base fx-coma NOS",9,155,,"Yes","No",2011
+"80169","Opn skul base fx-concuss",9,155,,"Yes","No",2011
+"80170","Op skl base fx/menin hem",9,155,,"Yes","No",2011
+"80171","Opn skl base fx w/o coma",9,155,,"Yes","No",2011
+"80172","Opn skl base fx-brf coma",9,155,,"Yes","No",2011
+"80173","Opn skl base fx-mod coma",9,154,,"Yes","No",2011
+"80174","Op skl base fx-prol coma",9,154,,"Yes","No",2011
+"80175","Op skl base fx-deep coma",9,154,,"Yes","No",2011
+"80176","Opn skl base fx-coma NOS",9,155,,"Yes","No",2011
+"80179","Opn skul base fx-concuss",9,155,,"Yes","No",2011
+"80180","Opn skul base fx/hem NEC",9,155,,"Yes","No",2011
+"80181","Opn skl base fx w/o coma",9,155,,"Yes","No",2011
+"80182","Opn skl base fx-brf coma",9,155,,"Yes","No",2011
+"80183","Opn skl base fx-mod coma",9,154,,"Yes","No",2011
+"80184","Op skl base fx-prol coma",9,154,,"Yes","No",2011
+"80185","Op skl base fx-deep coma",9,154,,"Yes","No",2011
+"80186","Opn skl base fx-coma NOS",9,155,,"Yes","No",2011
+"80189","Opn skul base fx-concuss",9,155,,"Yes","No",2011
+"80190","Op sk base fx/br inj NEC",9,155,,"Yes","No",2011
+"80191","Op skul base fx w/o coma",9,155,,"Yes","No",2011
+"80192","Opn skl base fx-brf coma",9,155,,"Yes","No",2011
+"80193","Opn skl base fx-mod coma",9,154,,"Yes","No",2011
+"80194","Op skl base fx-prol coma",9,154,,"Yes","No",2011
+"80195","Op skl base fx-deep coma",9,154,,"Yes","No",2011
+"80196","Opn skl base fx-coma NOS",9,155,,"Yes","No",2011
+"80199","Opn skul base fx-concuss",9,155,,"Yes","No",2011
+"80220","Mandible fx NOS-closed",9,155,,"Yes","No",2011
+"80221","Fx condyl proc mandib-cl",9,155,,"Yes","No",2011
+"80222","Subcondylar fx mandib-cl",9,155,,"Yes","No",2011
+"80223","Fx coron proc mandib-cl",9,155,,"Yes","No",2011
+"80224","Fx ramus NOS-closed",9,155,,"Yes","No",2011
+"80225","Fx angle of jaw-closed",9,155,,"Yes","No",2011
+"80226","Fx symphy mandib body-cl",9,155,,"Yes","No",2011
+"80227","Fx alveolar bord mand-cl",9,155,,"Yes","No",2011
+"80228","Fx mandible body NEC-cl",9,155,,"Yes","No",2011
+"80229","Mult fx mandible-closed",9,155,,"Yes","No",2011
+"80230","Mandible fx NOS-open",9,155,,"Yes","No",2011
+"80231","Fx condyl proc mand-open",9,155,,"Yes","No",2011
+"80232","Subcondyl fx mandib-open",9,155,,"Yes","No",2011
+"80233","Fx coron proc mandib-opn",9,155,,"Yes","No",2011
+"80234","Fx ramus NOS-open",9,155,,"Yes","No",2011
+"80235","Fx angle of jaw-open",9,155,,"Yes","No",2011
+"80236","Fx symphy mandib bdy-opn",9,155,,"Yes","No",2011
+"80237","Fx alv bord mand bdy-opn",9,155,,"Yes","No",2011
+"80238","Fx mandible body NEC-opn",9,155,,"Yes","No",2011
+"80239","Mult fx mandible-open",9,155,,"Yes","No",2011
+"8024","Fx malar/maxillary-close",9,155,,"Yes","No",2011
+"8025","Fx malar/maxillary-open",9,155,,"Yes","No",2011
+"8026","Fx orbital floor-closed",9,155,,"Yes","No",2011
+"8027","Fx orbital floor-open",9,155,,"Yes","No",2011
+"8028","Fx facial bone NEC-close",9,155,,"Yes","No",2011
+"8029","Fx facial bone NEC-open",9,155,,"Yes","No",2011
+"80300","Close skull fracture NEC",9,155,,"Yes","No",2011
+"80301","Cl skull fx NEC w/o coma",9,155,,"Yes","No",2011
+"80302","Cl skull fx NEC-brf coma",9,155,,"Yes","No",2011
+"80303","Cl skull fx NEC-mod coma",9,154,,"Yes","No",2011
+"80304","Cl skl fx NEC-proln coma",9,154,,"Yes","No",2011
+"80305","Cl skul fx NEC-deep coma",9,154,,"Yes","No",2011
+"80306","Cl skull fx NEC-coma NOS",9,155,,"Yes","No",2011
+"80309","Cl skull fx NEC-concuss",9,155,,"Yes","No",2011
+"80310","Cl skl fx NEC/cerebr lac",9,155,,"Yes","No",2011
+"80311","Cl skull fx NEC w/o coma",9,155,,"Yes","No",2011
+"80312","Cl skull fx NEC-brf coma",9,155,,"Yes","No",2011
+"80313","Cl skull fx NEC-mod coma",9,154,,"Yes","No",2011
+"80314","Cl skl fx NEC-proln coma",9,154,,"Yes","No",2011
+"80315","Cl skul fx NEC-deep coma",9,154,,"Yes","No",2011
+"80316","Cl skull fx NEC-coma NOS",9,155,,"Yes","No",2011
+"80319","Cl skull fx NEC-concuss",9,155,,"Yes","No",2011
+"80320","Cl skl fx NEC/mening hem",9,155,,"Yes","No",2011
+"80321","Cl skull fx NEC w/o coma",9,155,,"Yes","No",2011
+"80322","Cl skull fx NEC-brf coma",9,155,,"Yes","No",2011
+"80323","Cl skull fx NEC-mod coma",9,154,,"Yes","No",2011
+"80324","Cl skl fx NEC-proln coma",9,154,,"Yes","No",2011
+"80325","Cl skul fx NEC-deep coma",9,154,,"Yes","No",2011
+"80326","Cl skull fx NEC-coma NOS",9,155,,"Yes","No",2011
+"80329","Cl skull fx NEC-concuss",9,155,,"Yes","No",2011
+"80330","Cl skull fx NEC/hem NEC",9,155,,"Yes","No",2011
+"80331","Cl skull fx NEC w/o coma",9,155,,"Yes","No",2011
+"80332","Cl skull fx NEC-brf coma",9,155,,"Yes","No",2011
+"80333","Cl skull fx NEC-mod coma",9,154,,"Yes","No",2011
+"80334","Cl skl fx NEC-proln coma",9,154,,"Yes","No",2011
+"80335","Cl skul fx NEC-deep coma",9,154,,"Yes","No",2011
+"80336","Cl skull fx NEC-coma NOS",9,155,,"Yes","No",2011
+"80339","Cl skull fx NEC-concuss",9,155,,"Yes","No",2011
+"80340","Cl skl fx NEC/br inj NEC",9,155,,"Yes","No",2011
+"80341","Cl skull fx NEC w/o coma",9,155,,"Yes","No",2011
+"80342","Cl skull fx NEC-brf coma",9,155,,"Yes","No",2011
+"80343","Cl skull fx NEC-mod coma",9,154,,"Yes","No",2011
+"80344","Cl skl fx NEC-proln coma",9,154,,"Yes","No",2011
+"80345","Cl skul fx NEC-deep coma",9,154,,"Yes","No",2011
+"80346","Cl skull fx NEC-coma NOS",9,155,,"Yes","No",2011
+"80349","Cl skull fx NEC-concuss",9,155,,"Yes","No",2011
+"80350","Open skull fracture NEC",9,155,,"Yes","No",2011
+"80351","Opn skul fx NEC w/o coma",9,155,,"Yes","No",2011
+"80352","Opn skul fx NEC-brf coma",9,155,,"Yes","No",2011
+"80353","Opn skul fx NEC-mod coma",9,154,,"Yes","No",2011
+"80354","Opn skl fx NEC-prol coma",9,154,,"Yes","No",2011
+"80355","Opn skl fx NEC-deep coma",9,154,,"Yes","No",2011
+"80356","Opn skul fx NEC-coma NOS",9,155,,"Yes","No",2011
+"80359","Opn skull fx NEC-concuss",9,155,,"Yes","No",2011
+"80360","Opn skl fx NEC/cereb lac",9,155,,"Yes","No",2011
+"80361","Opn skul fx NEC w/o coma",9,155,,"Yes","No",2011
+"80362","Opn skul fx NEC-brf coma",9,155,,"Yes","No",2011
+"80363","Opn skul fx NEC-mod coma",9,154,,"Yes","No",2011
+"80364","Opn skl fx NEC-proln com",9,154,,"Yes","No",2011
+"80365","Opn skl fx NEC-deep coma",9,154,,"Yes","No",2011
+"80366","Opn skul fx NEC-coma NOS",9,155,,"Yes","No",2011
+"80369","Opn skull fx NEC-concuss",9,155,,"Yes","No",2011
+"80370","Opn skl fx NEC/menin hem",9,155,,"Yes","No",2011
+"80371","Opn skul fx NEC w/o coma",9,155,,"Yes","No",2011
+"80372","Opn skul fx NEC-brf coma",9,155,,"Yes","No",2011
+"80373","Opn skul fx NEC-mod coma",9,154,,"Yes","No",2011
+"80374","Opn skl fx NEC-prol coma",9,154,,"Yes","No",2011
+"80375","Opn skl fx NEC-deep coma",9,154,,"Yes","No",2011
+"80376","Opn skul fx NEC-coma NOS",9,155,,"Yes","No",2011
+"80379","Opn skull fx NEC-concuss",9,155,,"Yes","No",2011
+"80380","Opn skull fx NEC/hem NEC",9,155,,"Yes","No",2011
+"80381","Opn skul fx NEC w/o coma",9,155,,"Yes","No",2011
+"80382","Opn skul fx NEC-brf coma",9,155,,"Yes","No",2011
+"80383","Opn skul fx NEC-mod coma",9,154,,"Yes","No",2011
+"80384","Opn skl fx NEC-prol coma",9,154,,"Yes","No",2011
+"80385","Opn skl fx NEC-deep coma",9,154,,"Yes","No",2011
+"80386","Opn skul fx NEC-coma NOS",9,155,,"Yes","No",2011
+"80389","Opn skull fx NEC-concuss",9,155,,"Yes","No",2011
+"80390","Op skl fx NEC/br inj NEC",9,155,,"Yes","No",2011
+"80391","Opn skul fx NEC w/o coma",9,155,,"Yes","No",2011
+"80392","Opn skul fx NEC-brf coma",9,155,,"Yes","No",2011
+"80393","Opn skul fx NEC-mod coma",9,154,,"Yes","No",2011
+"80394","Opn skl fx NEC-prol coma",9,154,,"Yes","No",2011
+"80395","Opn skl fx NEC-deep coma",9,154,,"Yes","No",2011
+"80396","Opn skul fx NEC-coma NOS",9,155,,"Yes","No",2011
+"80399","Opn skull fx NEC-concuss",9,155,,"Yes","No",2011
+"80400","Cl skul fx w oth bone fx",9,155,,"Yes","No",2011
+"80401","Cl skl w oth fx w/o coma",9,155,,"Yes","No",2011
+"80402","Cl skl w oth fx-brf coma",9,155,,"Yes","No",2011
+"80403","Cl skl w oth fx-mod coma",9,154,,"Yes","No",2011
+"80404","Cl skl/oth fx-proln coma",9,154,,"Yes","No",2011
+"80405","Cl skul/oth fx-deep coma",9,154,,"Yes","No",2011
+"80406","Cl skl w oth fx-coma NOS",9,155,,"Yes","No",2011
+"80409","Cl skul w oth fx-concuss",9,155,,"Yes","No",2011
+"80410","Cl sk w oth fx/cereb lac",9,155,,"Yes","No",2011
+"80411","Cl skl w oth fx w/o coma",9,155,,"Yes","No",2011
+"80412","Cl skl w oth fx-brf coma",9,155,,"Yes","No",2011
+"80413","Cl skl w oth fx-mod coma",9,154,,"Yes","No",2011
+"80414","Cl skl/oth fx-proln coma",9,154,,"Yes","No",2011
+"80415","Cl skul/oth fx-deep coma",9,154,,"Yes","No",2011
+"80416","Cl skl w oth fx-coma NOS",9,155,,"Yes","No",2011
+"80419","Cl skul w oth fx-concuss",9,155,,"Yes","No",2011
+"80420","Cl skl/oth fx/mening hem",9,155,,"Yes","No",2011
+"80421","Cl skl w oth fx w/o coma",9,155,,"Yes","No",2011
+"80422","Cl skl w oth fx-brf coma",9,155,,"Yes","No",2011
+"80423","Cl skl w oth fx-mod coma",9,154,,"Yes","No",2011
+"80424","Cl skl/oth fx-proln coma",9,154,,"Yes","No",2011
+"80425","Cl skul/oth fx-deep coma",9,154,,"Yes","No",2011
+"80426","Cl skl w oth fx-coma NOS",9,155,,"Yes","No",2011
+"80429","Cl skul w oth fx-concuss",9,155,,"Yes","No",2011
+"80430","Cl skul w oth fx/hem NEC",9,155,,"Yes","No",2011
+"80431","Cl skl w oth fx w/o coma",9,155,,"Yes","No",2011
+"80432","Cl skl w oth fx-brf coma",9,155,,"Yes","No",2011
+"80433","Cl skl w oth fx-mod coma",9,154,,"Yes","No",2011
+"80434","Cl skl/oth fx-proln coma",9,154,,"Yes","No",2011
+"80435","Cl skul/oth fx-deep coma",9,154,,"Yes","No",2011
+"80436","Cl skl w oth fx-coma NOS",9,155,,"Yes","No",2011
+"80439","Cl skul w oth fx-concuss",9,155,,"Yes","No",2011
+"80440","Cl skl/oth fx/br inj NEC",9,155,,"Yes","No",2011
+"80441","Cl skl w oth fx w/o coma",9,155,,"Yes","No",2011
+"80442","Cl skl w oth fx-brf coma",9,155,,"Yes","No",2011
+"80443","Cl skl w oth fx-mod coma",9,154,,"Yes","No",2011
+"80444","Cl skl/oth fx-proln coma",9,154,,"Yes","No",2011
+"80445","Cl skul/oth fx-deep coma",9,154,,"Yes","No",2011
+"80446","Cl skl w oth fx-coma NOS",9,155,,"Yes","No",2011
+"80449","Cl skul w oth fx-concuss",9,155,,"Yes","No",2011
+"80450","Opn skull fx/oth bone fx",9,155,,"Yes","No",2011
+"80451","Opn skul/oth fx w/o coma",9,155,,"Yes","No",2011
+"80452","Opn skul/oth fx-brf coma",9,155,,"Yes","No",2011
+"80453","Opn skul/oth fx-mod coma",9,154,,"Yes","No",2011
+"80454","Opn skl/oth fx-prol coma",9,154,,"Yes","No",2011
+"80455","Opn skl/oth fx-deep coma",9,154,,"Yes","No",2011
+"80456","Opn skul/oth fx-coma NOS",9,155,,"Yes","No",2011
+"80459","Opn skull/oth fx-concuss",9,155,,"Yes","No",2011
+"80460","Opn skl/oth fx/cereb lac",9,155,,"Yes","No",2011
+"80461","Opn skul/oth fx w/o coma",9,155,,"Yes","No",2011
+"80462","Opn skul/oth fx-brf coma",9,155,,"Yes","No",2011
+"80463","Opn skul/oth fx-mod coma",9,154,,"Yes","No",2011
+"80464","Opn skl/oth fx-prol coma",9,154,,"Yes","No",2011
+"80465","Opn skl/oth fx-deep coma",9,154,,"Yes","No",2011
+"80466","Opn skul/oth fx-coma NOS",9,155,,"Yes","No",2011
+"80469","Opn skull/oth fx-concuss",9,155,,"Yes","No",2011
+"80470","Opn skl/oth fx/menin hem",9,155,,"Yes","No",2011
+"80471","Opn skul/oth fx w/o coma",9,155,,"Yes","No",2011
+"80472","Opn skul/oth fx-brf coma",9,155,,"Yes","No",2011
+"80473","Opn skul/oth fx-mod coma",9,154,,"Yes","No",2011
+"80474","Opn skl/oth fx-prol coma",9,154,,"Yes","No",2011
+"80475","Opn skl/oth fx-deep coma",9,154,,"Yes","No",2011
+"80476","Opn skul/oth fx-coma NOS",9,155,,"Yes","No",2011
+"80479","Opn skull/oth fx-concuss",9,155,,"Yes","No",2011
+"80480","Opn skl w oth fx/hem NEC",9,155,,"Yes","No",2011
+"80481","Opn skul/oth fx w/o coma",9,155,,"Yes","No",2011
+"80482","Opn skul/oth fx-brf coma",9,155,,"Yes","No",2011
+"80483","Opn skul/oth fx-mod coma",9,154,,"Yes","No",2011
+"80484","Opn skl/oth fx-prol coma",9,154,,"Yes","No",2011
+"80485","Opn skl/oth fx-deep coma",9,154,,"Yes","No",2011
+"80486","Opn skul/oth fx-coma NOS",9,155,,"Yes","No",2011
+"80489","Opn skull/oth fx-concuss",9,155,,"Yes","No",2011
+"80490","Op skl/oth fx/br inj NEC",9,155,,"Yes","No",2011
+"80491","Opn skul/oth fx w/o coma",9,155,,"Yes","No",2011
+"80492","Opn skul/oth fx-brf coma",9,155,,"Yes","No",2011
+"80493","Opn skul/oth fx-mod coma",9,154,,"Yes","No",2011
+"80494","Opn skl/oth fx-prol coma",9,154,,"Yes","No",2011
+"80495","Opn skl/oth fx-deep coma",9,154,,"Yes","No",2011
+"80496","Opn skul/oth fx-coma NOS",9,155,,"Yes","No",2011
+"80499","Opn skull/oth fx-concuss",9,155,,"Yes","No",2011
+"80500","Fx cervical vert NOS-cl",9,157,,"Yes","No",2011
+"80501","Fx c1 vertebra-closed",9,157,,"Yes","No",2011
+"80502","Fx c2 vertebra-closed",9,157,,"Yes","No",2011
+"80503","Fx c3 vertebra-closed",9,157,,"Yes","No",2011
+"80504","Fx c4 vertebra-closed",9,157,,"Yes","No",2011
+"80505","Fx c5 vertebra-closed",9,157,,"Yes","No",2011
+"80506","Fx c6 vertebra-closed",9,157,,"Yes","No",2011
+"80507","Fx c7 vertebra-closed",9,157,,"Yes","No",2011
+"80508","Fx mult cervical vert-cl",9,157,,"Yes","No",2011
+"80510","Fx cervical vert NOS-opn",9,157,,"Yes","No",2011
+"80511","Fx c1 vertebra-open",9,157,,"Yes","No",2011
+"80512","Fx c2 vertebra-open",9,157,,"Yes","No",2011
+"80513","Fx c3 vertebra-open",9,157,,"Yes","No",2011
+"80514","Fx c4 vertebra-open",9,157,,"Yes","No",2011
+"80515","Fx c5 vertebra-open",9,157,,"Yes","No",2011
+"80516","Fx c6 vertebra-open",9,157,,"Yes","No",2011
+"80517","Fx c7 vertebra-open",9,157,,"Yes","No",2011
+"80518","Fx mlt cervical vert-opn",9,157,,"Yes","No",2011
+"8052","Fx dorsal vertebra-close",9,157,,"Yes","No",2011
+"8053","Fx dorsal vertebra-open",9,157,,"Yes","No",2011
+"8054","Fx lumbar vertebra-close",9,157,,"Yes","No",2011
+"8055","Fx lumbar vertebra-open",9,157,,"Yes","No",2011
+"8056","Fx sacrum/coccyx-closed",9,157,,"Yes","No",2011
+"8057","Fx sacrum/coccyx-open",9,157,,"Yes","No",2011
+"8058","Vertebral fx NOS-closed",9,157,,"Yes","No",2011
+"8059","Vertebral fx NOS-open",9,157,,"Yes","No",2011
+"80600","C1-c4 fx-cl/cord inj NOS",9,69,,"Yes","No",2011
+"80601","C1-c4 fx-cl/com cord les",9,67,,"Yes","No",2011
+"80602","C1-c4 fx-cl/ant cord syn",9,69,,"Yes","No",2011
+"80603","C1-c4 fx-cl/cen cord syn",9,69,,"Yes","No",2011
+"80604","C1-c4 fx-cl/cord inj NEC",9,69,,"Yes","No",2011
+"80605","C5-c7 fx-cl/cord inj NOS",9,69,,"Yes","No",2011
+"80606","C5-c7 fx-cl/com cord les",9,67,,"Yes","No",2011
+"80607","C5-c7 fx-cl/ant cord syn",9,69,,"Yes","No",2011
+"80608","C5-c7 fx-cl/cen cord syn",9,69,,"Yes","No",2011
+"80609","C5-c7 fx-cl/cord inj NEC",9,69,,"Yes","No",2011
+"80610","C1-c4 fx-op/cord inj NOS",9,69,,"Yes","No",2011
+"80611","C1-c4 fx-op/com cord les",9,67,,"Yes","No",2011
+"80612","C1-c4 fx-op/ant cord syn",9,69,,"Yes","No",2011
+"80613","C1-c4 fx-op/cen cord syn",9,69,,"Yes","No",2011
+"80614","C1-c4 fx-op/cord inj NEC",9,69,,"Yes","No",2011
+"80615","C5-c7 fx-op/cord inj NOS",9,69,,"Yes","No",2011
+"80616","C5-c7 fx-op/com cord les",9,67,,"Yes","No",2011
+"80617","C5-c7 fx-op/ant cord syn",9,69,,"Yes","No",2011
+"80618","C5-c7 fx-op/cen cord syn",9,69,,"Yes","No",2011
+"80619","C5-c7 fx-op/cord inj NEC",9,69,,"Yes","No",2011
+"80620","T1-t6 fx-cl/cord inj NOS",9,69,,"Yes","No",2011
+"80621","T1-t6 fx-cl/com cord les",9,68,,"Yes","No",2011
+"80622","T1-t6 fx-cl/ant cord syn",9,69,,"Yes","No",2011
+"80623","T1-t6 fx-cl/cen cord syn",9,69,,"Yes","No",2011
+"80624","T1-t6 fx-cl/cord inj NEC",9,69,,"Yes","No",2011
+"80625","T7-t12 fx-cl/crd inj NOS",9,69,,"Yes","No",2011
+"80626","T7-t12 fx-cl/com crd les",9,68,,"Yes","No",2011
+"80627","T7-t12 fx-cl/ant crd syn",9,69,,"Yes","No",2011
+"80628","T7-t12 fx-cl/cen crd syn",9,69,,"Yes","No",2011
+"80629","T7-t12 fx-cl/crd inj NEC",9,69,,"Yes","No",2011
+"80630","T1-t6 fx-op/cord inj NOS",9,69,,"Yes","No",2011
+"80631","T1-t6 fx-op/com cord les",9,68,,"Yes","No",2011
+"80632","T1-t6 fx-op/ant cord syn",9,69,,"Yes","No",2011
+"80633","T1-t6 fx-op/cen cord syn",9,69,,"Yes","No",2011
+"80634","T1-t6 fx-op/cord inj NEC",9,69,,"Yes","No",2011
+"80635","T7-t12 fx-op/crd inj NOS",9,69,,"Yes","No",2011
+"80636","T7-t12 fx-op/com crd les",9,68,,"Yes","No",2011
+"80637","T7-t12 fx-op/ant crd syn",9,69,,"Yes","No",2011
+"80638","T7-t12 fx-op/cen crd syn",9,69,,"Yes","No",2011
+"80639","T7-t12 fx-op/crd inj NEC",9,69,,"Yes","No",2011
+"8064","Cl lumbar fx w cord inj",9,69,,"Yes","No",2011
+"8065","Opn lumbar fx w cord inj",9,69,,"Yes","No",2011
+"80660","Fx sacrum-cl/crd inj NOS",9,69,,"Yes","No",2011
+"80661","Fx sacr-cl/cauda equ les",9,69,,"Yes","No",2011
+"80662","Fx sacr-cl/cauda inj NEC",9,69,,"Yes","No",2011
+"80669","Fx sacrum-cl/crd inj NEC",9,69,,"Yes","No",2011
+"80670","Fx sacrum-op/crd inj NOS",9,69,,"Yes","No",2011
+"80671","Fx sacr-op/cauda equ les",9,69,,"Yes","No",2011
+"80672","Fx sacr-op/cauda inj NEC",9,69,,"Yes","No",2011
+"80679","Fx sacrum-op/crd inj NEC",9,69,,"Yes","No",2011
+"8068","Vert fx NOS-cl w crd inj",9,69,,"Yes","No",2011
+"8069","Vert fx NOS-op w crd inj",9,69,,"Yes","No",2011
+"8080","Fracture acetabulum-clos",9,158,,"Yes","No",2011
+"8081","Fracture acetabulum-open",9,158,,"Yes","No",2011
+"8082","Fracture of pubis-closed",9,158,,"Yes","No",2011
+"8083","Fracture of pubis-open",9,158,,"Yes","No",2011
+"80841","Fracture of ilium-closed",9,158,,"Yes","No",2011
+"80842","Fracture ischium-closed",9,158,,"Yes","No",2011
+"80843","Pelv fx-clos/pelv disrup",9,158,,"Yes","No",2011
+"80849","Pelvic fracture NEC-clos",9,158,,"Yes","No",2011
+"80851","Fracture of ilium-open",9,158,,"Yes","No",2011
+"80852","Fracture of ischium-open",9,158,,"Yes","No",2011
+"80853","Pelv fx-open/pelv disrup",9,158,,"Yes","No",2011
+"80859","Pelvic fracture NEC-open",9,158,,"Yes","No",2011
+"8088","Pelvic fracture NOS-clos",9,158,,"Yes","No",2011
+"8089","Pelvic fracture NOS-open",9,158,,"Yes","No",2011
+"82000","Fx femur intrcaps NOS-cl",9,158,,"Yes","No",2011
+"82001","Fx up femur epiphy-clos",9,158,,"Yes","No",2011
+"82002","Fx femur, midcervic-clos",9,158,,"Yes","No",2011
+"82003","Fx base femoral nck-clos",9,158,,"Yes","No",2011
+"82009","Fx femur intrcaps NEC-cl",9,158,,"Yes","No",2011
+"82010","Fx femur intrcap NOS-opn",9,158,,"Yes","No",2011
+"82011","Fx up femur epiphy-open",9,158,,"Yes","No",2011
+"82012","Fx femur, midcervic-open",9,158,,"Yes","No",2011
+"82013","Fx base femoral nck-open",9,158,,"Yes","No",2011
+"82019","Fx femur intrcap NEC-opn",9,158,,"Yes","No",2011
+"82020","Trochanteric fx NOS-clos",9,158,,"Yes","No",2011
+"82021","Intertrochanteric fx-cl",9,158,,"Yes","No",2011
+"82022","Subtrochanteric fx-close",9,158,,"Yes","No",2011
+"82030","Trochanteric fx NOS-open",9,158,,"Yes","No",2011
+"82031","Intertrochanteric fx-opn",9,158,,"Yes","No",2011
+"82032","Subtrochanteric fx-open",9,158,,"Yes","No",2011
+"8208","Fx neck of femur NOS-cl",9,158,,"Yes","No",2011
+"8209","Fx neck of femur NOS-opn",9,158,,"Yes","No",2011
+"82100","Fx femur NOS-closed",9,158,,"Yes","No",2011
+"82101","Fx femur shaft-closed",9,158,,"Yes","No",2011
+"82110","Fx femur NOS-open",9,158,,"Yes","No",2011
+"82111","Fx femur shaft-open",9,158,,"Yes","No",2011
+"82120","Fx low end femur NOS-cl",9,158,,"Yes","No",2011
+"82121","Fx femoral condyle-close",9,158,,"Yes","No",2011
+"82122","Fx low femur epiphy-clos",9,158,,"Yes","No",2011
+"82123","Supracondyl fx femur-cl",9,158,,"Yes","No",2011
+"82129","Fx low end femur NEC-cl",9,158,,"Yes","No",2011
+"82130","Fx low end femur NOS-opn",9,158,,"Yes","No",2011
+"82131","Fx femoral condyle-open",9,158,,"Yes","No",2011
+"82132","Fx low femur epiphy-open",9,158,,"Yes","No",2011
+"82133","Supracondyl fx femur-opn",9,158,,"Yes","No",2011
+"82139","Fx low end femur NEC-opn",9,158,,"Yes","No",2011
+"83500","Dislocat hip NOS-closed",9,158,,"Yes","No",2011
+"83501","Posterior disloc hip-cl",9,158,,"Yes","No",2011
+"83502","Obturator disloc hip-cl",9,158,,"Yes","No",2011
+"83503","Ant disloc hip NEC-clos",9,158,,"Yes","No",2011
+"83510","Dislocation hip NOS-open",9,158,,"Yes","No",2011
+"83511","Posterior disloc hip-opn",9,158,,"Yes","No",2011
+"83512","Obturator disloc hip-opn",9,158,,"Yes","No",2011
+"83513","Ant disloc hip NEC-open",9,158,,"Yes","No",2011
+"8502","Concussion-moderate coma",9,155,,"Yes","No",2011
+"8503","Concussion-prolong coma",9,155,,"Yes","No",2011
+"8504","Concussion-deep coma",9,155,,"Yes","No",2011
+"85100","Cerebral cortx contusion",9,155,,"Yes","No",2011
+"85101","Cortex contusion-no coma",9,155,,"Yes","No",2011
+"85102","Cortex contus-brief coma",9,155,,"Yes","No",2011
+"85103","Cortex contus-mod coma",9,154,,"Yes","No",2011
+"85104","Cortx contus-prolng coma",9,154,,"Yes","No",2011
+"85105","Cortex contus-deep coma",9,154,,"Yes","No",2011
+"85106","Cortex contus-coma NOS",9,155,,"Yes","No",2011
+"85109","Cortex contus-concus NOS",9,155,,"Yes","No",2011
+"85110","Cortex contusion/opn wnd",9,155,,"Yes","No",2011
+"85111","Opn cortx contus-no coma",9,155,,"Yes","No",2011
+"85112","Opn cort contus-brf coma",9,155,,"Yes","No",2011
+"85113","Opn cort contus-mod coma",9,154,,"Yes","No",2011
+"85114","Opn cort contu-prol coma",9,154,,"Yes","No",2011
+"85115","Opn cort contu-deep coma",9,154,,"Yes","No",2011
+"85116","Opn cort contus-coma NOS",9,155,,"Yes","No",2011
+"85119","Opn cortx contus-concuss",9,155,,"Yes","No",2011
+"85120","Cerebral cortex lacerat",9,155,,"Yes","No",2011
+"85121","Cortex lacerat w/o coma",9,155,,"Yes","No",2011
+"85122","Cortex lacera-brief coma",9,155,,"Yes","No",2011
+"85123","Cortex lacerat-mod coma",9,154,,"Yes","No",2011
+"85124","Cortex lacerat-prol coma",9,154,,"Yes","No",2011
+"85125","Cortex lacerat-deep coma",9,154,,"Yes","No",2011
+"85126","Cortex lacerat-coma NOS",9,155,,"Yes","No",2011
+"85129","Cortex lacerat-concuss",9,155,,"Yes","No",2011
+"85130","Cortex lacer w opn wound",9,155,,"Yes","No",2011
+"85131","Opn cortex lacer-no coma",9,155,,"Yes","No",2011
+"85132","Opn cortx lac-brief coma",9,155,,"Yes","No",2011
+"85133","Opn cortx lacer-mod coma",9,154,,"Yes","No",2011
+"85134","Opn cortx lac-proln coma",9,154,,"Yes","No",2011
+"85135","Opn cortex lac-deep coma",9,154,,"Yes","No",2011
+"85136","Opn cortx lacer-coma NOS",9,155,,"Yes","No",2011
+"85139","Opn cortx lacer-concuss",9,155,,"Yes","No",2011
+"85140","Cerebel/brain stm contus",9,155,,"Yes","No",2011
+"85141","Cerebell contus w/o coma",9,155,,"Yes","No",2011
+"85142","Cerebell contus-brf coma",9,155,,"Yes","No",2011
+"85143","Cerebell contus-mod coma",9,154,,"Yes","No",2011
+"85144","Cerebel contus-prol coma",9,154,,"Yes","No",2011
+"85145","Cerebel contus-deep coma",9,154,,"Yes","No",2011
+"85146","Cerebell contus-coma NOS",9,155,,"Yes","No",2011
+"85149","Cerebell contus-concuss",9,155,,"Yes","No",2011
+"85150","Cerebel contus w opn wnd",9,155,,"Yes","No",2011
+"85151","Opn cerebe cont w/o coma",9,155,,"Yes","No",2011
+"85152","Opn cerebe cont-brf coma",9,155,,"Yes","No",2011
+"85153","Opn cerebe cont-mod coma",9,154,,"Yes","No",2011
+"85154","Opn cerebe cont-prol com",9,154,,"Yes","No",2011
+"85155","Opn cerebe cont-deep com",9,154,,"Yes","No",2011
+"85156","Opn cerebe cont-coma NOS",9,155,,"Yes","No",2011
+"85159","Opn cerebel cont-concuss",9,155,,"Yes","No",2011
+"85160","Cerebel/brain stem lacer",9,155,,"Yes","No",2011
+"85161","Cerebel lacerat w/o coma",9,155,,"Yes","No",2011
+"85162","Cerebel lacer-brief coma",9,155,,"Yes","No",2011
+"85163","Cerebel lacerat-mod coma",9,154,,"Yes","No",2011
+"85164","Cerebel lacer-proln coma",9,154,,"Yes","No",2011
+"85165","Cerebell lacer-deep coma",9,154,,"Yes","No",2011
+"85166","Cerebel lacerat-coma NOS",9,155,,"Yes","No",2011
+"85169","Cerebel lacer-concussion",9,155,,"Yes","No",2011
+"85170","Cerebel lacer w open wnd",9,155,,"Yes","No",2011
+"85171","Opn cerebel lac w/o coma",9,155,,"Yes","No",2011
+"85172","Opn cerebel lac-brf coma",9,155,,"Yes","No",2011
+"85173","Opn cerebel lac-mod coma",9,154,,"Yes","No",2011
+"85174","Opn cerebe lac-prol coma",9,154,,"Yes","No",2011
+"85175","Opn cerebe lac-deep coma",9,154,,"Yes","No",2011
+"85176","Opn cerebel lac-coma NOS",9,155,,"Yes","No",2011
+"85179","Opn cerebell lac-concuss",9,155,,"Yes","No",2011
+"85180","Brain laceration NEC",9,155,,"Yes","No",2011
+"85181","Brain lacer NEC w/o coma",9,155,,"Yes","No",2011
+"85182","Brain lac NEC-brief coma",9,155,,"Yes","No",2011
+"85183","Brain lacer NEC-mod coma",9,154,,"Yes","No",2011
+"85184","Brain lac NEC-proln coma",9,154,,"Yes","No",2011
+"85185","Brain lac NEC-deep coma",9,154,,"Yes","No",2011
+"85186","Brain lacer NEC-coma NOS",9,155,,"Yes","No",2011
+"85189","Brain lacer NEC-concuss",9,155,,"Yes","No",2011
+"85190","Brain lac NEC w open wnd",9,155,,"Yes","No",2011
+"85191","Opn brain lacer w/o coma",9,155,,"Yes","No",2011
+"85192","Opn brain lac-brief coma",9,155,,"Yes","No",2011
+"85193","Opn brain lacer-mod coma",9,154,,"Yes","No",2011
+"85194","Opn brain lac-proln coma",9,154,,"Yes","No",2011
+"85195","Open brain lac-deep coma",9,154,,"Yes","No",2011
+"85196","Opn brain lacer-coma NOS",9,155,,"Yes","No",2011
+"85199","Open brain lacer-concuss",9,155,,"Yes","No",2011
+"85200","Traum subarachnoid hem",9,155,,"Yes","No",2011
+"85201","Subarachnoid hem-no coma",9,155,,"Yes","No",2011
+"85202","Subarach hem-brief coma",9,155,,"Yes","No",2011
+"85203","Subarach hem-mod coma",9,154,,"Yes","No",2011
+"85204","Subarach hem-prolng coma",9,154,,"Yes","No",2011
+"85205","Subarach hem-deep coma",9,154,,"Yes","No",2011
+"85206","Subarach hem-coma NOS",9,155,,"Yes","No",2011
+"85209","Subarach hem-concussion",9,155,,"Yes","No",2011
+"85210","Subarach hem w opn wound",9,155,,"Yes","No",2011
+"85211","Opn subarach hem-no coma",9,155,,"Yes","No",2011
+"85212","Op subarach hem-brf coma",9,155,,"Yes","No",2011
+"85213","Op subarach hem-mod coma",9,154,,"Yes","No",2011
+"85214","Op subarach hem-prol com",9,154,,"Yes","No",2011
+"85215","Op subarach hem-deep com",9,154,,"Yes","No",2011
+"85216","Op subarach hem-coma NOS",9,155,,"Yes","No",2011
+"85219","Opn subarach hem-concuss",9,155,,"Yes","No",2011
+"85220","Traumatic subdural hem",9,155,,"Yes","No",2011
+"85221","Subdural hem w/o coma",9,155,,"Yes","No",2011
+"85222","Subdural hem-brief coma",9,155,,"Yes","No",2011
+"85223","Subdural hemorr-mod coma",9,154,,"Yes","No",2011
+"85224","Subdural hem-prolng coma",9,154,,"Yes","No",2011
+"85225","Subdural hem-deep coma",9,154,,"Yes","No",2011
+"85226","Subdural hemorr-coma NOS",9,155,,"Yes","No",2011
+"85229","Subdural hem-concussion",9,155,,"Yes","No",2011
+"85230","Subdural hem w opn wound",9,155,,"Yes","No",2011
+"85231","Open subdur hem w/o coma",9,155,,"Yes","No",2011
+"85232","Opn subdur hem-brf coma",9,155,,"Yes","No",2011
+"85233","Opn subdur hem-mod coma",9,154,,"Yes","No",2011
+"85234","Opn subdur hem-prol coma",9,154,,"Yes","No",2011
+"85235","Opn subdur hem-deep coma",9,154,,"Yes","No",2011
+"85236","Opn subdur hem-coma NOS",9,155,,"Yes","No",2011
+"85239","Opn subdur hem-concuss",9,155,,"Yes","No",2011
+"85240","Traumatic extradural hem",9,155,,"Yes","No",2011
+"85241","Extradural hem w/o coma",9,155,,"Yes","No",2011
+"85242","Extradur hem-brief coma",9,155,,"Yes","No",2011
+"85243","Extradural hem-mod coma",9,154,,"Yes","No",2011
+"85244","Extradur hem-proln coma",9,154,,"Yes","No",2011
+"85245","Extradural hem-deep coma",9,154,,"Yes","No",2011
+"85246","Extradural hem-coma NOS",9,155,,"Yes","No",2011
+"85249","Extadural hem-concuss",9,155,,"Yes","No",2011
+"85250","Extradural hem w opn wnd",9,155,,"Yes","No",2011
+"85251","Extradural hemor-no coma",9,155,,"Yes","No",2011
+"85252","Extradur hem-brief coma",9,155,,"Yes","No",2011
+"85253","Extradural hem-mod coma",9,154,,"Yes","No",2011
+"85254","Extradur hem-proln coma",9,154,,"Yes","No",2011
+"85255","Extradur hem-deep coma",9,154,,"Yes","No",2011
+"85256","Extradural hem-coma NOS",9,155,,"Yes","No",2011
+"85259","Extradural hem-concuss",9,155,,"Yes","No",2011
+"85300","Traumatic brain hem NEC",9,155,,"Yes","No",2011
+"85301","Brain hem NEC w/o coma",9,155,,"Yes","No",2011
+"85302","Brain hem NEC-brief coma",9,155,,"Yes","No",2011
+"85303","Brain hem NEC-mod coma",9,154,,"Yes","No",2011
+"85304","Brain hem NEC-proln coma",9,154,,"Yes","No",2011
+"85305","Brain hem NEC-deep coma",9,154,,"Yes","No",2011
+"85306","Brain hem NEC-coma NOS",9,155,,"Yes","No",2011
+"85309","Brain hem NEC-concussion",9,155,,"Yes","No",2011
+"85310","Brain hem NEC w opn wnd",9,155,,"Yes","No",2011
+"85311","Brain hem opn w/o coma",9,155,,"Yes","No",2011
+"85312","Brain hem opn-brf coma",9,155,,"Yes","No",2011
+"85313","Brain hem open-mod coma",9,154,,"Yes","No",2011
+"85314","Brain hem opn-proln coma",9,154,,"Yes","No",2011
+"85315","Brain hem open-deep coma",9,154,,"Yes","No",2011
+"85316","Brain hem open-coma NOS",9,155,,"Yes","No",2011
+"85319","Brain hem opn-concussion",9,155,,"Yes","No",2011
+"85400","Brain injury NEC",9,155,,"Yes","No",2011
+"85401","Brain injury NEC-no coma",9,155,,"Yes","No",2011
+"85402","Brain inj NEC-brief coma",9,155,,"Yes","No",2011
+"85403","Brain inj NEC-mod coma",9,154,,"Yes","No",2011
+"85404","Brain inj NEC-proln coma",9,154,,"Yes","No",2011
+"85405","Brain inj NEC-deep coma",9,154,,"Yes","No",2011
+"85406","Brain inj NEC-coma NOS",9,155,,"Yes","No",2011
+"85409","Brain inj NEC-concussion",9,155,,"Yes","No",2011
+"85410","Brain injury w opn wnd",9,155,,"Yes","No",2011
+"85411","Opn brain inj w/o coma",9,155,,"Yes","No",2011
+"85412","Opn brain inj-brief coma",9,155,,"Yes","No",2011
+"85413","Opn brain inj-mod coma",9,154,,"Yes","No",2011
+"85414","Opn brain inj-proln coma",9,154,,"Yes","No",2011
+"85415","Opn brain inj-deep coma",9,154,,"Yes","No",2011
+"85416","Open brain inj-coma NOS",9,155,,"Yes","No",2011
+"85419","Opn brain inj-concussion",9,155,,"Yes","No",2011
+"8870","Amput below elb, unilat",9,161,,"Yes","No",2011
+"8871","Amp below elb, unil-comp",9,161,,"Yes","No",2011
+"8872","Amput abv elbow, unilat",9,161,,"Yes","No",2011
+"8873","Amput abv elb, unil-comp",9,161,,"Yes","No",2011
+"8874","Amputat arm, unilat NOS",9,161,,"Yes","No",2011
+"8875","Amput arm, unil NOS-comp",9,161,,"Yes","No",2011
+"8876","Amputation arm, bilat",9,161,,"Yes","No",2011
+"8877","Amputat arm, bilat-compl",9,161,,"Yes","No",2011
+"8950","Amputation toe",9,161,,"Yes","No",2011
+"8951","Amputation toe-complicat",9,161,,"Yes","No",2011
+"8960","Amputation foot, unilat",9,161,,"Yes","No",2011
+"8961","Amput foot, unilat-compl",9,161,,"Yes","No",2011
+"8962","Amputation foot, bilat",9,161,,"Yes","No",2011
+"8963","Amputat foot, bilat-comp",9,161,,"Yes","No",2011
+"8970","Amput below knee, unilat",9,161,,"Yes","No",2011
+"8971","Amputat bk, unilat-compl",9,161,,"Yes","No",2011
+"8972","Amput above knee, unilat",9,161,,"Yes","No",2011
+"8973","Amput abv kn, unil-compl",9,161,,"Yes","No",2011
+"8974","Amputat leg, unilat NOS",9,161,,"Yes","No",2011
+"8975","Amput leg, unil NOS-comp",9,161,,"Yes","No",2011
+"8976","Amputation leg, bilat",9,161,,"Yes","No",2011
+"8977","Amputat leg, bilat-compl",9,161,,"Yes","No",2011
+"9050","Late effec skull/face fx",9,155,,"Yes","No",2011
+"9059","Late eff traumat amputat",9,177,,"Yes","No",2011
+"9070","Lt eff intracranial inj",9,155,,"Yes","No",2011
+"9072","Late eff spinal cord inj",9,69,,"Yes","No",2011
+"94811","10-19% bdy brn/10-19% 3d",9,150,,"Yes","No",2011
+"94821","20-29% bdy brn/10-19% 3d",9,150,,"Yes","No",2011
+"94822","20-29% bdy brn/20-29% 3d",9,150,,"Yes","No",2011
+"94831","30-39% bdy brn/10-19% 3d",9,150,,"Yes","No",2011
+"94832","30-39% bdy brn/20-29% 3d",9,150,,"Yes","No",2011
+"94833","30-39% bdy brn/30-39% 3d",9,150,,"Yes","No",2011
+"94841","40-49% bdy brn/10-19% 3d",9,150,,"Yes","No",2011
+"94842","40-49% bdy brn/20-29% 3d",9,150,,"Yes","No",2011
+"94843","40-49% bdy brn/30-39% 3d",9,150,,"Yes","No",2011
+"94844","40-49% bdy brn/40-49% 3d",9,150,,"Yes","No",2011
+"94851","50-59% bdy brn/10-19% 3d",9,150,,"Yes","No",2011
+"94852","50-59% bdy brn/20-29% 3d",9,150,,"Yes","No",2011
+"94853","50-59% bdy brn/30-39% 3d",9,150,,"Yes","No",2011
+"94854","50-59% bdy brn/40-49% 3d",9,150,,"Yes","No",2011
+"94855","50-59% bdy brn/50-59% 3d",9,150,,"Yes","No",2011
+"94861","60-69% bdy brn/10-19% 3d",9,150,,"Yes","No",2011
+"94862","60-69% bdy brn/20-29% 3d",9,150,,"Yes","No",2011
+"94863","60-69% bdy brn/30-39% 3d",9,150,,"Yes","No",2011
+"94864","60-69% bdy brn/40-49% 3d",9,150,,"Yes","No",2011
+"94865","60-69% bdy brn/50-59% 3d",9,150,,"Yes","No",2011
+"94866","60-69% bdy brn/60-69% 3d",9,150,,"Yes","No",2011
+"94871","70-79% bdy brn/10-19% 3d",9,150,,"Yes","No",2011
+"94872","70-79% bdy brn/20-29% 3d",9,150,,"Yes","No",2011
+"94873","70-79% bdy brn/30-39% 3d",9,150,,"Yes","No",2011
+"94874","70-79% bdy brn/40-49% 3d",9,150,,"Yes","No",2011
+"94875","70-79% bdy brn/50-59% 3d",9,150,,"Yes","No",2011
+"94876","70-79% bdy brn/60-69% 3d",9,150,,"Yes","No",2011
+"94877","70-79% bdy brn/70-79% 3d",9,150,,"Yes","No",2011
+"94881","80-89% bdy brn/10-19% 3d",9,150,,"Yes","No",2011
+"94882","80-89% bdy brn/20-29% 3d",9,150,,"Yes","No",2011
+"94883","80-89% bdy brn/30-39% 3d",9,150,,"Yes","No",2011
+"94884","80-89% bdy brn/40-49% 3d",9,150,,"Yes","No",2011
+"94885","80-89% bdy brn/50-59% 3d",9,150,,"Yes","No",2011
+"94886","80-89% bdy brn/60-69% 3d",9,150,,"Yes","No",2011
+"94887","80-89% bdy brn/70-79% 3d",9,150,,"Yes","No",2011
+"94888","80-89% bdy brn/80-89% 3d",9,150,,"Yes","No",2011
+"94891","90% + bdy brn/10-19% 3rd",9,150,,"Yes","No",2011
+"94892","90% + bdy brn/20-29% 3rd",9,150,,"Yes","No",2011
+"94893","90% + bdy brn/30-39% 3rd",9,150,,"Yes","No",2011
+"94894","90% + bdy brn/40-49% 3rd",9,150,,"Yes","No",2011
+"94895","90% + bdy brn/50-59% 3rd",9,150,,"Yes","No",2011
+"94896","90% + bdy brn/60-69% 3rd",9,150,,"Yes","No",2011
+"94897","90% + bdy brn/70-79% 3rd",9,150,,"Yes","No",2011
+"94898","90% + bdy brn/80-89% 3rd",9,150,,"Yes","No",2011
+"94899","90% + bdy brn/90% + 3rd",9,150,,"Yes","No",2011
+"95200","C1-c4 spin cord inj NOS",9,69,,"Yes","No",2011
+"95201","Complete les cord/c1-c4",9,67,,"Yes","No",2011
+"95202","Anterior cord synd/c1-c4",9,69,,"Yes","No",2011
+"95203","Central cord synd/c1-c4",9,69,,"Yes","No",2011
+"95204","C1-c4 spin cord inj NEC",9,69,,"Yes","No",2011
+"95205","C5-c7 spin cord inj NOS",9,69,,"Yes","No",2011
+"95206","Complete les cord/c5-c7",9,67,,"Yes","No",2011
+"95207","Anterior cord synd/c5-c7",9,69,,"Yes","No",2011
+"95208","Central cord synd/c5-c7",9,69,,"Yes","No",2011
+"95209","C5-c7 spin cord inj NEC",9,69,,"Yes","No",2011
+"95210","T1-t6 spin cord inj NOS",9,69,,"Yes","No",2011
+"95211","Complete les cord/t1-t6",9,68,,"Yes","No",2011
+"95212","Anterior cord synd/t1-t6",9,69,,"Yes","No",2011
+"95213","Central cord synd/t1-t6",9,69,,"Yes","No",2011
+"95214","T1-t6 spin cord inj NEC",9,69,,"Yes","No",2011
+"95215","T7-t12 spin cord inj NOS",9,69,,"Yes","No",2011
+"95216","Complete les cord/t7-t12",9,68,,"Yes","No",2011
+"95217","Anterior cord syn/t7-t12",9,69,,"Yes","No",2011
+"95218","Central cord syn/t7-t12",9,69,,"Yes","No",2011
+"95219","T7-t12 spin cord inj NEC",9,69,,"Yes","No",2011
+"9522","Lumbar spinal cord injur",9,69,,"Yes","No",2011
+"9523","Sacral spinal cord injur",9,69,,"Yes","No",2011
+"9524","Cauda equina injury",9,69,,"Yes","No",2011
+"9528","Spin cord inj-mult site",9,69,,"Yes","No",2011
+"9529","Spinal cord injury NOS",9,69,,"Yes","No",2011
+"9580","Air embolism",9,164,,"Yes","No",2011
+"9581","Fat embolism",9,164,,"Yes","No",2011
+"9582","Secondary/recur hemorr",9,164,,"Yes","No",2011
+"9583","Posttraum wnd infec NEC",9,164,,"Yes","No",2011
+"9584","Traumatic shock",9,164,,"Yes","No",2011
+"9585","Traumatic anuria",9,164,,"Yes","No",2011
+"9586","Volkmann's isch contract",9,164,,"Yes","No",2011
+"9587","Traum subcutan emphysema",9,164,,"Yes","No",2011
+"9588","Early complic trauma NEC",9,164,,"Yes","No",2011
+"95890","Compartment syndrome NOS",9,164,,"Yes","No",2011
+"95891","Trauma comp synd up ext",9,164,,"Yes","No",2011
+"95892","Trauma comp synd low ext",9,164,,"Yes","No",2011
+"95893","Trauma compart synd abd",9,164,,"Yes","No",2011
+"95899","Trauma compart synd NEC",9,164,,"Yes","No",2011
+"99600","Malfunc card dev/grf NOS",9,164,,"Yes","No",2011
+"99601","Malfunc cardiac pacemake",9,164,,"Yes","No",2011
+"99602","Malfunc prosth hrt valve",9,164,,"Yes","No",2011
+"99603","Malfunc coron bypass grf",9,164,,"Yes","No",2011
+"99604","Mch cmp autm mplnt dfbrl",9,164,,"Yes","No",2011
+"99609","Malfunc card dev/grf NEC",9,164,,"Yes","No",2011
+"9961","Malfunc vasc device/graf",9,164,,"Yes","No",2011
+"9962","Malfun neuro device/graf",9,164,,"Yes","No",2011
+"99630","Malfunc gu dev/graft NOS",9,164,,"Yes","No",2011
+"99631","Malfunc urethral cath",9,164,,"Yes","No",2011
+"99632","Malfunction iud",9,164,,"Yes","No",2011
+"99639","Malfunc gu dev/graft NEC",9,164,,"Yes","No",2011
+"99640","Cmp int orth dev/gft NOS",9,164,,"Yes","No",2011
+"99641","Mech loosening pros jt",9,164,,"Yes","No",2011
+"99642","Dislocate prosthetic jt",9,164,,"Yes","No",2011
+"99643","Broke prosthtc jt implnt",9,164,,"Yes","No",2011
+"99644","Periprosthetc fx-pros jt",9,164,,"Yes","No",2011
+"99645","Periprosthetc osteolysis",9,164,,"Yes","No",2011
+"99646","Articular wear prosth jt",9,164,,"Yes","No",2011
+"99647","Mech com pros jt implant",9,164,,"Yes","No",2011
+"99649","Mech com orth dev NEC",9,164,,"Yes","No",2011
+"99651","Corneal grft malfunction",9,164,,"Yes","No",2011
+"99652","Oth tissue graft malfunc",9,164,,"Yes","No",2011
+"99653","Lens prosthesis malfunc",9,164,,"Yes","No",2011
+"99654","Breast prosth malfunc",9,164,,"Yes","No",2011
+"99655","Comp-artificial skin grf",9,164,,"Yes","No",2011
+"99656","Comp-periton dialys cath",9,130,121,"Yes","Yes",2011
+"99657","Complcation-insulin pump",9,164,,"Yes","No",2011
+"99659","Malfunc oth device/graft",9,164,,"Yes","No",2011
+"99660","Reaction-unsp devic/grft",9,164,,"Yes","No",2011
+"99661","React-cardiac dev/graft",9,164,,"Yes","No",2011
+"99662","React-oth vasc dev/graft",9,164,,"Yes","No",2011
+"99663","React-nerv sys dev/graft",9,164,,"Yes","No",2011
+"99664","React-indwell urin cath",9,164,,"Yes","No",2011
+"99665","React-oth genitourin dev",9,164,,"Yes","No",2011
+"99666","React-inter joint prost",9,164,,"Yes","No",2011
+"99667","React-oth int ortho dev",9,164,,"Yes","No",2011
+"99668","React-periton dialy cath",9,130,121,"Yes","Yes",2011
+"99669","React-int pros devic NEC",9,164,,"Yes","No",2011
+"99670","Comp-unsp device/graft",9,164,,"Yes","No",2011
+"99671","Comp-heart valve prosth",9,164,,"Yes","No",2011
+"99672","Comp-oth cardiac device",9,164,,"Yes","No",2011
+"99673","Comp-ren dialys dev/grft",9,130,121,"Yes","Yes",2011
+"99674","Comp-oth vasc dev/graft",9,164,,"Yes","No",2011
+"99675","Comp-nerv sys dev/graft",9,164,,"Yes","No",2011
+"99676","Comp-genitourin dev/grft",9,164,,"Yes","No",2011
+"99677","Comp-internal joint pros",9,164,,"Yes","No",2011
+"99678","Comp-oth int ortho devic",9,164,,"Yes","No",2011
+"99679","Comp-int prost devic NEC",9,164,,"Yes","No",2011
+"99681","Compl kidney transplant",9,,120,"No","Yes",2011
+"99682","Compl liver transplant",9,174,167,"Yes","Yes",2011
+"99683","Compl heart transplant",9,174,167,"Yes","Yes",2011
+"99684","Compl lung transplant",9,174,166,"Yes","Yes",2011
+"99685","Compl marrow transplant",9,174,167,"Yes","Yes",2011
+"99686","Compl pancreas transplnt",9,174,168,"Yes","Yes",2011
+"99687","Comp intestine transplnt",9,174,167,"Yes","Yes",2011
+"99690","Comp reattach extrem NOS",9,161,,"Yes","No",2011
+"99691","Compl reattached forearm",9,161,,"Yes","No",2011
+"99692","Compl reattached hand",9,161,,"Yes","No",2011
+"99693","Compl reattached finger",9,161,,"Yes","No",2011
+"99694","Compl reattached arm NEC",9,161,,"Yes","No",2011
+"99695","Compl reattached foot",9,161,,"Yes","No",2011
+"99696","Compl reattached leg NEC",9,161,,"Yes","No",2011
+"99699","Compl reattach part NEC",9,161,,"Yes","No",2011
+"99700","Nervous syst complc NOS",9,164,,"Yes","No",2011
+"99701","Surg complication - cns",9,164,,"Yes","No",2011
+"99702","Iatrogen CV infarc/hmrhg",9,164,97,"Yes","Yes",2011
+"99709","Surg comp nerv systm NEC",9,164,,"Yes","No",2011
+"9971","Surg compl-heart",9,164,,"Yes","No",2011
+"9972","Surg comp-peri vasc syst",9,164,,"Yes","No",2011
+"99731","Ventltr assoc pneumonia",9,164,,"Yes","No",2011
+"99739","Respiratory comp NEC",9,164,,"Yes","No",2011
+"9974","Surg comp-digestv system",9,164,,"Yes","No",2011
+"9975","Surg compl-urinary tract",9,164,,"Yes","No",2011
+"99760","Amputat stump compl NOS",9,177,,"Yes","No",2011
+"99761","Neuroma amputation stump",9,177,,"Yes","No",2011
+"99762","Infection amputat stump",9,177,,"Yes","No",2011
+"99769","Amputat stump compl NEC",9,177,,"Yes","No",2011
+"99771","Vasc comp mesenteric art",9,164,,"Yes","No",2011
+"99772","Vasc comp renal artery",9,164,,"Yes","No",2011
+"99779","Vascular comp vessel NEC",9,164,,"Yes","No",2011
+"9980","Postoperative shock",9,164,,"Yes","No",2011
+"9986","Persist postop fistula",9,164,,"Yes","No",2011
+"E9500","Poison-analgesics",9,55,,"Yes","No",2011
+"E9501","Poison-barbiturates",9,55,,"Yes","No",2011
+"E9502","Poison-sedat/hypnotic",9,55,,"Yes","No",2011
+"E9503","Poison-psychotropic agt",9,55,,"Yes","No",2011
+"E9504","Poison-drug/medicin NEC",9,55,,"Yes","No",2011
+"E9505","Poison-drug/medicin NOS",9,55,,"Yes","No",2011
+"E9506","Poison-agricult agent",9,55,,"Yes","No",2011
+"E9507","Poison-corrosiv/caustic",9,55,,"Yes","No",2011
+"E9508","Poison-arsenic",9,55,,"Yes","No",2011
+"E9509","Poison-solid/liquid NEC",9,55,,"Yes","No",2011
+"E9510","Poison-piped gas",9,55,,"Yes","No",2011
+"E9511","Poison-gas in container",9,55,,"Yes","No",2011
+"E9518","Poison-utility gas NEC",9,55,,"Yes","No",2011
+"E9520","Poison-exhaust gas",9,55,,"Yes","No",2011
+"E9521","Poison-co NEC",9,55,,"Yes","No",2011
+"E9528","Poison-gas/vapor NEC",9,55,,"Yes","No",2011
+"E9529","Poison-gas/vapor NOS",9,55,,"Yes","No",2011
+"E9530","Injury-hanging",9,55,,"Yes","No",2011
+"E9531","Injury-suff w plas bag",9,55,,"Yes","No",2011
+"E9538","Injury-strang/suff NEC",9,55,,"Yes","No",2011
+"E9539","Injury-strang/suff NOS",9,55,,"Yes","No",2011
+"E954","Injury-submersion",9,55,,"Yes","No",2011
+"E9550","Injury-handgun",9,55,,"Yes","No",2011
+"E9551","Injury-shotgun",9,55,,"Yes","No",2011
+"E9552","Injury-hunting rifle",9,55,,"Yes","No",2011
+"E9553","Injury-military firearm",9,55,,"Yes","No",2011
+"E9554","Injury-firearm NEC",9,55,,"Yes","No",2011
+"E9555","Injury-explosives",9,55,,"Yes","No",2011
+"E9556","Self inflict acc-air gun",9,55,,"Yes","No",2011
+"E9557","Self inj-paintball gun",9,55,,"Yes","No",2011
+"E9559","Injury-firearm/expl NOS",9,55,,"Yes","No",2011
+"E956","Injury-cut instrument",9,55,,"Yes","No",2011
+"E9570","Injury-jump fm residence",9,55,,"Yes","No",2011
+"E9571","Injury-jump fm struc NEC",9,55,,"Yes","No",2011
+"E9572","Injury-jump fm natur sit",9,55,,"Yes","No",2011
+"E9579","Injury-jump NEC",9,55,,"Yes","No",2011
+"E9580","Injury-moving object",9,55,,"Yes","No",2011
+"E9581","Injury-burn, fire",9,55,,"Yes","No",2011
+"E9582","Injury-scald",9,55,,"Yes","No",2011
+"E9583","Injury-extreme cold",9,55,,"Yes","No",2011
+"E9584","Injury-electrocution",9,55,,"Yes","No",2011
+"E9585","Injury-motor veh crash",9,55,,"Yes","No",2011
+"E9586","Injury-aircraft crash",9,55,,"Yes","No",2011
+"E9587","Injury-caustic substance",9,55,,"Yes","No",2011
+"E9588","Injury-NEC",9,55,,"Yes","No",2011
+"E9589","Injury-NOS",9,55,,"Yes","No",2011
+"E959","Late eff of self-injury",9,55,,"Yes","No",2011
+"V08","Asymp hiv infectn status",9,1,1,"Yes","Yes",2011
+"V420","Kidney transplant status",9,,120,"No","Yes",2011
+"V421","Heart transplant status",9,174,167,"Yes","Yes",2011
+"V426","Lung transplant status",9,174,166,"Yes","Yes",2011
+"V427","Liver transplant status",9,174,167,"Yes","Yes",2011
+"V4281","Trnspl status-bne marrow",9,174,167,"Yes","Yes",2011
+"V4282","Trspl sts-perip stm cell",9,174,167,"Yes","Yes",2011
+"V4283","Trnspl status-pancreas",9,174,168,"Yes","Yes",2011
+"V4284","Trnspl status-intestines",9,174,167,"Yes","Yes",2011
+"V4321","Heart assist dev replace",9,174,,"Yes","No",2011
+"V4322","Artficial heart replace",9,174,,"Yes","No",2011
+"V440","Tracheostomy status",9,77,,"Yes","No",2011
+"V441","Gastrostomy status",9,176,,"Yes","No",2011
+"V442","Ileostomy status",9,176,,"Yes","No",2011
+"V443","Colostomy status",9,176,,"Yes","No",2011
+"V444","Enterostomy status NEC",9,176,,"Yes","No",2011
+"V4450","Cystostomy status NOS",9,176,,"Yes","No",2011
+"V4451","Cutaneous-vesicos status",9,176,,"Yes","No",2011
+"V4452","Appendico-vesicos status",9,176,,"Yes","No",2011
+"V4459","Cystostomy status NEC",9,176,,"Yes","No",2011
+"V446","Urinostomy status NEC",9,176,,"Yes","No",2011
+"V448","Artif open status NEC",9,176,,"Yes","No",2011
+"V449","Artif open status NOS",9,176,,"Yes","No",2011
+"V4511","Renal dialysis status",9,130,121,"Yes","Yes",2011
+"V4512","Noncmplnt w renal dialys",9,130,121,"Yes","Yes",2011
+"V4611","Respirator depend status",9,77,,"Yes","No",2011
+"V4612","Resp depend-powr failure",9,77,,"Yes","No",2011
+"V4613","Weaning from respirator",9,77,,"Yes","No",2011
+"V4614","Mech comp respirator",9,77,,"Yes","No",2011
+"V4970","Status amput lwr lmb NOS",9,177,,"Yes","No",2011
+"V4971","Status amput great toe",9,177,,"Yes","No",2011
+"V4972","Status amput othr toe(s)",9,177,,"Yes","No",2011
+"V4973","Status amput foot",9,177,,"Yes","No",2011
+"V4974","Status amput ankle",9,177,,"Yes","No",2011
+"V4975","Status amput below knee",9,177,,"Yes","No",2011
+"V4976","Status amput above knee",9,177,,"Yes","No",2011
+"V4977","Status amput hip",9,177,,"Yes","No",2011
+"V521","Fitting artificial leg",9,177,,"Yes","No",2011
+"V550","Atten to tracheostomy",9,77,,"Yes","No",2011
+"V551","Atten to gastrostomy",9,176,,"Yes","No",2011
+"V552","Atten to ileostomy",9,176,,"Yes","No",2011
+"V553","Atten to colostomy",9,176,,"Yes","No",2011
+"V554","Atten to enterostomy NEC",9,176,,"Yes","No",2011
+"V555","Atten to cystostomy",9,176,,"Yes","No",2011
+"V556","Atten to urinostomy NEC",9,176,,"Yes","No",2011
+"V558","Attn to artif open NEC",9,176,,"Yes","No",2011
+"V559","Attn to artif open NOS",9,176,,"Yes","No",2011
+"V560","Renal dialysis encounter",9,130,121,"Yes","Yes",2011
+"V561","Ft/adj xtrcorp dial cath",9,130,121,"Yes","Yes",2011
+"V562","Fit/adj perit dial cath",9,130,121,"Yes","Yes",2011
+"V5631","Hemodialysis testing",9,130,121,"Yes","Yes",2011
+"V5632","Peritoneal dialysis test",9,130,121,"Yes","Yes",2011
+"V568","Dialysis encounter, NEC",9,130,121,"Yes","Yes",2011
+"V5867","Long-term use of insulin",9,19,15,"Yes","Yes",2011
+"V854","BMI 40 and over,adult",9,,21,"No","Yes",2011
+"V8541","BMI 40.0-44.9, adult",9,,21,"No","Yes",2011
+"V8542","BMI 45.0-49.9, adult",9,,21,"No","Yes",2011
+"V8543","BMI 50.0-59.9, adult",9,,21,"No","Yes",2011
+"V8544","BMI 60.0-69.9, adult",9,,21,"No","Yes",2011
+"V8545","BMI 70 and over, adult",9,,21,"No","Yes",2011
