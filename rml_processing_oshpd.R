@@ -3,7 +3,6 @@
 ##################
 
 # Data Management Packages
-library(data.table)
 library(stringr)
 library(tidyr)
 library(dplyr)
@@ -361,6 +360,19 @@ dx[,c(odiags, opoas)] <- as.data.frame(lapply(dx[,c(odiags, opoas)], as.characte
 dx <- dx %>%
   gather(var, value, -rln, -admtdate, na.rm=T)
 
+# partition data
+cluster <- create_cluster(8)
+set_default_cluster(cluster)
+
+dxmc <- partition(dx, rln)
+
+dxmc1 <- dxmc %>%
+  gather(var, value, -rln, -admtdate, na.rm=T)
+
+# Recombine 
+dxmc1 <- collect(dxmc1)
+
+
 dx$value <- factor(dx$value)
 
 # Split the odiag1-24 and opoa1-24 columns into two so that I can identify the number associated with opoa==no
@@ -395,16 +407,15 @@ rm(temp)
 dx <- rbind(dx, diag_p)
 rm(diag_p)
 
-dx1 <- dx[1:50,]
 #####################################
 #### Identify Readmissions
 #####################################
-ptm <- proc.time()
+
 # Will do these manipulations using parallel processing enabled by multidplyr package
 library(multidplyr)
 
 # set up 8 core cluster
-cluster <- create_cluster(32)
+cluster <- create_cluster(8)
 set_default_cluster(cluster)
 
 # Limit to the fields necessary for this calculation
