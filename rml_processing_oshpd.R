@@ -7,6 +7,7 @@ library(data.table)
 library(stringr)
 library(tidyr)
 library(dplyr)
+library(reshape2)
 library(lubridate)
 
 # Graphics Packages
@@ -14,22 +15,6 @@ library(ggplot2)
 
 # Specialty Packages
 library(icd)
-
-##################
-#### Functions
-##################
-
-# can look up listing of ICD9 codes based on id (RLN) and date of admission
-icd9detail <- function(df, id, date) {
-  require(icd9)
-  diags <- c("diag_p", paste("odiag",1:24,sep=""))
-  df <- df[,c("admtdate", "rln", diags)]
-  df <- df %>%
-    filter(as.character(admtdate)==date) %>%
-    filter(rln==id) %>%
-    select(contains("diag"))
-  apply(df, 1, function(x) icd9Explain(x[icd9IsReal(x)]))
-}
 
 ##################
 #### Defined Data
@@ -355,6 +340,62 @@ pt <- left_join(pt, charlson)
 # Clean Up Environment
 rm(charlson, diags, odiags, opoas)
 
+#####################################
+#### Assign HCCs
+#####################################
+
+# isolate primary diagnoses (must always be present on admission), and will add back later
+diag_p <- pt[,c("rln", "admtdate", "diag_p")]
+colnames(diag_p) <- c("rln", "admtdate", "icd_code")
+
+# Create vectors to identify other diagnoses and present on admission column names
+odiags <- paste("odiag",1:24,sep="")
+opoas <- paste("opoa", 1:24, sep="")
+
+# Limit DF for columns of interest
+dx <- pt[,c("rln", "admtdate", odiags, opoas)]
+
+dx[,c(odiags, opoas)] <- as.data.frame(lapply(dx[,c(odiags, opoas)], as.character), stringsAsFactors = F)
+
+# Convert wide to long and rename
+dx <- dx %>%
+  gather(var, value, -rln, -admtdate, na.rm=T)
+
+dx$value <- factor(dx$value)
+
+# Split the odiag1-24 and opoa1-24 columns into two so that I can identify the number associated with opoa==no
+colsplit <- rbind(data.frame(var=paste("odiag",1:24, sep=""), var="odiag", number=1:24), data.frame(var=paste("opoa",1:24, sep=""), var="opoa", number=1:24))
+
+# Join dx data with split column names
+dx <- dx %>%
+  left_join(colsplit) %>%
+  select(-var) %>%
+  rename(var = var.1)
+
+rm(colsplit)
+
+# Made a DF of just the visitId and numbers associated with diagnoses NOT Present on Admission
+temp <- dx[dx$value=="No",c("rln", "admtdate","number")]
+
+# drop NAs
+temp <- temp[!is.na(temp$number),]
+# Assign a flag for drops
+temp$drop <- TRUE
+
+# Merge working list of ICD9s with temp DF to identify rows to drop, drop them, and simplify DF
+dx <- dx %>%
+  left_join(temp) %>%
+  filter(is.na(drop)) %>%
+  filter(var == "odiag") %>%
+  select(rln, admtdate, icd_code = value) %>%
+  filter(!is.na(icd_code))
+
+rm(temp)
+
+dx <- rbind(dx, diag_p)
+rm(diag_p)
+
+dx1 <- dx[1:50,]
 #####################################
 #### Identify Readmissions
 #####################################
