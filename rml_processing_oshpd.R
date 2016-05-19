@@ -25,10 +25,10 @@ codes <- list()
 codes$DxBladderCa <- c(icd9Children("188"), "2337", "2339", "2367", "2394")
 
 # Kidney Cancer ICD9 Codes (Miller DC, Gore JL)
-codes$DxKidneyCa <- c("189", "1890", "1891", "1898", "1899", 
-                      "1580", "1715", 
-                      "1940", "1952", "1976", "1980", "1981", "19889", "1991", 
-                      "2239", 
+codes$DxKidneyCa <- c("189", "1890", "1891", "1898", "1899",
+                      "1580", "1715",
+                      "1940", "1952", "1976", "1980", "1981", "19889", "1991",
+                      "2239",
                       "2339", "2354", "2369", "23690", "23691", "23699", "2372", "2381", "2388", "2395", "2399")
 
 # Prostate Cancer ICD9 Diagnosis Codes
@@ -42,7 +42,7 @@ codes$DxTestisCa <- c("186", "1860", "1869", "1580", "158","1976", "2118", "2354
 codes$SxRadNx <- c("5551", "5552", "5554")
 
 # Partial Nephrectomy Procedure Codes (DCM, JLG)
-codes$SxPartialNx <- c("5501", "5524", "5531", "5539", "554", "5540", "5581", "5589", "5591", 
+codes$SxPartialNx <- c("5501", "5524", "5531", "5539", "554", "5540", "5581", "5589", "5591",
                        "5902", "5909", "5921")
 
 # Radical Cystectomy Procedure Codes
@@ -78,8 +78,8 @@ pt <- pt[,sort(colnames(pt))]
 pt <- pt %>% filter(rln!="---------")
 
 # Drop some of the fields not used in this analysis
-pt <- pt %>% select(-pls_id, -pls_wrtin, -charge, -mdc, 
-                    -msdrg, -race, -race_grp, -ethncty, 
+pt <- pt %>% select(-pls_id, -pls_wrtin, -charge, -mdc,
+                    -msdrg, -race, -race_grp, -ethncty,
                     -sev_code, -hplcnty, -patcnty)
 
 # Drop age at discharge and birthdate
@@ -121,7 +121,7 @@ pt$sex <- factor(pt$sex, levels=1:2, labels=c("Male", "Female"))
 
 # ZIP CODES
 # # Identify hospitals that for some reason do not have ZIP codes, will have to assign them manually
-# 
+#
 # # Manually enter zip codes (found from OSHPD financial records)
 pt$hplzip[pt$oshpd_id==300032] <- 92868
 pt$hplzip[pt$oshpd_id==301127] <- 92621
@@ -186,7 +186,7 @@ pt$totaldx <- apply(pt[, diags], 1, function(x) sum(!is.na(x)))
 # Subset the "Other Diagnoses" (everything except the principal diagnosis), and their corresponding POA fields
 elix <- pt[, c(odiags, opoas)]
 
-# Convert factors to characters, combine with visitIds 
+# Convert factors to characters, combine with visitIds
 elix <- as.data.frame(lapply(elix, as.character), stringsAsFactors = F)
 elix <- cbind(visitId = pt$visitId, elix)
 
@@ -267,7 +267,7 @@ opoas <- c(paste("opoa",1:24,sep=""))
 # Subset the "Other Diagnoses" (everything except the principal diagnosis), and their corresponding POA fields
 charlson <- pt[,c(odiags, opoas)]
 
-# Convert factors to characters, combine with visitIds 
+# Convert factors to characters, combine with visitIds
 charlson <- as.data.frame(lapply(charlson, as.character), stringsAsFactors = F)
 charlson <- cbind(visitId = pt$visitId, charlson)
 
@@ -393,7 +393,90 @@ rm(diag_p, opoas, odiags)
 
 ###############
 # now assign HCCS
-dx_hcc <- icd_comorbid_hcc(dx, date_name="admtdate", visit_name="rln")
+# dx_hcc <- icd_comorbid_hcc(dx, date_name="admtdate", visit_name="rln")
+
+# manually partition the dx records into sets of 10m rows
+# write to disk and remove from memory
+dx1 <- dx[1:10000000,]
+saveRDS(dx1, "data/patient/tidy/dx1.rds")
+rm(dx1)
+
+dx2 <- dx[10000001:20000000,]
+saveRDS(dx2, "data/patient/tidy/dx2.rds")
+rm(dx2)
+
+dx3 <- dx[20000001:30000000,]
+saveRDS(dx3, "data/patient/tidy/dx3.rds")
+rm(dx3)
+
+dx4 <- dx[30000001:40000000,]
+saveRDS(dx4, "data/patient/tidy/dx4.rds")
+rm(dx4)
+
+dx5 <- dx[40000001:50000000,]
+saveRDS(dx5, "data/patient/tidy/dx5.rds")
+rm(dx5)
+
+dx6 <- dx[60000001:70000000,]
+saveRDS(dx6, "data/patient/tidy/dx6.rds")
+rm(dx6)
+
+dx7 <- dx[70000001:80000000,]
+saveRDS(dx7, "data/patient/tidy/dx7.rds")
+rm(dx7)
+
+dx8 <- dx[80000001:90000000,]
+saveRDS(dx8, "data/patient/tidy/dx8.rds")
+rm(dx8)
+
+dx9 <- dx[90000001:100000000,]
+saveRDS(dx9, "data/patient/tidy/dx9.rds")
+rm(dx9)
+
+dx10 <- dx[100000001:110000000,]
+saveRDS(dx10, "data/patient/tidy/dx10.rds")
+rm(dx10)
+
+dx11 <- dx[110000001:nrow(dx),]
+saveRDS(dx11, "data/patient/tidy/dx11.rds")
+rm(dx11)
+
+# remove combined dx data
+rm(dx)
+
+dx1 <- readRDS("data/patient/tidy/dx1.rds")
+dx1 <- icd_comorbid_hcc(dx1, date_name = "admtdate", visit_name = "rln")
+
+dx2 <- readRDS("data/patient/tidy/dx2.rds")
+dx2 <- icd_comorbid_hcc(dx2, date_name = "admtdate", visit_name = "rln")
+
+dx3 <- readRDS("data/patient/tidy/dx3.rds")
+dx3 <- icd_comorbid_hcc(dx3, date_name = "admtdate", visit_name = "rln")
+
+dx4 <- readRDS("data/patient/tidy/dx4.rds")
+dx4 <- icd_comorbid_hcc(dx4, date_name = "admtdate", visit_name = "rln")
+
+dx5 <- readRDS("data/patient/tidy/dx5.rds")
+dx5 <- icd_comorbid_hcc(dx5, date_name = "admtdate", visit_name = "rln")
+
+dx6 <- readRDS("data/patient/tidy/dx6.rds")
+dx6 <- icd_comorbid_hcc(dx6, date_name = "admtdate", visit_name = "rln")
+
+dx7 <- readRDS("data/patient/tidy/dx7.rds")
+dx7 <- icd_comorbid_hcc(dx7, date_name = "admtdate", visit_name = "rln")
+
+dx8 <- readRDS("data/patient/tidy/dx8.rds")
+dx8 <- icd_comorbid_hcc(dx8, date_name = "admtdate", visit_name = "rln")
+
+dx9 <- readRDS("data/patient/tidy/dx9.rds")
+dx9 <- icd_comorbid_hcc(dx9, date_name = "admtdate", visit_name = "rln")
+
+dx10 <- readRDS("data/patient/tidy/dx10.rds")
+dx10 <- icd_comorbid_hcc(dx10, date_name = "admtdate", visit_name = "rln")
+
+dx11 <- readRDS("data/patient/tidy/dx11.rds")
+dx11 <- icd_comorbid_hcc(dx11, date_name = "admtdate", visit_name = "rln")
+
 
 #####################################
 #### Identify Readmissions
@@ -408,7 +491,7 @@ set_default_cluster(cluster)
 
 # Limit to the fields necessary for this calculation
 # group by rln and arrange in preparation for splitting for parallel
-readmit <- pt %>% 
+readmit <- pt %>%
   select(rln, admtype, admtdate, dschdate, disp) %>%
   group_by(rln) %>%
   arrange(rln, admtdate)
@@ -427,7 +510,7 @@ readmit <- readmit %>%
   mutate(within30dc = ifelse(readmitdaysdc<= 30 & readmitdaysdc!=0, T, F)) %>%
   mutate(isreadmit30dc = ifelse(within30dc==T & lead(admtype) !="Scheduled" & !(disp %in% c("AMA", "Incarcerated", "Died", "Acute-Other Facility", "Other Care Level-Other Facility")), T, F))
 
-# Recombine 
+# Recombine
 readmit <- collect(readmit)
 rm(cluster)
 
