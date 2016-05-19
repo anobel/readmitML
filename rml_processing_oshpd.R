@@ -78,7 +78,12 @@ pt <- pt[,sort(colnames(pt))]
 pt <- pt %>% filter(rln!="---------")
 
 # Drop some of the fields not used in this analysis
-pt <- pt %>% select(-pls_id, -pls_wrtin, -charge, -mdc, -msdrg, -race, -race_grp, -ethncty, -sev_code)
+pt <- pt %>% select(-pls_id, -pls_wrtin, -charge, -mdc, 
+                    -msdrg, -race, -race_grp, -ethncty, 
+                    -sev_code, -hplcnty, -patcnty)
+
+# Drop age at discharge and birthdate
+pt <- pt %>% select(-agyrdsch, -bthdate)
 
 # Format all dates to POSIX
 # make a vector identifying the date fields
@@ -113,14 +118,6 @@ pt <- pt %>% filter(sex<3)
 # factor sex variable
 pt$sex <- factor(pt$sex, levels=1:2, labels=c("Male", "Female"))
 
-# Age
-# To prep for analysis, set age 18 as the baseline (0), and divide by 10 for ease of interpretation
-pt$agyradmcentered <- (pt$agyradm-18)/10
-# drop age at discharge and birthdate
-pt <- pt %>% select(-agyrdsch, -bthdate)
-
-# drop hospital and patient county info
-pt <- pt %>% select(-hplcnty, -patcnty)
 
 # ZIP CODES
 # # Identify hospitals that for some reason do not have ZIP codes, will have to assign them manually
@@ -161,17 +158,17 @@ rm(zcta)
 
 # Was Diagnosis Present On Admission?
 # Principal Diagnosis Present on Admission
-pt$poa_p <- factor(pt$poa_p, levels=c("Y", "N", "E", "U", "W", "0"), labels=c("Yes", "No", "Exempt", "Unknown", "Clinically Undetermined", "Invalid"))
+pt$poa_p <- factor(pt$poa_p, levels = c("Y", "N", "E", "U", "W", "0"), labels=c("Yes", "No", "Exempt", "Unknown", "Clinically Undetermined", "Invalid"))
 
 # Other Diagnoses Present on Admission
 # create vector for all 24 Other Present on Admission diagnosis fields
-opoa <- paste("opoa", 1:24, sep="")
+opoa <- paste("opoa", 1:24, sep = "")
 # Relabel Factors
-pt[,opoa] <- as.data.frame(lapply(pt[,opoa], factor, levels=c("Y", "N", "E", "U", "W", "0"), labels=c("Yes", "No", "Exempt", "Unknown", "Clinically Undetermined", "Invalid")))
+pt[, opoa] <- as.data.frame(lapply(pt[, opoa], factor, levels = c("Y", "N", "E", "U", "W", "0"), labels=c("Yes", "No", "Exempt", "Unknown", "Clinically Undetermined", "Invalid")))
 rm(opoa)
 
 # create visitId variable (combining RLN and admission date) for assigning Elixhauser codes
-pt$visitId = paste(pt$rln, pt$admtdate, sep="_")
+pt$visitId = paste(pt$rln, pt$admtdate, sep = "_")
 gc()
 
 ###################################
@@ -179,15 +176,15 @@ gc()
 ###################################
 
 # create vector listing just the fields with diagnosis codes
-diags <- c("diag_p", paste("odiag",1:24,sep=""))
-odiags <- c(paste("odiag",1:24,sep=""))
-opoas <- c(paste("opoa",1:24,sep=""))
+diags <- c("diag_p", paste("odiag", 1:24,sep = ""))
+odiags <- c(paste("odiag", 1:24, sep = ""))
+opoas <- c(paste("opoa", 1:24, sep = ""))
 
 # Calculate the total number of listed ICD9 diagnoses per patient
-pt$totaldx <- apply(pt[,diags], 1, function(x) sum(!is.na(x)))
+pt$totaldx <- apply(pt[, diags], 1, function(x) sum(!is.na(x)))
 
 # Subset the "Other Diagnoses" (everything except the principal diagnosis), and their corresponding POA fields
-elix <- pt[,c(odiags, opoas)]
+elix <- pt[, c(odiags, opoas)]
 
 # Convert factors to characters, combine with visitIds 
 elix <- as.data.frame(lapply(elix, as.character), stringsAsFactors = F)
@@ -198,12 +195,12 @@ elix <- cbind(visitId = pt$visitId, elix)
 # Then add principal diagnosis and calculate Elixhauser before merging with main data
 
 # Convert wide to long and rename, factor columns
-elix <- gather(elix, visitId, value, na.rm=T)
+elix <- gather(elix, visitId, value, na.rm = T)
 colnames(elix) <- c("visitId", "var", "value")
 elix$value <- factor(elix$value)
 
 # Split the odiag1-24 and opoa1-24 columns into two so that I can identify the number associated with opoa==no
-colsplit <- rbind(data.frame(var=paste("odiag",1:24, sep=""), var="odiag", number=1:24), data.frame(var=paste("opoa",1:24, sep=""), var="opoa", number=1:24))
+colsplit <- rbind(data.frame(var = paste("odiag", 1:24, sep = ""), var = "odiag", number = 1:24), data.frame(var = paste("opoa", 1:24, sep = ""), var = "opoa", number = 1:24))
 
 # Join elix data with split column names
 elix <- elix %>%
@@ -342,7 +339,7 @@ rm(charlson, diags, odiags, opoas)
 #####################################
 #### Assign HCCs
 #####################################
-
+# Data must be first formatted/prepared for analysis
 # isolate primary diagnoses (must always be present on admission), and will add back later
 diag_p <- pt[,c("rln", "admtdate", "diag_p")]
 colnames(diag_p) <- c("rln", "admtdate", "icd_code")
@@ -359,19 +356,6 @@ dx[,c(odiags, opoas)] <- as.data.frame(lapply(dx[,c(odiags, opoas)], as.characte
 # Convert wide to long and rename
 dx <- dx %>%
   gather(var, value, -rln, -admtdate, na.rm=T)
-
-# partition data
-cluster <- create_cluster(8)
-set_default_cluster(cluster)
-
-dxmc <- partition(dx, rln)
-
-dxmc1 <- dxmc %>%
-  gather(var, value, -rln, -admtdate, na.rm=T)
-
-# Recombine 
-dxmc1 <- collect(dxmc1)
-
 
 dx$value <- factor(dx$value)
 
@@ -405,7 +389,11 @@ dx <- dx %>%
 rm(temp)
 
 dx <- rbind(dx, diag_p)
-rm(diag_p)
+rm(diag_p, opoas, odiags)
+
+###############
+# now assign HCCS
+dx_hcc <- icd_comorbid_hcc(dx, date_name="admtdate", visit_name="rln")
 
 #####################################
 #### Identify Readmissions
@@ -457,7 +445,7 @@ rm(readmit)
 # Keep ONLY acute care visits (remove pychiatric/physical rehab admissions as allowable index admissions)
 # Drop type care variable
 pt <- pt %>% filter(typcare=="Acute Care") %>% select(-typcare)
-proc.time() - ptm
+
 
 saveRDS(pt, file="ptcomorbs.rds")
 
