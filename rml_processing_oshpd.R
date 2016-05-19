@@ -317,7 +317,6 @@ rm(diag_p)
 
 # based on ICD9s for each patient/admission, excluding ICDs NOT Present on Admission,
 # make matrix of all 30 Elixhauser categories (T/F)
-
 charlson <- as.data.frame(icd_comorbid_quan_deyo(charlson, visitId="visitId"))
 
 # add visitId as index and drop rownames
@@ -328,13 +327,18 @@ row.names(charlson) <- NULL
 charlson <- cbind(charlson, charlson = rowSums(charlson[-length(charlson)]))
 
 # Prepend all column names with cd_ to denote charlson-deyo
-colnames(charlson)[1:(length(charlson)-2)] <-   paste("cd_", colnames(charlson)[1:(length(charlson)-2)], sep="")
+colnames(charlson)[1:(length(charlson) - 2)] <-   paste("cd_", colnames(charlson)[1:(length(charlson) - 2)], sep = "")
 
 # Merge with main data
 pt <- left_join(pt, charlson)
 
 # Clean Up Environment
+# drop visitID
+pt <- pt %>% select(-visitId)
 rm(charlson, diags, odiags, opoas)
+
+# Save as backup
+# saveRDS(pt, file = "data/patient/temp/ptelixcharlson.rds")
 
 #####################################
 #### Assign HCCs
@@ -351,6 +355,10 @@ opoas <- paste("opoa", 1:24, sep="")
 # Limit DF for columns of interest
 dx <- pt[,c("rln", "admtdate", odiags, opoas)]
 
+# remove pt to free memory
+rm(pt)
+
+# convert from factors to character
 dx[,c(odiags, opoas)] <- as.data.frame(lapply(dx[,c(odiags, opoas)], as.character), stringsAsFactors = F)
 
 # Convert wide to long and rename
@@ -391,7 +399,7 @@ rm(temp)
 dx <- rbind(dx, diag_p)
 rm(diag_p, opoas, odiags)
 
-# saveRDS(dx, "data/patient/tidy/dx.rds")
+# saveRDS(dx, "data/patient/temp/dx.rds")
 # In order to assign HCCs, have to split the data due to memory limits
 # manually partition the dx records into sets of 10m rows
 # write to disk and remove from memory
@@ -493,10 +501,13 @@ dx <- rbind(dx1, dx2, dx3, dx4, dx5, dx6, dx7, dx8, dx9, dx10, dx11)
 saveRDS(dx, "data/patient/temp/dx_hcc.RDS")
 rm(dx1, dx2, dx3, dx4, dx5, dx6, dx7, dx8, dx9, dx10, dx11)
 
+## THIS PORTION OF ANALYSIS IF RAM INTENSIVE
+# Crashed on laptop w 16gb ram
+# instead, run AWS r3.4xl (120gb ram)
 # Convert HCC table to wide
 dx <- dcast(dx, rln + admtdate ~ hcc)
 
-# rename column names to start with hcc
+# Rename column names to start with hcc
 names(dx) <- str_replace(names(dx), "([0-9]+)", "hcc_\\1")
 
 # Convert HCCs into True/False
@@ -512,16 +523,16 @@ dxtf <- data.frame(lapply(dxtf, function(x) !is.na(x)))
 # Combine HCC T/F DF with the identifying columns (rln, admtdate)
 dx <- cbind(dx[,1:2], dxtf)
 
+# remove TF dataframe 
 rm(dxtf)
 
-pt <- pt %>%
-  select(rln, admtdate, cohort, isreadmit30dc, agyradm, sex, )
-
-saveRDS(dx, file = "data/patient/tidy/dx.rds")
-
-
 # Merge HCCs back to PT data
+pt <- readRDS("data/patient/tidy/ptelixcharlson.rds")
 
+pt <- pt %>%
+  left_join(dx)
+
+saveRDS(pt, "data/patient/temp/ptcomorbs.rds")
 
 #####################################
 #### Identify Readmissions
