@@ -3,14 +3,12 @@
 ##################
 
 # Data Management Packages
+library(data.table)
 library(stringr)
 library(tidyr)
 library(dplyr)
 library(reshape2)
 library(lubridate)
-
-# Graphics Packages
-library(ggplot2)
 
 # Specialty Packages
 library(icd)
@@ -61,6 +59,13 @@ codes$minimal <- c("1742", "1743", "1744", "1749", "5421")
 #### Import Data
 ##################
 # Import OSHPD data into a list of dataframes
+pt <- apply(data.frame(paste("data/patient/raw/oshpd/",list.files("data/patient/raw/oshpd/"),sep="")), 1, FUN=fread, na.strings=c(""), header=TRUE, stringsAsFactors=TRUE)
+
+# row binds all the dataframes in the list into one frame
+pt <- rbind_all(pt)
+
+saveRDS(pt, file="data/patient/raw/ptraw.rds")
+
 # Use the combined data as RDS
 pt <- readRDS("data/patient/raw/ptraw.rds")
 # place columns in alphabetical order (ignore incorrect numerical ordering)
@@ -78,16 +83,15 @@ pt <- pt[,sort(colnames(pt))]
 pt <- pt %>% filter(rln!="---------")
 
 # Drop some of the fields not used in this analysis
-pt <- pt %>% select(-pls_id, -pls_wrtin, -charge, -mdc,
-                    -msdrg, -race, -race_grp, -ethncty,
-                    -sev_code, -hplcnty, -patcnty)
-
-# Drop age at discharge and birthdate
-pt <- pt %>% select(-agyrdsch, -bthdate)
+pt <- pt %>% select(-pls_id, -pls_wrtin, -pls_abbr, -race, -race_grp, -ethncty,
+                    -charge, -mdc, -msdrg, -drg, -sev_code, 
+                    -pay_plan, -pay_cat, -pay_type, -cat_code
+                    -hplcnty, -patcnty,
+                    -agyrdsch, -bthdate)
 
 # Format all dates to POSIX
 # make a vector identifying the date fields
-d <- c("admtdate", "bthdate", "dschdate", "proc_pdt", paste("procdt", 1:20, sep=""))
+d <- c("admtdate", "dschdate", "proc_pdt", paste("procdt", 1:20, sep=""))
 
 # Convert date fields from factor to character, replace in dataframe
 pt[,d] <- as.data.frame(lapply(pt[,d], as.character), stringsAsFactors = F)
@@ -117,44 +121,6 @@ pt$disp <- factor(pt$disp, levels=0:13, labels=c("Invalid", "Home", "Acute Care"
 pt <- pt %>% filter(sex<3)
 # factor sex variable
 pt$sex <- factor(pt$sex, levels=1:2, labels=c("Male", "Female"))
-
-
-# ZIP CODES
-# # Identify hospitals that for some reason do not have ZIP codes, will have to assign them manually
-#
-# # Manually enter zip codes (found from OSHPD financial records)
-pt$hplzip[pt$oshpd_id==300032] <- 92868
-pt$hplzip[pt$oshpd_id==301127] <- 92621
-pt$hplzip[pt$oshpd_id==301140] <- 92869
-pt$hplzip[pt$oshpd_id==301279] <- 92868
-pt$hplzip[pt$oshpd_id==301283] <- 92843
-pt$hplzip[pt$oshpd_id==301297] <- 92870
-pt$hplzip[pt$oshpd_id==301357] <- 92780
-pt$hplzip[pt$oshpd_id==304045] <- 92618
-pt$hplzip[pt$oshpd_id==304079] <- 92780
-pt$hplzip[pt$oshpd_id==331152] <- 92882
-pt$hplzip[pt$oshpd_id==370759] <- 91950
-
-# Convert all ZIP codes to ZCTAs
-zcta <- read.csv("data/tidy/zcta.csv")
-
-##################
-# Hospital ZIP to ZCTA
-pt <- pt %>%
-  left_join(zcta, by = c("hplzip" ="zip")) %>%
-  rename(hospzcta = zcta) %>%
-  select(-hplzip)
-
-# Patient ZIP to ZCTA
-pt$patzip <- as.numeric(as.character(pt$patzip))
-
-pt <- pt %>%
-  left_join(zcta, by = c("patzip" ="zip")) %>%
-  rename(patzcta = zcta) %>%
-  select(-patzip)
-
-# Clean environment
-rm(zcta)
 
 # Was Diagnosis Present On Admission?
 # Principal Diagnosis Present on Admission
@@ -537,7 +503,6 @@ saveRDS(pt, "data/patient/temp/ptcomorbs.rds")
 #####################################
 #### Identify Readmissions
 #####################################
-
 # Will do these manipulations using parallel processing enabled by multidplyr package
 library(multidplyr)
 
@@ -576,17 +541,14 @@ readmit$isreadmit30dc[is.na(readmit$isreadmit30dc)] <- F
 
 # Merge readmit assignments back to main patient data
 pt <- readmit %>%
-  select(rln, admtdate, los, readmitdaysdc, within30dc, isreadmit30dc) %>%
+  select(rln, admtdate, readmitdaysdc, within30dc, isreadmit30dc) %>%
   right_join(pt)
-
+names(pt)
 rm(readmit)
 
 # Keep ONLY acute care visits (remove pychiatric/physical rehab admissions as allowable index admissions)
 # Drop type care variable
 pt <- pt %>% filter(typcare=="Acute Care") %>% select(-typcare)
-
-
-saveRDS(pt, file="ptcomorbs.rds")
 
 #####################################
 #### Procedure Specific Cohorts
@@ -647,12 +609,6 @@ pt$cohort[cohort$SxRPLND>0 & cohort$DxTestisCa>0 & cohort$DxKidneyCa>0 & (cohort
 pt$open <- ifelse(
   rowSums(as.data.frame(lapply(select(pt, one_of(c(procs))), function(x) x %in% codes$minimal)))==0,
   T,F)
+rm(cohort)
 
-
-saveRDS(pt, file="rao_workingdata/pt.rds")
-
-# Once complete, run rao_processing_all.r to combine with other datasets
-
-# Misc
-# to get listing of ICD9 descriptions for each patient
-# apply(pt[4,diags], 1, function(x) icd9Explain(x[icd9IsReal(x)]))
+saveRDS(pt, file="data/patient/tidy/pt.rds")
