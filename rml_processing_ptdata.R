@@ -129,6 +129,7 @@ pt$poa_p <- factor(pt$poa_p, levels = c("Y", "N", "E", "U", "W", "0"), labels=c(
 # Other Diagnoses Present on Admission
 # create vector for all 24 Other Present on Admission diagnosis fields
 opoa <- paste("opoa", 1:24, sep = "")
+
 # Relabel Factors
 pt[, opoa] <- as.data.frame(lapply(pt[, opoa], factor, levels = c("Y", "N", "E", "U", "W", "0"), labels=c("Yes", "No", "Exempt", "Unknown", "Clinically Undetermined", "Invalid")))
 rm(opoa)
@@ -421,7 +422,7 @@ rm(dx)
 dx1 <- readRDS("data/patient/temp/dx1.rds")
 dx1 <- icd_comorbid_hcc(dx1, date_name = "admtdate", visit_name = "rln")
 saveRDS(dx1, file="data/patient/temp/dx1_result.rds")
-      
+
 dx2 <- readRDS("data/patient/temp/dx2.rds")
 dx2 <- icd_comorbid_hcc(dx2, date_name = "admtdate", visit_name = "rln")
 saveRDS(dx2, file="data/patient/temp/dx2_result.rds")
@@ -619,6 +620,18 @@ set.seed(7)
 # randomly sample 250k of htem
 pt$cohort[sample(which(is.na(pt$cohort)),250000)] <- "Random"
 
+
+saveRDS(pt, file="data/patient/tidy/pt_all.rds")
+
+# drop all diagnosis, procedure, and associated date fields
+diags <- c("diag_p", paste("odiag", 1:24, sep = ""))
+opoa <- paste("opoa", 1:24, sep = "")
+procs <- c("proc_p", paste("oproc", 1:20, sep = ""))
+procdts <- c("proc_pdt", paste("procdt", 1:20, sep = ""))
+
+pt <- pt[,!(names(pt) %in% c(diags, opoa, procs, procdts))]
+
+# Save tidy patient data
 saveRDS(pt, file="data/patient/tidy/pt.rds")
 
 # Make subset with only the specified cohorts
