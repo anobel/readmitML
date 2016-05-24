@@ -609,6 +609,22 @@ pt$cohort[cohort$SxRPLND>0 & cohort$DxTestisCa>0 & cohort$DxKidneyCa>0 & (cohort
 pt$open <- ifelse(
   rowSums(as.data.frame(lapply(select(pt, one_of(c(procs))), function(x) x %in% codes$minimal)))==0,
   T,F)
+
 rm(cohort)
 
+# Create cohort of 250k random patients
+set.seed(7)
+
+# of the patients not assigned to a GU cohort,
+# randomly sample 250k of htem
+pt$cohort[sample(which(is.na(pt$cohort)),250000)] <- "Random"
+
 saveRDS(pt, file="data/patient/tidy/pt.rds")
+
+# Make subset with only the specified cohorts
+# Excluding patients with multiple GU surgeries
+pt_rml <- pt %>%
+  filter(cohort!="Multiple GU Sx") %>%
+  filter(!is.na(cohort))
+
+saveRDS(pt_rml, file="data/patient/tidy/pt_rml.rds")
