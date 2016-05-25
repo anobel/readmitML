@@ -1,2 +1,2 @@
-# readmit
-applying machine learning approaches to predict hospital readmissions
+# Comorbidity Indices for Predicting Readmissions
+### Machine Learning Approaches

@@ -465,7 +465,7 @@ saveRDS(dx11, file="data/patient/temp/dx11_result.rds")
 
 # combine and save HCCs
 dx <- rbind(dx1, dx2, dx3, dx4, dx5, dx6, dx7, dx8, dx9, dx10, dx11)
-saveRDS(dx, "data/patient/temp/dx_hcc.RDS")
+saveRDS(dx, "data/patient/temp/dx_hcc.rds")
 rm(dx1, dx2, dx3, dx4, dx5, dx6, dx7, dx8, dx9, dx10, dx11)
 
 dx <- as.data.table(dx)
@@ -500,6 +500,14 @@ pt <- readRDS("data/patient/temp/ptelixcharlson.rds")
 pt <- pt %>%
   left_join(dx)
 
+# after merge, any patients with NO HCC have the whole row set to NA
+# Must change this to FALSE
+# column indices representing hcc fields
+cols <- grep("hcc_", names(p))
+# replace all NA with F in HCC columns
+pt[cols][is.na(pt[cols])] <- F
+
+# Save as backup
 saveRDS(pt, "data/patient/temp/ptcomorbs.rds")
 
 #####################################
@@ -552,7 +560,8 @@ rm(readmit)
 # Drop type care variable
 pt <- pt %>% filter(typcare=="Acute Care") %>% select(-typcare)
 
-saveRDS(pt, "data/patient/temp/pt_comorbs.rds")
+# Save as backup
+saveRDS(pt, "data/patient/temp/ptcomorbsreadmit.rds")
 
 #####################################
 #### Procedure Specific Cohorts
@@ -628,15 +637,15 @@ procdts <- c("proc_pdt", paste("procdt", 1:20, sep = ""))
 pt <- pt[,!(names(pt) %in% c(diags, poa, procs, procdts))]
 rm(diags, poa, procs, procdts)
 
+# Save tidy patient data
+saveRDS(pt, file="data/patient/tidy/pt.rds")
+
 # Create cohort of 250k random patients
 set.seed(7)
 
 # of the patients not assigned to a GU cohort,
 # randomly sample 250k of htem
 pt$cohort[sample(which(is.na(pt$cohort)),250000)] <- "Random"
-
-# Save tidy patient data
-saveRDS(pt, file="data/patient/tidy/pt.rds")
 
 # Make subset with only the specified cohorts
 # Excluding patients with multiple GU surgeries
