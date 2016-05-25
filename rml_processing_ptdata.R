@@ -468,18 +468,16 @@ dx <- rbind(dx1, dx2, dx3, dx4, dx5, dx6, dx7, dx8, dx9, dx10, dx11)
 saveRDS(dx, "data/patient/temp/dx_hcc.RDS")
 rm(dx1, dx2, dx3, dx4, dx5, dx6, dx7, dx8, dx9, dx10, dx11)
 
-
-dx <- readRDS("data/patient/temp/dx_hcc.RDS")
 dx <- as.data.table(dx)
 
 ## THIS PORTION OF ANALYSIS IF RAM INTENSIVE
 # Crashed on laptop w 16gb ram
 # instead, run AWS r3.4xl (120gb ram)
 # Convert HCC table to wide
-dx <- dcast(hcc_dt, rln + admtdate ~ hcc)
+dx <- dcast(dx, rln + admtdate ~ hcc)
 
 # Rename column names to start with hcc
-names(dx) <- str_replace(names(dx), "([0-9]+)", "hcc_\\1")
+names(dx) <- gsub("([0-9]+)", "hcc_\\1", names(dx))
 
 # Convert HCCs into True/False
 # make a DF of just the HCCs
@@ -490,9 +488,6 @@ dxtf <- dx[,c(3:length(dx))]
 # This resulted from the dcast
 dxtf <- data.frame(lapply(dxtf, function(x) x>0))
 
-# If the HCC is NA, set it to false
-dxtf <- data.frame(lapply(dxtf, function(x) !is.na(x)))
-
 # Combine HCC T/F DF with the identifying columns (rln, admtdate)
 dx <- cbind(dx[,1:2], dxtf)
 
@@ -500,7 +495,7 @@ dx <- cbind(dx[,1:2], dxtf)
 rm(dxtf)
 
 # Merge HCCs back to PT data
-pt <- readRDS("data/patient/tidy/ptetelixcharlson.rds")
+pt <- readRDS("data/patient/temp/ptelixcharlson.rds")
 
 pt <- pt %>%
   left_join(dx)
@@ -556,6 +551,8 @@ rm(readmit)
 # Keep ONLY acute care visits (remove pychiatric/physical rehab admissions as allowable index admissions)
 # Drop type care variable
 pt <- pt %>% filter(typcare=="Acute Care") %>% select(-typcare)
+
+saveRDS(pt, "data/patient/temp/pt_comorbs.rds")
 
 #####################################
 #### Procedure Specific Cohorts
@@ -619,14 +616,7 @@ pt$open <- ifelse(
 
 rm(cohort)
 
-# Create cohort of 250k random patients
-set.seed(7)
-
-# of the patients not assigned to a GU cohort,
-# randomly sample 250k of htem
-pt$cohort[sample(which(is.na(pt$cohort)),250000)] <- "Random"
-
-
+# save patient data
 saveRDS(pt, file="data/patient/tidy/pt_all.rds")
 
 # drop all diagnosis, procedure, and associated date fields
@@ -637,6 +627,13 @@ procdts <- c("proc_pdt", paste("procdt", 1:20, sep = ""))
 
 pt <- pt[,!(names(pt) %in% c(diags, poa, procs, procdts))]
 rm(diags, poa, procs, procdts)
+
+# Create cohort of 250k random patients
+set.seed(7)
+
+# of the patients not assigned to a GU cohort,
+# randomly sample 250k of htem
+pt$cohort[sample(which(is.na(pt$cohort)),250000)] <- "Random"
 
 # Save tidy patient data
 saveRDS(pt, file="data/patient/tidy/pt.rds")
