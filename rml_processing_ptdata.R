@@ -468,22 +468,28 @@ dx <- rbind(dx1, dx2, dx3, dx4, dx5, dx6, dx7, dx8, dx9, dx10, dx11)
 saveRDS(dx, "data/patient/temp/dx_hcc.RDS")
 rm(dx1, dx2, dx3, dx4, dx5, dx6, dx7, dx8, dx9, dx10, dx11)
 
+
+dx <- readRDS("data/patient/temp/dx_hcc.RDS")
+dx <- as.data.table(dx)
+
 ## THIS PORTION OF ANALYSIS IF RAM INTENSIVE
 # Crashed on laptop w 16gb ram
 # instead, run AWS r3.4xl (120gb ram)
 # Convert HCC table to wide
-dx <- dcast(dx, rln + admtdate ~ hcc)
+dx <- dcast(hcc_dt, rln + admtdate ~ hcc)
 
 # Rename column names to start with hcc
 names(dx) <- str_replace(names(dx), "([0-9]+)", "hcc_\\1")
 
 # Convert HCCs into True/False
 # make a DF of just the HCCs
-dxtf <- dx[,3:length(dx)]
+dx <- as.data.frame(dx)
+dxtf <- dx[,c(3:length(dx))]
 
 # Assign TRUE if there is a number in the HCC field
 # This resulted from the dcast
 dxtf <- data.frame(lapply(dxtf, function(x) x>0))
+
 # If the HCC is NA, set it to false
 dxtf <- data.frame(lapply(dxtf, function(x) !is.na(x)))
 
@@ -494,7 +500,7 @@ dx <- cbind(dx[,1:2], dxtf)
 rm(dxtf)
 
 # Merge HCCs back to PT data
-pt <- readRDS("data/patient/tidy/ptelixcharlson.rds")
+pt <- readRDS("data/patient/tidy/ptetelixcharlson.rds")
 
 pt <- pt %>%
   left_join(dx)
@@ -625,11 +631,12 @@ saveRDS(pt, file="data/patient/tidy/pt_all.rds")
 
 # drop all diagnosis, procedure, and associated date fields
 diags <- c("diag_p", paste("odiag", 1:24, sep = ""))
-opoa <- paste("opoa", 1:24, sep = "")
+poa <- c("poa_p", paste("opoa", 1:24, sep = ""))
 procs <- c("proc_p", paste("oproc", 1:20, sep = ""))
 procdts <- c("proc_pdt", paste("procdt", 1:20, sep = ""))
 
-pt <- pt[,!(names(pt) %in% c(diags, opoa, procs, procdts))]
+pt <- pt[,!(names(pt) %in% c(diags, poa, procs, procdts))]
+rm(diags, poa, procs, procdts)
 
 # Save tidy patient data
 saveRDS(pt, file="data/patient/tidy/pt.rds")
