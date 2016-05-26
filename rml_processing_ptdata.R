@@ -503,9 +503,17 @@ pt <- pt %>%
 # after merge, any patients with NO HCC have the whole row set to NA
 # Must change this to FALSE
 # column indices representing hcc fields
-cols <- grep("hcc_", names(p))
+cols <- grep("hcc_", names(pt))
 # replace all NA with F in HCC columns
 pt[cols][is.na(pt[cols])] <- F
+
+# replace column names
+hccnames <- read.csv("data/raw/hcc/hcc_labels.csv")
+
+# Prepend the abbreviated HCC names with hcc_
+hccnames$hcc_short <- paste("hcc_", hccnames$hcc_short, sep="")
+
+names(pt)[cols] <- hccnames$hcc_short
 
 # Save as backup
 saveRDS(pt, "data/patient/temp/ptcomorbs.rds")
@@ -625,6 +633,9 @@ pt$open <- ifelse(
 
 rm(cohort)
 
+# convert cohort to factor
+pt$cohort <- as.factor(pt$cohort)
+
 # save patient data
 saveRDS(pt, file="data/patient/tidy/pt_all.rds")
 
@@ -648,9 +659,11 @@ set.seed(7)
 pt$cohort[sample(which(is.na(pt$cohort)),250000)] <- "Random"
 
 # Make subset with only the specified cohorts
-# Excluding patients with multiple GU surgeries
 pt_rml <- pt %>%
-  filter(cohort!="Multiple GU Sx") %>%
-  filter(!is.na(cohort))
+  filter(cohort!="Multiple GU Sx") %>% # drop those with multiple GU surgeries
+  # drop RP patients (not enough readmissions) and RPLND patients (not enough patients)
+  filter(cohort != "RP") %>%
+  filter(cohort != "RPLND") %>%
+  filter(!is.na(cohort)) # Drop those not assigned to a cohort
 
 saveRDS(pt_rml, file="data/patient/tidy/pt_rml.rds")
