@@ -1,0 +1,326 @@
+---
+title: "Comorbidity Indices for Predicting Readmissions"
+subtitle: "Machine Learning Approaches"
+author: "Anobel Y Odisho, Ruth Etzioni, John L Gore"
+date: "`r Sys.Date()`"
+output: 
+  tufterhandout::html_tufte_handout:
+        theme: cosmo
+        css: floating.css
+        toc: yes
+params:
+    cohort: ""
+---
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE,
+  cache = T,
+  dev = 'quartz_pdf')
+```
+
+```{r packages, cache=F}
+# Data Cleaning Packages
+library(parallel)   # for parallel processing mclapply
+library(dplyr)      # Data Management
+library(tidyr)      # Data Cleaning
+library(stringr)    # String manipulation
+library(broom)      # Tidy regression results
+
+# Graphics Packages
+library(ggplot2)    # Graphics
+library(ggthemes)   # Themes for ggplot
+library(DT)         # HTML Widget for Data Tables
+library(stargazer)  # HTML Tables for regression results
+
+# Specialty/Stats Packages
+library(ROCR)       # Performance measures, ROC curves, AUC
+library(icd)        # ICD package
+# library(lme4)     # Mixed Effects Models
+# library(coin)     # Permutation Testing
+```
+
+```{r constants}
+# Define colors for charts
+c<- list()
+c$dblue <- "#506380"
+c$teal <- "#18A3AC"
+c$blue <- "#178CCB"
+c$orange <- "#F48024"
+
+# HCC names
+hccnames <- read.csv("data/raw/hcc/hcc_labels.csv", stringsAsFactors = F)
+```
+
+```{r functions}
+rocResult <- function (x, addplot=F) {
+  # predict test data result
+  pr <- predict(x, newdata=test, allow.new.levels=T)
+  pr <- prediction(pr, test$isreadmit30dc)
+  auc <- performance(pr, measure="auc") 
+  auc <- round(auc@y.values[[1]],4)
+  
+  # Generate ROC Curve
+  roc <- performance(pr, measure="tpr", x.measure="fpr")
+  plot(roc, colorize=T, downsampling=0.5, add=addplot)
+  abline(0,1, col="grey")
+  cat("AUC:", auc)
+}
+
+aucResult <- function(x) {
+  # predict test data result
+  pr <- predict(x, newdata=test, allow.new.levels=T)
+  pr <- prediction(pr, test$isreadmit30dc)
+  auc <- performance(pr, measure="auc") 
+  auc <- round(auc@y.values[[1]],4)
+  return(auc)
+}
+```
+
+```{r importdata}
+# Import data
+pt <- readRDS("data/patient/tidy/pt_rml.rds")
+
+# split data into training and validation cohorts
+# Set random seed to reproduce results
+set.seed(7)
+
+# Create an index variable which will allow splitting of training/test data without overlap
+pt$index <- seq(1:nrow(pt))
+
+# Group by OSHPD_ID, then take a 75% sample for training set
+train <- pt %>%
+  group_by(cohort) %>%
+  sample_frac(size=0.75, replace=F)
+
+# Anything that didnt make it into training set is put into a test set
+test <- pt[!(pt$index %in% train$index),]
+
+# Remove index variables
+pt <- pt %>% select(-index)
+train <- train %>% select(-index)
+test <- test %>% select(-index)
+
+# save formulas for regression models
+elixfm <- paste0(grep("elix_", names(pt), value = T), collapse="+")
+elixfm <- as.formula(paste("isreadmit30dc", elixfm, sep="~"))
+
+cdfm <- paste0(grep("cd_", names(pt), value = T), collapse="+")
+cdfm <- as.formula(paste("isreadmit30dc", cdfm, sep="~"))
+
+hccfm <- paste0(grep("hcc_", names(pt), value = T), collapse="+")
+hccfm <- as.formula(paste("isreadmit30dc", hccfm, sep="~"))
+```
+
+# Log Models
+## Elixhauser
+```{r logmodelselix}
+glmelix <- pt %>% 
+  group_by(cohort) %>%
+  do(
+    fit = glm(elixfm, data=., family="binomial")
+    ) %>% 
+  rowwise()
+
+# create a dataframe of tidy results
+glmelixres <- glmelix %>% 
+  tidy(fit, exponentiate = T)
+
+# Calculate 95% confidence intervals
+ci <- mclapply(1:nrow(glmelix), mc.cores = 8, function(x) exp(confint(glmelix[[x,2]])))
+
+# create a vector of cohort names in the model
+# use this to organize confidence interval caluclations
+cohorts <- glmelix[,1]
+cohorts <- unlist(lapply(cohorts, as.character))
+
+# add cohort names to CI calculations
+ci <- Map(cbind, ci, cohort = cohorts)
+# Combine into one DF and rename columns
+ci <- do.call(rbind, ci)
+ci <- data.frame(cbind(term = rownames(ci), ci), row.names = NULL, stringsAsFactors = F)
+names(ci) <- c("term", "ci.low", "ci.high", "cohort")
+# Convert CIs to numeric 
+ci$ci.low <- as.numeric(ci$ci.low)
+ci$ci.high <- as.numeric(ci$ci.high)
+
+# combine CI calculations with GLM results
+glmelixres <- merge(glmelixres, ci)
+
+# Drop intercept terms from charts, clean up term names
+glmelixres <- glmelixres %>%
+  filter(term!="(Intercept)") %>%
+  mutate(term = str_replace_all(term, "elix_|TRUE",""))
+
+# Flag invalid CIs (NAs)
+# If any term has invalid CI or estimates, set it all to NA for plotting
+invalid <- is.na(rowSums(glmelixres[names(glmelixres) %in% c("estimate", "ci.low", "ci.high")]))
+glmelixres$estimate[invalid] <- NA
+glmelixres$ci.low[invalid] <- NA
+glmelixres$ci.high[invalid] <- NA
+
+# Loop to generate 4 separate plots, one for each cohort
+# This shows Odds ratio of each term with 95% CI
+for (i in seq_along(unique(glmelix$cohort))){
+  plotcohort <- unique(glmelix$cohort)[i]
+  plot <- glmelixres %>%
+    filter(cohort==plotcohort) %>%
+      ggplot(data=., aes(estimate, term, color=term)) +
+      geom_point() +
+      geom_errorbarh(aes(xmin = ci.low, xmax = ci.high)) +
+      geom_vline(xintercept=1) + 
+      labs(title=paste(plotcohort, "Cohort Elixhauser Log Regression"), x="Odds Ratio with 95% Confidence Interval", y="") +
+    coord_cartesian(xlim=c(0, 5)) + 
+    theme_light() + 
+    theme(legend.position = "none")
+  print(plot)
+}
+```
+
+## Charlson-Deyo
+```{r logmodelscd}
+# Fit the basic log model across all cohorts
+glmcd <- pt %>% 
+  group_by(cohort) %>%
+  do(
+    fit = glm(cdfm, data=., family="binomial")
+    ) %>% 
+  rowwise()
+
+# create a dataframe of tidy results
+glmcdres <- glmcd %>% 
+  tidy(fit, exponentiate = T)
+
+# Calculate 95% confidence intervals
+ci <- mclapply(1:nrow(glmcd), mc.cores = 8, function(x) exp(confint(glmcd[[x,2]])))
+
+# create a vector of cohort names in the model
+# use this to organize confidence interval caluclations
+cohorts <- glmcd[,1]
+cohorts <- unlist(lapply(cohorts, as.character))
+
+# add cohort names to CI calculations
+ci <- Map(cbind, ci, cohort = cohorts)
+# Combine into one DF and rename columns
+ci <- do.call(rbind, ci)
+ci <- data.frame(cbind(term = rownames(ci), ci), row.names = NULL, stringsAsFactors = F)
+names(ci) <- c("term", "ci.low", "ci.high", "cohort")
+# Convert CIs to numeric 
+ci$ci.low <- as.numeric(ci$ci.low)
+ci$ci.high <- as.numeric(ci$ci.high)
+
+# combine CI calculations with GLM results
+glmcdres <- merge(glmcdres, ci)
+
+# Drop intercept terms from charts, clean up term names
+glmcdres <- glmcdres %>%
+  filter(term!="(Intercept)") %>%
+  mutate(term = str_replace_all(term, "cd_|TRUE",""))
+
+# Flag invalid CIs (NAs)
+# If any term has invalid CI or estimates, set it all to NA for plotting
+invalid <- is.na(rowSums(glmcdres[names(glmcdres) %in% c("estimate", "ci.low", "ci.high")]))
+glmcdres$estimate[invalid] <- NA
+glmcdres$ci.low[invalid] <- NA
+glmcdres$ci.high[invalid] <- NA
+
+# Loop to generate 4 separate plots, one for each cohort
+# This shows Odds ratio of each term with 95% CI
+for (i in seq_along(unique(glmcd$cohort))){
+  plotcohort <- unique(glmcd$cohort)[i]
+  plot <- glmcdres %>%
+    filter(cohort==plotcohort) %>%
+      ggplot(data=., aes(estimate, term, color=term)) +
+      geom_point() +
+      geom_errorbarh(aes(xmin = ci.low, xmax = ci.high)) +
+      geom_vline(xintercept=1) + 
+      labs(title=paste(plotcohort, "Cohort Charlson-Deyo Log Regression"), x="Odds Ratio with 95% Confidence Interval", y="") +
+    coord_cartesian(xlim=c(0, 5)) + 
+    theme_light() + 
+    theme(legend.position = "none")
+  print(plot)
+}
+```
+
+## HCC
+```{r logmodelshcc}
+# Fit the basic log model across all cohorts
+glmhcc <- pt %>% 
+  group_by(cohort) %>%
+  do(
+    fit = glm(hccfm, data=., family="binomial")
+    ) %>% 
+  rowwise()
+
+# create a dataframe of tidy results
+glmhccres <- glmhcc %>% 
+  tidy(fit, exponentiate = T)
+
+# Calculate 95% confidence intervals
+# ci <- mclapply(1:nrow(glmhcc), mc.cores=8, function(x) exp(confint(glmhcc[[x,2]])))
+
+# create a vector of cohort names in the model
+# use this to organize confidence interval caluclations
+cohorts <- glmhcc[,1]
+cohorts <- unlist(lapply(cohorts, as.character))
+
+# add cohort names to CI calculations
+ci <- Map(cbind, ci, cohort = cohorts)
+# Combine into one DF and rename columns
+ci <- do.call(rbind, ci)
+ci <- data.frame(cbind(term = rownames(ci), ci), row.names = NULL, stringsAsFactors = F)
+names(ci) <- c("term", "ci.low", "ci.high", "cohort")
+# Convert CIs to numeric 
+ci$ci.low <- as.numeric(ci$ci.low)
+ci$ci.high <- as.numeric(ci$ci.high)
+
+# combine CI calculations with GLM results
+glmhccres <- merge(glmhccres, ci)
+
+# Drop intercept terms from charts, clean up term names
+glmhccres <- glmhccres %>%
+  filter(term!="(Intercept)") %>%
+  mutate(term = str_replace_all(term, "hcc_|TRUE",""))
+
+# Flag invalid CIs (NAs)
+# If any term has invalid CI or estimates, set it all to NA for plotting
+invalid <- is.na(rowSums(glmhccres[names(glmhccres) %in% c("estimate", "ci.low", "ci.high")]))
+glmhccres$estimate[invalid] <- NA
+glmhccres$ci.low[invalid] <- NA
+glmhccres$ci.high[invalid] <- NA
+
+# some HCCs not represented in different cohorts, so make blank DF
+# and bind just the missing ones back to main results DF 
+blanks <- data.frame(cohort = rep(cohorts, each = nrow(hccnames)),
+                     term = hccnames$hcc_short,
+                     estimate = NA, std.error = NA, statistic = NA,
+                     p.value = NA, ci.low = NA, ci.high = NA)
+
+blanks <- glmhccres %>%
+  group_by(cohort) %>%
+   do (blanks[blanks$cohort %in% .$cohort & !(hccnames$hcc_short %in% .$term),])
+
+glmhccres <- rbind(glmhccres, blanks)
+
+# Loop to generate 4 separate plots, one for each cohort
+# This shows Odds ratio of each term with 95% CI
+for (i in seq_along(unique(glmhcc$cohort))){
+  plotcohort <- unique(glmhcc$cohort)[i]
+  plot <- glmhccres %>%
+    filter(cohort==plotcohort) %>%
+      ggplot(data=., aes(estimate, term, color=term)) +
+      geom_point() +
+      geom_errorbarh(aes(xmin = ci.low, xmax = ci.high)) +
+      geom_vline(xintercept=1) + 
+      labs(title=paste(plotcohort, "Cohort HCC Log Regression"), x="Odds Ratio with 95% Confidence Interval", y="") +
+    coord_cartesian(xlim=c(0, 5)) + 
+    theme_light() + 
+    theme(legend.position = "none")
+  print(plot)
+}
+```
+
+
+
