@@ -556,9 +556,11 @@ readmit$isreadmit30dc[is.na(readmit$isreadmit30dc)] <- F
 
 # Merge readmit assignments back to main patient data
 pt <- readmit %>%
+  ungroup() %>%
   select(rln, admtdate, readmitdaysdc, within30dc, isreadmit30dc) %>%
-  right_join(pt)
-names(pt)
+  right_join(pt) %>%
+  ungroup()
+
 rm(readmit)
 
 # Keep ONLY acute care visits (remove pychiatric/physical rehab admissions as allowable index admissions)
@@ -630,9 +632,6 @@ pt$open <- ifelse(
 
 rm(cohort)
 
-# convert cohort to factor
-pt$cohort <- as.factor(pt$cohort)
-
 # save patient data
 saveRDS(pt, file="data/patient/tidy/pt_all.rds")
 
@@ -645,15 +644,15 @@ procdts <- c("proc_pdt", paste("procdt", 1:20, sep = ""))
 pt <- pt[,!(names(pt) %in% c(diags, poa, procs, procdts))]
 rm(diags, poa, procs, procdts)
 
-# Save tidy patient data
-saveRDS(pt, file="data/patient/tidy/pt.rds")
-
 # Create cohort of 250k random patients
 set.seed(7)
 
 # of the patients not assigned to a GU cohort,
 # randomly sample 250k of htem
 pt$cohort[sample(which(is.na(pt$cohort)),250000)] <- "Random"
+
+# Save tidy patient data
+saveRDS(pt, file="data/patient/tidy/pt.rds")
 
 # Make subset with only the specified cohorts
 pt_rml <- pt %>%
