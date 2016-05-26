@@ -1,0 +1,71 @@
+hcc,hcc_short,hcc_long
+1,HIV,HIV-AIDS
+2,SepsisShock,Septicemia_Shock
+5,OppInfection,Opportunistic Infections
+7,Mets,Metastatic Cancer and Acute Leukemia
+8,LungUGCancer,Lung Upper Digestive Tract and Other Severe Cancers
+9,LymphENTCancer,Lymphatic Head and Neck Brain and Other Major Cancers
+10,BreastProstColoCancer,Breast Prostate Colorectal and Other Cancers and Tumors
+15,DMwRenalPVD,Diabetes with Renal or Peripheral Circulatory Manifestation
+16,DMwNeuro,Diabetes with Neurologic or Other Specified Manifestation
+17,DMwAcuteComp,Diabetes with Acute Complications
+18,DMwOphtho,Diabetes with Ophthalmologic or Unspecified Manifestation
+19,DMwNoComp,Diabetes without Complication
+21,Malnutrition,Protein-Calorie Malnutrition
+25,ESLD,End-Stage Liver Disease
+26,Cirrhosis,Cirrhosis of Liver
+27,Hepatitis,Chronic Hepatitis
+31,BowelObstructionPerf,Intestinal Obstruction_Perforation
+32,PancreaticDis,Pancreatic Disease
+33,IBD,Inflammatory Bowel Disease
+37,OrthoInfection,Bone_Joint_Muscle Infections_Necrosis
+38,Arthritis,Rheumatoid Arthritis and Inflammatory Connective Tissue Disease
+44,SevereHeme,Severe Hematological Disorders
+45,ImmuneDisorder,Disorders of Immunity
+51,DrugAlcPsychosis,Drug_Alcohol Psychosis
+52,DrugAlcDependence,Drug_Alcohol Dependence
+54,Schizophrenia,Schizophrenia
+55,Depression,Major Depressive Bipolar and Paranoid Disorders
+67,Quadriplegia,Quadriplegia Other Extensive Paralysis
+68,Paraplegia,Paraplegia
+69,SpinalCordDis,Spinal Cord Disorders_Injuries
+70,MuscularDystrophy,Muscular Dystrophy
+71,Polyneuropathy,Polyneuropathy
+72,MS,Multiple Sclerosis
+73,Parkinsons,Parkinsons and Huntingtons Diseases
+74,Seizures,Seizure Disorders and Convulsions
+75,ComaAnoxic,Coma Brain Compression_Anoxic Damage
+77,RespTrach,Respirator Dependence_Tracheostomy Status
+78,RespArrest,Respiratory Arrest
+79,CardioRespFail,Cardio-Respiratory Failure and Shock
+80,CHF,Congestive Heart Failure
+81,AcuteMI,Acute Myocardial Infarction
+82,UnstableAngina,Unstable Angina and Other Acute Ischemic Heart Disease
+83,AginaOldMI,Angina Pectoris_Old Myocardial Infarction
+92,Arrhythmias,Specified Heart Arrhythmias
+95,CerebralHemorrhage,Cerebral Hemorrhage
+96,IschemicStroke,Ischemic or Unspecified Stroke
+100,Hemiplegia,Hemiplegia_Hemiparesis
+101,CerebralPalsy,Cerebral Palsy and Other Paralytic Syndromes
+104,ValvularDiswComp,Vascular Disease with Complications
+105,ValvularDis,Vascular Disease
+107,CysticFibrosis,Cystic Fibrosis
+108,COPD,Chronic Obstructive Pulmonary Disease
+111,PNAaspiration,Aspiration and Specified Bacterial Pneumonias
+112,PNAother,Pneumococcal Pneumonia Emphysema Lung Abscess
+119,DiabRetinopathy,Proliferative Diabetic Retinopathy and Vitreous Hemorrhage
+130,Dialysis,Dialysis Status
+131,RenalFailure,Renal Failure
+132,Nephritis,Nephritis
+148,DecubitusUlcer,Decubitus Ulcer of Skin
+149,ChronicSkinUlcer,Chronic Ulcer of Skin Except Decubitus
+150,SevereBurn,Extensive Third-Degree Burns
+154,HeadInjurySevere,Severe Head Injury
+155,HeadInjuryMajor,Major Head Injury
+157,VertebralFracture,Vertebral Fractures without Spinal Cord Injury
+158,HipFracture,Hip Fracture_Dislocation
+161,AmpTraumatic,Traumatic Amputation
+164,MajorComplications,Major Complications of Medical Care and Trauma
+174,OrganTransplant,Major Organ Transplant Status
+176,ArtificialOpenings,Artificial Openings for Feeding or Elimination
+177,AmpLower,Amputation Status Lower Limb_Amputation Complications
