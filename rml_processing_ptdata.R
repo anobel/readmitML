@@ -470,11 +470,8 @@ rm(dx1, dx2, dx3, dx4, dx5, dx6, dx7, dx8, dx9, dx10, dx11)
 
 dx <- as.data.table(dx)
 
-## THIS PORTION OF ANALYSIS IF RAM INTENSIVE
-# Crashed on laptop w 16gb ram
-# instead, run AWS r3.4xl (120gb ram)
 # Convert HCC table to wide
-dx <- dcast(dx, rln + admtdate ~ hcc)
+dx <- data.table::dcast(dx, rln + admtdate ~ hcc)
 
 # Rename column names to start with hcc
 names(dx) <- gsub("([0-9]+)", "hcc_\\1", names(dx))
