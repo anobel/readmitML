@@ -190,6 +190,11 @@ pt <- pt %>% select(-index)
 train <- train %>% select(-index)
 test <- test %>% select(-index)
 
+# Calculate counts
+counts <- pt %>%
+  group_by(cohort) %>%
+  summarise(n = n())
+
 ########## Regression Formulas
 # save formulas for regression models
 elixfm <- paste0(grep("elix_", names(pt), value = T), collapse="+")
@@ -204,6 +209,35 @@ hccfm <- as.formula(paste("isreadmit30dc", hccfm, sep="~"))
 
 # Log Models
 ## Elixhauser
+### Frequency Table
+```{r Elix.frequency}
+# Calculate frequency table per cohort and join with counts per cohort
+freqelix <- pt %>% 
+  group_by(cohort) %>%
+  dplyr::select(starts_with("elix_")) %>%
+  summarise_each(funs(sum)) %>%
+  left_join(counts)
+
+# calculate percentages
+freqelix <- round(100*freqelix[,grep("elix_", names(freqelix))]/freqelix$n,2)
+# bring back cohort labels
+freqelix <- cbind(counts[,1], freqelix)
+
+# convert from wide to long and relabel columns, category names
+freqelix <- gather(freqelix, cohort, frequency)
+names(freqelix) <- c("cohort", "elix", "frequency")
+freqelix$elix <- str_replace(freqelix$elix, "elix_", "")
+
+# generate plot: freqnecy by cohort
+ggplot(freqelix, aes(x = elix, y = frequency, fill=cohort)) + 
+  geom_bar(stat="identity") + 
+  facet_grid(cohort ~ .) + 
+  scale_fill_brewer(palette="Set1") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) + 
+  theme(legend.position="none") + 
+  labs(title = "Frequency of Each Elixhauser Category by Cohort", x=element_blank(), y="Frequency")
+```
+
 ### Individual Predictors
 ```{r logmodelselix}
 glmelix <- pt %>% 
@@ -354,8 +388,37 @@ for (i in seq_along(unique(glmcd$cohort))){
 }
 ```
 
+### Frequency Table
+```{r CD.frequency}
+# Calculate frequency table per cohort and join with counts per cohort
+freqcd <- pt %>% 
+  group_by(cohort) %>%
+  dplyr::select(starts_with("cd_")) %>%
+  summarise_each(funs(sum)) %>%
+  left_join(counts)
+
+# calculate percentages
+freqcd <- round(100*freqcd[,grep("cd_", names(freqcd))]/freqcd$n,2)
+# bring back cohort labels
+freqcd <- cbind(counts[,1], freqcd)
+
+# convert from wide to long and relabel columns, category names
+freqcd <- gather(freqcd, cohort, frequency)
+names(freqcd) <- c("cohort", "cd", "frequency")
+freqcd$cd <- str_replace(freqcd$cd, "cd_", "")
+
+# generate plot: freqnecy by cohort
+ggplot(freqcd, aes(x = cd, y = frequency, fill=cohort)) + 
+  geom_bar(stat="identity") + 
+  facet_grid(cohort ~ .) + 
+  scale_fill_brewer(palette="Set1") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) + 
+  theme(legend.position="none") + 
+  labs(title = "Frequency of Each Charlson-Deyo Category by Cohort", x=element_blank(), y="Frequency")
+```
+
 ### ROC Curves
-```{r rocCD, eval = T}
+```{r rocCD}
 glmrocCD <- train %>%
   group_by(cohort) %>%
   do(
@@ -453,6 +516,35 @@ for (i in seq_along(unique(glmhcc$cohort))){
 }
 ```
 
+### Frequency Table
+```{r HCC.frequency}
+# Calculate frequency table per cohort and join with counts per cohort
+freqhcc <- pt %>% 
+  group_by(cohort) %>%
+  dplyr::select(starts_with("hcc_")) %>%
+  summarise_each(funs(sum)) %>%
+  left_join(counts)
+
+# calculate percentages
+freqhcc <- round(100*freqhcc[,grep("hcc_", names(freqhcc))]/freqhcc$n,2)
+# bring back cohort labels
+freqhcc <- cbind(counts[,1], freqhcc)
+
+# convert from wide to long and relabel columns, category names
+freqhcc <- gather(freqhcc, cohort, frequency)
+names(freqhcc) <- c("cohort", "hcc", "frequency")
+freqhcc$hcc <- str_replace(freqhcc$hcc, "hcc_", "")
+
+# generate plot: freqnecy by cohort
+ggplot(freqhcc, aes(x = hcc, y = frequency, fill=cohort)) + 
+  geom_bar(stat="identity") + 
+  facet_grid(cohort ~ .) + 
+  scale_fill_brewer(palette="Set1") + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) + 
+  theme(legend.position="none") + 
+  labs(title = "Frequency of Each HCC by Cohort", x=element_blank(), y="Frequency")
+```
+
 ### ROC Curves
 When using the 75% training data, there are insufficient observations to fit the model (rank-deficient). At this point, will keep the code here for when additional data are available, but it is currently not evaluated. 
 ```{r rocHCC, eval = F}
@@ -496,8 +588,28 @@ glmrocProc <- rocWide(glmrocProc)
 ggplot(glmrocProc, aes(x = fpr, y = tpr, label = cutoff, color = group)) +
   geom_roc(stat = "identity", n.cuts = 0) +
   style_roc() +
-  scale_color_brewer(palette = "Set1", name="Model",
+  scale_color_brewer(palette = "Set1", name = "Model",
                     labels = paste(unique(results$group), " AUC: ", 
                                    round(as.numeric(auc), 3), sep = "")) +
   labs(title = paste("Random Cohort Log Regression"))
+```
+
+# HCC Model Selection
+```{r hccModelSelection}
+hccmodels <- train %>%
+  group_by(cohort) %>%
+  do(
+    glmhcc = glm(hccfm, data=., family="binomial")
+    )
+t <- train %>% filter(cohort=="RadNx")
+
+100*prop.table(table(t$hcc_HIV))
+
+
+train %>%
+  select(cohort=="Cystectomy") %>%
+  step()
+
+
+
 ```
