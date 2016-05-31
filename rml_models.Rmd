@@ -39,6 +39,7 @@ library(stargazer)  # HTML Tables for regression results
 # Specialty/Stats Packages
 library(ROCR)       # Performance measures, ROC curves, AUC
 library(icd)        # ICD package
+# library(multidplyr)
 # library(lme4)     # Mixed Effects Models
 # library(coin)     # Permutation Testing
 ```
@@ -599,11 +600,23 @@ ggplot(glmrocProc, aes(x = fpr, y = tpr, label = cutoff, color = group)) +
 hccmodels <- train %>%
   group_by(cohort) %>%
   do(
-    glmhcc = glm(hccfm, data=., family="binomial")
+    glmhccfull = glm(hccfm, data=., family="binomial"),
+    glmhccempty = glm(isreadmit30dc ~ 1, data=., family="binomial")
     )
-t <- train %>% filter(cohort=="RadNx")
 
-100*prop.table(table(t$hcc_HIV))
+b <- mclapply(1:nrow(hccmodels), mc.cores=8, function(x) step(hccmodels[[x,"glmhccfull"]]))
+
+f <- mclapply(1:nrow(hccmodels), mc.cores=8, function(x) {
+        step(hccmodels[[x,"glmhccempty"]],
+             scope = list(
+               lower = formula(hccmodels[[x,"glmhccempty"]]),
+               upper = formula(hccmodels[[x,"glmhccfull"]])
+               )
+             , direction = "forward")
+          }
+  )
+
+f <- step(emptymod, scope=list(lower=formula(emptymod),upper=formula(fullmod)), direction="forward")
 
 
 train %>%
