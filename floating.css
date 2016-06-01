@@ -4,12 +4,12 @@
   top: 50px;
   width: 250px;
   height: 100%;
-  overflow:scroll;
+  overflow: scroll;
 }
 
 body {
   max-width: 1000px;
   margin: auto;
-  margin-left: 50px;
+  margin-left: 250px;
   line-height: 20px;
 }
