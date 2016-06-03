@@ -11,5 +11,6 @@
 *.html
 *_cache/
 *_files/
+exports/
 # Data
 data/patient/*
