@@ -361,7 +361,7 @@ fullcdl <- list()
 fullcdm <- vector("list", numcohorts)
 
 # prepare Matrix objects for Lasso regression
-??# this creates a list of matrices, one for each cohort
+# this creates a list of matrices, one for each cohort
 for (i in 1:numcohorts) {
   # convert from DF to list
   fullcdl[[i]] <- cdmodeldata %>% filter(cohort==cohorts[i]) %>% ungroup()
@@ -510,4 +510,132 @@ lasso.coef$hcc[rowSums(lasso.coef[, -1]) == 0]
 # create interactive data table 
 lasso.coef.dt <- lasso.coef[rowSums(lasso.coef[,-1]) > 0, ]
 kable(lasso.coef.dt, digits=3, row.names = F)
+```
+
+# Random Forest
+```{r elixRandomForest, echo=T}
+# make full dataset for elix
+fullelix <- pt %>%
+  group_by(cohort) %>% 
+  mutate(isreadmit30dc = as.factor(isreadmit30dc)) %>%
+  select(isreadmit30dc, agyradm_s, sex, starts_with("elix_"))
+
+trainelix <- train %>%
+  group_by(cohort) %>% 
+  mutate(isreadmit30dc = as.factor(isreadmit30dc)) %>%
+  select(isreadmit30dc, agyradm_s, sex, starts_with("elix_"))
+
+testelix <- test %>%
+  group_by(cohort) %>% 
+  mutate(isreadmit30dc = as.factor(isreadmit30dc)) %>%
+  select(isreadmit30dc, agyradm_s, sex, starts_with("elix_"))
+
+# nubmer of predictors in the data set
+preds <- length(fullelixl[[i]]) - 1
+
+# create empty objects to later populate
+trainelixl <- list()
+testelixl <- list()
+fullelixl <- list()
+
+# convert from DF to list of DFs
+for (i in 1:numcohorts) {
+  # Create Full data
+  fullelixl[[i]] <- fullelix %>% 
+    filter(cohort==cohorts[i]) %>% 
+    ungroup() %>%
+    select(-cohort)
+  # Create Training Data
+  trainelixl[[i]] <- trainelix %>% 
+    filter(cohort==cohorts[i]) %>% 
+    ungroup() %>%
+    select(-cohort)
+  # Create Test Data
+  testelixl[[i]] <- testelix %>% 
+    filter(cohort==cohorts[i]) %>% 
+    ungroup() %>%
+    select(-cohort)
+  }
+
+# create empty object populate
+rftune <- vector("list", numcohorts)
+rf.cv <- vector("list", numcohorts)
+varimportance <- vector("list", numcohorts)
+
+# create a grid of mtry values from 1 to number of predictors
+# create a vector of which variable subsets to test. 1 to 5, then every 5 until total number of predictors
+grid <- data.frame(mtry = 1:preds)
+subsets <- c(1:5, seq(from = 5, to = preds, 5))
+
+# prepare cluster
+cl <- makeCluster(detectCores())
+registerDoParallel(cl)
+
+for (i in 1:2) {
+# remember to change the range to 1:numcohorts on AWS
+# Tune RF model for optimal mtry
+# set control parameters. when repeated, set the CV number to 5
+control <- trainControl(method = "cv",
+                        number = 2,
+                        allowParallel = T)
+
+rftune[[i]] <- train(x = fullelixl[[i]][-1],
+                y = fullelixl[[i]][[1]],
+                method = "rf",
+                trControl = control,
+                metric = "Kappa",
+                tuneGrid = grid,
+                importance = T
+                )
+
+# show scatterplot matrix of accuracy, kappa, mtry, and SDs
+plot(rftune[[i]]$results, main = paste("Random Forest Tuning - Elixhauser", cohorts[[i]]))
+
+# plot kappa vs. number of randomly selected predictors at a time
+plot(rftune[[i]], main = paste("Random Forest Tuning - Elixhauser", cohorts[[i]]))
+
+# show mtry used
+paste("Optimal mtry parameter =", rftune[[i]]$bestTune)
+
+# results of model
+rftune[[i]]$finalModel
+
+# refit random forest, looking at model performance as variables increased
+control <- rfeControl(functions = rfFuncs,
+                   method = "cv",
+                   number = 5,
+                   verbose = F,
+                   allowParallel = T
+                   )
+
+rf.cv[[i]] <- rfe(x = fullelixl[[i]][-1], y = fullelixl[[i]][[1]],
+                 rfeControl = control,
+                 sizes = subsets,
+                 tuneGrid = data.frame(mtry = rftune[[i]]$bestTune)
+                 )
+
+plot(rf.cv[[i]], type = c("g", "o"),
+     main = paste("Randrom Forest Accuracy with addition of variables, Elixhauser -", cohorts[[i]]))
+
+# create variable importance plot
+varImpPlot(rftune[[i]]$finalModel, type = 2, pch = 19,
+           main = paste("Variable Importance - Elixhauser", cohorts[[i]]))
+
+varimportance[[i]] <- importance(rftune[[i]]$finalModel)
+}
+
+# flatten varimportance into a single DF and prepare for table
+varimportance <- lapply(varimportance, data.frame)
+varimportance <-  mapply(cbind, varimportance, "cohort" = cohorts, SIMPLIFY = F)
+varimportance <- do.call(rbind, varimportance)
+varimportance$term <- row.names(varimportance)
+varimportance$term <- str_replace_all(varimportance$term, "[0-9]|elix_", "")
+
+varimportance <- varimportance %>%
+  select(term, cohort, MeanDecreaseGini) %>%
+  spread(cohort, MeanDecreaseGini)
+
+kable(varimportance, digits=3)
+
+save(rf.cv, rftune, file = "exports/rf.Rda")
 ```
