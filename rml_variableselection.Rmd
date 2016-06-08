@@ -122,7 +122,7 @@ hccfm <- as.formula(paste("isreadmit30dc", hccfm, sep = "~"))
 Using AIC for model selection, 15 maximum steps
 
 ## Elixhauser
-```{r elixForwardLog}
+```{r elixForwardLog, eval=F}
 # Create empty data frame to populate with forward logistic results
 elixforward <- vector("list", numcohorts)
 # fit forward stepwise models for all 4 cohorts
@@ -172,7 +172,7 @@ kable(elixforwardres)
 ```
 
 ## Charlson
-```{r cdForwardLog}
+```{r cdForwardLog, eval=F}
 # Create empty data frame to populate with forward logistic results
 cdforward <- vector("list", numcohorts)
 # fit forward stepwise models for all 4 cohorts
@@ -221,7 +221,7 @@ kable(cdforwardres)
 ```
 
 ## HCC
-```{r hccForwardLog}
+```{r hccForwardLog, eval=F}
 # Create empty data frame to populate with forward logistic results
 hccforward <- vector("list", numcohorts)
 # fit forward stepwise models for all 4 cohorts
@@ -271,7 +271,7 @@ kable(hccforwardres)
 
 # Lasso Model Selection
 ## Elixhauser
-```{r lassoelix}
+```{r lassoelix, eval=F}
 # make full dataset for elix
 elixmodeldata <- pt %>%
   group_by(cohort) %>% 
@@ -352,7 +352,7 @@ kable(lasso.coef.dt, digits=3, row.names = F)
 ```
 
 ## Charlson
-```{r lassocd}
+```{r lassocd, eval=F}
 # make full dataset for cd
 cdmodeldata <- pt %>%
   group_by(cohort) %>% 
@@ -433,7 +433,7 @@ kable(lasso.coef.dt, digits=3, row.names = F)
 ```
 
 ## HCC
-```{r lassoHCC}
+```{r lassoHCC, eval=F}
 # make full dataset for hcc
 hccmodeldata <- pt %>%
   group_by(cohort) %>% 
@@ -515,7 +515,9 @@ kable(lasso.coef.dt, digits=3, row.names = F)
 ```
 
 # Random Forest
-```{r elixRandomForest, echo=T}
+## Elixhauser
+```{r elixRandomForest, eval=T}
+system.time(
 # make full dataset for elix
 fullelix <- pt %>%
   group_by(cohort) %>% 
@@ -572,7 +574,7 @@ subsets <- c(1:5, seq(from = 5, to = preds, 5))
 # prepare cluster
 cl <- makeCluster(detectCores())
 registerDoParallel(cl)
-system.time(
+
 for (i in 1:numcohorts) {
 # remember to change the range to 1:numcohorts on AWS
 # Tune RF model for optimal mtry
@@ -590,18 +592,6 @@ rftune[[i]] <- train(x = fullelixl[[i]][-1],
                 importance = T
                 )
 
-# show scatterplot matrix of accuracy, kappa, mtry, and SDs
-plot(rftune[[i]]$results, main = paste("Random Forest Tuning - Elixhauser", cohorts[[i]]))
-
-# plot kappa vs. number of randomly selected predictors at a time
-plot(rftune[[i]], main = paste("Random Forest Tuning - Elixhauser", cohorts[[i]]))
-
-# show mtry used
-paste("Optimal mtry parameter =", rftune[[i]]$bestTune)
-
-# results of model
-rftune[[i]]$finalModel
-
 # refit random forest, looking at model performance as variables increased
 control <- rfeControl(functions = rfFuncs,
                    method = "cv",
@@ -616,16 +606,39 @@ rf.cv[[i]] <- rfe(x = fullelixl[[i]][-1], y = fullelixl[[i]][[1]],
                  tuneGrid = data.frame(mtry = rftune[[i]]$bestTune)
                  )
 
+varimportance[[i]] <- importance(rftune[[i]]$finalModel)
+}
+)
+save(rftune, rf.cv, varimportance, file = "exports/rfelix.rda")
+```
+
+```{r elixRandomForestReport, eval=F}
+# load random forest objects
+load("exports/rfelix.rda")
+
+# loop through to plot them
+for (i in 1:numcohorts) {
+# show scatterplot matrix of accuracy, kappa, mtry, and SDs
+plot(rftune[[i]]$results, main = paste("Random Forest Tuning - Elixhauser", cohorts[[i]]))
+
+# plot kappa vs. number of randomly selected predictors at a time
+plot(rftune[[i]], main = paste("Random Forest Tuning - Elixhauser", cohorts[[i]]))
+
+# show mtry used
+paste("Optimal mtry parameter =", rftune[[i]]$bestTune)
+
+# results of model
+rftune[[i]]$finalModel
+  
 plot(rf.cv[[i]], type = c("g", "o"),
      main = paste("Randrom Forest Accuracy with addition of variables, Elixhauser -", cohorts[[i]]))
 
 # create variable importance plot
 varImpPlot(rftune[[i]]$finalModel, type = 2, pch = 19,
            main = paste("Variable Importance - Elixhauser", cohorts[[i]]))
-
-varimportance[[i]] <- importance(rftune[[i]]$finalModel)
+  
 }
-)
+
 # flatten varimportance into a single DF and prepare for table
 varimportance <- lapply(varimportance, data.frame)
 varimportance <-  mapply(cbind, varimportance, "cohort" = cohorts, SIMPLIFY = F)
@@ -638,6 +651,280 @@ varimportance <- varimportance %>%
   spread(cohort, MeanDecreaseGini)
 
 kable(varimportance, digits=3)
+```
 
-save(rf.cv, rftune, file = "exports/rf.Rda")
+## Charlson
+```{r cdRandomForest, eval=T}
+system.time(
+# make full dataset for cd
+fullcd <- pt %>%
+  group_by(cohort) %>% 
+  mutate(isreadmit30dc = as.factor(isreadmit30dc)) %>%
+  select(isreadmit30dc, agyradm_s, sex, starts_with("cd_"))
+
+traincd <- train %>%
+  group_by(cohort) %>% 
+  mutate(isreadmit30dc = as.factor(isreadmit30dc)) %>%
+  select(isreadmit30dc, agyradm_s, sex, starts_with("cd_"))
+
+testcd <- test %>%
+  group_by(cohort) %>% 
+  mutate(isreadmit30dc = as.factor(isreadmit30dc)) %>%
+  select(isreadmit30dc, agyradm_s, sex, starts_with("cd_"))
+
+# nubmer of predictors in the data set
+preds <- length(fullcd) - 2
+
+# create empty objects to later populate
+traincdl <- list()
+testcdl <- list()
+fullcdl <- list()
+
+# convert from DF to list of DFs
+for (i in 1:numcohorts) {
+  # Create Full data
+  fullcdl[[i]] <- fullcd %>% 
+    filter(cohort==cohorts[i]) %>% 
+    ungroup() %>%
+    select(-cohort)
+  # Create Training Data
+  traincdl[[i]] <- traincd %>% 
+    filter(cohort==cohorts[i]) %>% 
+    ungroup() %>%
+    select(-cohort)
+  # Create Test Data
+  testcdl[[i]] <- testcd %>% 
+    filter(cohort==cohorts[i]) %>% 
+    ungroup() %>%
+    select(-cohort)
+  }
+
+# create empty object populate
+rftune <- vector("list", numcohorts)
+rf.cv <- vector("list", numcohorts)
+varimportance <- vector("list", numcohorts)
+
+# create a grid of mtry values from 1 to number of predictors
+# create a vector of which variable subsets to test. 1 to 5, then every 5 until total number of predictors
+grid <- data.frame(mtry = 1:preds)
+subsets <- c(1:5, seq(from = 5, to = preds, 5))
+
+# prepare cluster
+cl <- makeCluster(detectCores())
+registerDoParallel(cl)
+
+for (i in 1:numcohorts) {
+# remember to change the range to 1:numcohorts on AWS
+# Tune RF model for optimal mtry
+# set control parameters. when repeated, set the CV number to 5
+control <- trainControl(method = "cv",
+                        number = 5,
+                        allowParallel = T)
+
+rftune[[i]] <- train(x = fullcdl[[i]][-1],
+                y = fullcdl[[i]][[1]],
+                method = "rf",
+                trControl = control,
+                metric = "Kappa",
+                tuneGrid = grid,
+                importance = T
+                )
+
+# refit random forest, looking at model performance as variables increased
+control <- rfeControl(functions = rfFuncs,
+                   method = "cv",
+                   number = 5,
+                   verbose = F,
+                   allowParallel = T
+                   )
+
+rf.cv[[i]] <- rfe(x = fullcdl[[i]][-1], y = fullcdl[[i]][[1]],
+                 rfeControl = control,
+                 sizes = subsets,
+                 tuneGrid = data.frame(mtry = rftune[[i]]$bestTune)
+                 )
+
+varimportance[[i]] <- importance(rftune[[i]]$finalModel)
+}
+)
+save(rftune, rf.cv, varimportance, file = "exports/rfcd.rda")
+```
+
+```{r cdRandomForestReport, eval=F}
+# load random forest objects
+load("exports/rfcd.rda")
+
+# loop through to plot them
+for (i in 1:numcohorts) {
+# show scatterplot matrix of accuracy, kappa, mtry, and SDs
+plot(rftune[[i]]$results, main = paste("Random Forest Tuning - Charlson", cohorts[[i]]))
+
+# plot kappa vs. number of randomly selected predictors at a time
+plot(rftune[[i]], main = paste("Random Forest Tuning - Charlson", cohorts[[i]]))
+
+# show mtry used
+paste("Optimal mtry parameter =", rftune[[i]]$bestTune)
+
+# results of model
+rftune[[i]]$finalModel
+  
+plot(rf.cv[[i]], type = c("g", "o"),
+     main = paste("Randrom Forest Accuracy with addition of variables, Charlson -", cohorts[[i]]))
+
+# create variable importance plot
+varImpPlot(rftune[[i]]$finalModel, type = 2, pch = 19,
+           main = paste("Variable Importance - Charlson", cohorts[[i]]))
+  
+}
+
+# flatten varimportance into a single DF and prepare for table
+varimportance <- lapply(varimportance, data.frame)
+varimportance <-  mapply(cbind, varimportance, "cohort" = cohorts, SIMPLIFY = F)
+varimportance <- do.call(rbind, varimportance)
+varimportance$term <- row.names(varimportance)
+varimportance$term <- str_replace_all(varimportance$term, "[0-9]|cd_", "")
+
+varimportance <- varimportance %>%
+  select(term, cohort, MeanDecreaseGini) %>%
+  spread(cohort, MeanDecreaseGini)
+
+kable(varimportance, digits=3)
+```
+
+## HCC
+```{r hccRandomForest, eval=T}
+system.time(
+# make full dataset for hcc
+fullhcc <- pt %>%
+  group_by(cohort) %>% 
+  mutate(isreadmit30dc = as.factor(isreadmit30dc)) %>%
+  select(isreadmit30dc, agyradm_s, sex, starts_with("hcc_"))
+
+trainhcc <- train %>%
+  group_by(cohort) %>% 
+  mutate(isreadmit30dc = as.factor(isreadmit30dc)) %>%
+  select(isreadmit30dc, agyradm_s, sex, starts_with("hcc_"))
+
+testhcc <- test %>%
+  group_by(cohort) %>% 
+  mutate(isreadmit30dc = as.factor(isreadmit30dc)) %>%
+  select(isreadmit30dc, agyradm_s, sex, starts_with("hcc_"))
+
+# nubmer of predictors in the data set
+preds <- length(fullhcc) - 2
+
+# create empty objects to later populate
+trainhccl <- list()
+testhccl <- list()
+fullhccl <- list()
+
+# convert from DF to list of DFs
+for (i in 1:numcohorts) {
+  # Create Full data
+  fullhccl[[i]] <- fullhcc %>% 
+    filter(cohort==cohorts[i]) %>% 
+    ungroup() %>%
+    select(-cohort)
+  # Create Training Data
+  trainhccl[[i]] <- trainhcc %>% 
+    filter(cohort==cohorts[i]) %>% 
+    ungroup() %>%
+    select(-cohort)
+  # Create Test Data
+  testhccl[[i]] <- testhcc %>% 
+    filter(cohort==cohorts[i]) %>% 
+    ungroup() %>%
+    select(-cohort)
+  }
+
+# create empty object populate
+rftune <- vector("list", numcohorts)
+rf.cv <- vector("list", numcohorts)
+varimportance <- vector("list", numcohorts)
+
+# create a grid of mtry values from 1 to number of predictors
+# create a vector of which variable subsets to test. 1 to 5, then every 5 until total number of predictors
+grid <- data.frame(mtry = 1:preds)
+subsets <- c(1:5, seq(from = 5, to = preds, 5))
+
+# prepare cluster
+cl <- makeCluster(detectCores())
+registerDoParallel(cl)
+
+for (i in 1:numcohorts) {
+# remember to change the range to 1:numcohorts on AWS
+# Tune RF model for optimal mtry
+# set control parameters. when repeated, set the CV number to 5
+control <- trainControl(method = "cv",
+                        number = 5,
+                        allowParallel = T)
+
+rftune[[i]] <- train(x = fullhccl[[i]][-1],
+                y = fullhccl[[i]][[1]],
+                method = "rf",
+                trControl = control,
+                metric = "Kappa",
+                tuneGrid = grid,
+                importance = T
+                )
+
+# refit random forest, looking at model performance as variables increased
+control <- rfeControl(functions = rfFuncs,
+                   method = "cv",
+                   number = 5,
+                   verbose = F,
+                   allowParallel = T
+                   )
+
+rf.cv[[i]] <- rfe(x = fullhccl[[i]][-1], y = fullhccl[[i]][[1]],
+                 rfeControl = control,
+                 sizes = subsets,
+                 tuneGrid = data.frame(mtry = rftune[[i]]$bestTune)
+                 )
+
+varimportance[[i]] <- importance(rftune[[i]]$finalModel)
+}
+)
+save(rftune, rf.cv, varimportance, file = "exports/rfhcc.rda")
+```
+
+```{r hccRandomForestReport, eval=F}
+# load random forest objects
+load("exports/rfhcc.rda")
+
+# loop through to plot them
+for (i in 1:numcohorts) {
+# show scatterplot matrix of accuracy, kappa, mtry, and SDs
+plot(rftune[[i]]$results, main = paste("Random Forest Tuning - hcchauser", cohorts[[i]]))
+
+# plot kappa vs. number of randomly selected predictors at a time
+plot(rftune[[i]], main = paste("Random Forest Tuning - hcchauser", cohorts[[i]]))
+
+# show mtry used
+paste("Optimal mtry parameter =", rftune[[i]]$bestTune)
+
+# results of model
+rftune[[i]]$finalModel
+  
+plot(rf.cv[[i]], type = c("g", "o"),
+     main = paste("Randrom Forest Accuracy with addition of variables, hcchauser -", cohorts[[i]]))
+
+# create variable importance plot
+varImpPlot(rftune[[i]]$finalModel, type = 2, pch = 19,
+           main = paste("Variable Importance - hcchauser", cohorts[[i]]))
+  
+}
+
+# flatten varimportance into a single DF and prepare for table
+varimportance <- lapply(varimportance, data.frame)
+varimportance <-  mapply(cbind, varimportance, "cohort" = cohorts, SIMPLIFY = F)
+varimportance <- do.call(rbind, varimportance)
+varimportance$term <- row.names(varimportance)
+varimportance$term <- str_replace_all(varimportance$term, "[0-9]|hcc_", "")
+
+varimportance <- varimportance %>%
+  select(term, cohort, MeanDecreaseGini) %>%
+  spread(cohort, MeanDecreaseGini)
+
+kable(varimportance, digits=3)
 ```
