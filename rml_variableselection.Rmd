@@ -21,9 +21,6 @@ knitr::opts_chunk$set(
 
 ```{r packages, cache=F}
 # Data Cleaning Packages
-library(parallel)   # for parallel processing mclapply
-options(mc.cores = detectCores()) # set cores to system max
-
 library(dplyr)      # Data Management
 library(tidyr)      # Data Cleaning
 library(stringr)    # String manipulation
@@ -41,9 +38,14 @@ library(stargazer)  # HTML Tables for regression results
 library(ROCR)       # Performance measures, ROC curves, AUC
 library(icd)        # ICD package
 library(glmnet)
-# library(multidplyr)
+library(caret)
 # library(lme4)     # Mixed Effects Models
 # library(coin)     # Permutation Testing
+
+# Parallel Processing
+library(parallel)   # for parallel processing mclapply
+options(mc.cores = detectCores()) # set cores to system max
+library(doParallel) # backend for Caret
 ```
 
 ```{r importdata}
