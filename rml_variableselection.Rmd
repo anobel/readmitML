@@ -531,7 +531,7 @@ testelix <- test %>%
   select(isreadmit30dc, agyradm_s, sex, starts_with("elix_"))
 
 # nubmer of predictors in the data set
-preds <- length(fullelixl[[i]]) - 1
+preds <- length(fullelix) - 2
 
 # create empty objects to later populate
 trainelixl <- list()
@@ -570,13 +570,13 @@ subsets <- c(1:5, seq(from = 5, to = preds, 5))
 # prepare cluster
 cl <- makeCluster(detectCores())
 registerDoParallel(cl)
-
-for (i in 1:2) {
+system.time(
+for (i in 1:numcohorts) {
 # remember to change the range to 1:numcohorts on AWS
 # Tune RF model for optimal mtry
 # set control parameters. when repeated, set the CV number to 5
 control <- trainControl(method = "cv",
-                        number = 2,
+                        number = 5,
                         allowParallel = T)
 
 rftune[[i]] <- train(x = fullelixl[[i]][-1],
@@ -623,7 +623,7 @@ varImpPlot(rftune[[i]]$finalModel, type = 2, pch = 19,
 
 varimportance[[i]] <- importance(rftune[[i]]$finalModel)
 }
-
+)
 # flatten varimportance into a single DF and prepare for table
 varimportance <- lapply(varimportance, data.frame)
 varimportance <-  mapply(cbind, varimportance, "cohort" = cohorts, SIMPLIFY = F)
