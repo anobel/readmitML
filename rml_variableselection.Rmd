@@ -269,6 +269,7 @@ write.csv(hccforwardres, file="exports/hccforward.csv")
 kable(hccforwardres)
 ```
 
+
 # Lasso Model Selection
 ## Elixhauser
 ```{r lassoelix, eval=F}
@@ -514,10 +515,10 @@ lasso.coef.dt <- lasso.coef[rowSums(lasso.coef[,-1]) > 0, ]
 kable(lasso.coef.dt, digits=3, row.names = F)
 ```
 
+
 # Random Forest
 ## Elixhauser
 ```{r elixRandomForest, eval=T}
-system.time(
 # make full dataset for elix
 fullelix <- pt %>%
   group_by(cohort) %>% 
@@ -568,11 +569,10 @@ varimportance <- vector("list", numcohorts)
 
 # create a grid of mtry values from 1 to number of predictors
 # create a vector of which variable subsets to test. 1 to 5, then every 5 until total number of predictors
-grid <- data.frame(mtry = 1:preds)
 subsets <- c(1:5, seq(from = 5, to = preds, 5))
 
 # prepare cluster
-cl <- makeCluster(detectCores())
+cl <- makeCluster(16)
 registerDoParallel(cl)
 
 for (i in 1:numcohorts) {
@@ -586,9 +586,10 @@ control <- trainControl(method = "cv",
 rftune[[i]] <- train(x = fullelixl[[i]][-1],
                 y = fullelixl[[i]][[1]],
                 method = "rf",
+                ntree = 251,
                 trControl = control,
                 metric = "Kappa",
-                tuneGrid = grid,
+                tuneGrid = data.frame(mtry = 1:preds),
                 importance = T
                 )
 
@@ -603,12 +604,12 @@ control <- rfeControl(functions = rfFuncs,
 rf.cv[[i]] <- rfe(x = fullelixl[[i]][-1], y = fullelixl[[i]][[1]],
                  rfeControl = control,
                  sizes = subsets,
-                 tuneGrid = data.frame(mtry = rftune[[i]]$bestTune)
+                 tuneGrid = expand.grid(.mtry = rftune[[i]]$bestTune)
                  )
 
 varimportance[[i]] <- importance(rftune[[i]]$finalModel)
 }
-)
+
 save(rftune, rf.cv, varimportance, file = "exports/rfelix.rda")
 ```
 
@@ -724,9 +725,10 @@ control <- trainControl(method = "cv",
 rftune[[i]] <- train(x = fullcdl[[i]][-1],
                 y = fullcdl[[i]][[1]],
                 method = "rf",
+                ntree = 251,
                 trControl = control,
                 metric = "Kappa",
-                tuneGrid = grid,
+                tuneGrid = data.frame(mtry = 1:preds),
                 importance = T
                 )
 
@@ -862,9 +864,10 @@ control <- trainControl(method = "cv",
 rftune[[i]] <- train(x = fullhccl[[i]][-1],
                 y = fullhccl[[i]][[1]],
                 method = "rf",
+                ntree = 251,
                 trControl = control,
                 metric = "Kappa",
-                tuneGrid = grid,
+                tuneGrid = data.frame(mtry = 1:preds),
                 importance = T
                 )
 
